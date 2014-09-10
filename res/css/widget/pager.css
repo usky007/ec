@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/**
+ * @author				mitchell
+ * @description		定义pager翻页组件的样式
+ * @lastmodified		$2010-07-01$
+ */
+
+.pager {
+	padding-top:15px;
+	clear:both;
+	height:28px;
+	float:right;
+	text-align:center;
+}
+	.pager ul {
+		margin:0 auto;
+	}
+	.pager li {
+		margin-left:4px;
+		line-height:26px;
+		display:inline;
+	}
+	.pager li a {
+		display:inline-block;
+		text-decoration:none;
+		padding:0px 6px;
+		text-align:center;
+		line-height:26px;
+		border:1px solid #e6e7e1;
+		white-space:nowrap;
+	}
+	.pager li a.active {
+		background-color:#0085cf;
+		color:#FFF;
+		border-color:#0085CF;
+	}
+	.pager li a.pgup,.pager li a.pgdn{
+		_padding-top:6px;
+		_padding-bottom:5px;
+		_position:relative;
+		_top:4px;
+	}
+	.pager li a.pgup img{
+		background-image:url(../../images/widget/pager/arrow_left.gif);
+		width:12px;
+		height:12px;
+		background-position:top;
+		margin-bottom:-2px;
+	}
+	.pager li a.pgdn img{
+		background-image:url(../../images/widget/pager/arrow_right.gif);
+		width:12px;
+		height:12px;
+		background-position:top;
+		margin-bottom:-2px;
+	}
+	.pager li a:hover {
+		background-color:#0085cf;
+		color:#FFF;
+		border-color:#0085CF;
+	}
+	.pager li a:hover img{
+		background-position:bottom;
+	}

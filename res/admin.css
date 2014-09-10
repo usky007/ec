@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+/* Style for suggestion widget */
+div.tag_panel.suggestions
+{
+	border:1px solid #CCC;
+	background-color:#4F6B72;
+	padding: 0px;
+	font-size:9pt;
+	color:#ppp;
+	text-align:left;
+	overflow:auto;
+}
+div.tag_panel.suggestions div.option
+{
+	padding: 4px 8px;
+	background:none;
+	cursor:pointer;
+}
+div.tag_panel.suggestions div.selected
+{
+	background-color:#EFF7FD;
+	color:#1B90D0;
+}
+div.tag_panel.suggestions span.matched
+{
+	background: none repeat scroll 0 0 #FF9400;
+    color: #FFF;
+}
+div.tag_button
+{
+	position:relative;
+	top:-1px;
+	width:15px;
+	height:20px;
+	border:1px solid black;
+	cursor:pointer;
+	background-color:#404040;
+	color:White;
+	text-align:center;
+	font-family:Wingdings 3;
+	font-size:5pt;
+}

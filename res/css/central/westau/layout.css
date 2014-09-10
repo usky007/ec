@@ -1,0 +1,199 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "global.css";
+#boxmain {
+	background:url(../../../images/westau/nav_bg.jpg) repeat-x;
+}
+#contentmain {
+	width:1000px;
+	height:150px;
+	margin:0 auto;
+}
+.head {
+	height:103px;
+}
+.logo {
+	width:400px;
+	height:103px;
+	clear:both;
+	float:left;
+}
+.logo a {
+	display:block;
+	width:178px;
+	height:85px;
+	margin-left:16px;
+	margin-top:10px;
+	float:left;
+	background:url(http://feature.uutuu.com/WA/images/logo.jpg)
+}
+.logo a.great {
+	display:block;
+	width:86px;
+	height:88px;
+	margin-left:12px;
+	margin-top:10px;
+	float:left;
+	background:url(../../../images/westau/logo_great.jpg)
+}
+.sinawb {
+	float:right;
+	width:500px;
+	margin-top:40px;
+	height:50px;
+	background:url(http://feature.uutuu.com/WA/images/top_wb.jpg) no-repeat center center;
+	position:relative;
+	z-index:1001;
+}
+.sinawb a {
+	display:block;
+	width:75px;
+	height:30px;
+	margin-left:18px;
+	margin-top:11px;
+	float:left;
+}
+.sinawb a.auswb {
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin-left: 235px;
+	margin-top: 11px;
+	float: left;
+}
+.sinawb a.auswx {
+	display:block;
+	width:30px;
+	height:30px;
+	margin-left:0px;
+	margin-top:11px;
+	float:left;
+}
+.sinawb a.auswx:hover .weixin {
+	display:block;
+}
+.weixin {
+	width:177px;
+	height:310px;
+	display:none;
+	position:absolute;
+	top:40px;
+	left:192px;
+	z-index:1001;
+}
+.sinawb a.westauswb {
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin-left: 148px;
+	margin-top: 11px;
+	float: left;
+}
+.nav {
+	height:45px;
+	width:950px;
+}
+.nav li {
+	float:left;
+	height:45px;
+	width:70px;
+	margin:0 30px;
+}
+.nav li a {
+	display:block;
+	height:45px;
+}
+.nav li a:hover {
+	background-position:bottom;
+}
+.nav li a.current {
+	background-position:bottom;
+}
+.nav li.home {
+	margin:0 15px;
+	width:55px;
+}
+.nav li.event {
+	width:157px;
+	margin:0 20px;
+}
+#content {
+	width:1000px;
+	margin:0 auto;
+	padding:25px 0;
+	position:relative;
+	z-index:999;
+}
+#jionshow {
+	position:fixed;
+	width:113px;
+	height:184px;
+	left:88%;
+	top:40%;
+	z-index:999;
+}
+.main_bottom {
+	background:url(../../../images/westau/main_bottom.jpg) center bottom no-repeat;
+	height:21px;
+	width:100%;
+}
+#TB_overlay {
+	display:none;
+	position: fixed;
+	z-index:1000;
+	top: 0px;
+	left: 0px;
+	background-color:#000;
+	filter:alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.8;
+	height:100%;
+	width:100%;
+}
+#TB_window {
+	position: fixed;
+	background: #999;
+	z-index: 1002;
+	color:#000000;
+	display:none;
+	text-align:left;
+	top:50%;
+	left:50%;
+}
+.loading {
+	display: none;
+	margin-bottom: 15px;
+	padding: 15px 0;
+	text-align: center;
+	font-weight: 700;
+	border: double rgba(34,25,25,.14);
+	border-width: 3px 0 0 0;
+}
+.back-to{
+	right: 5px;
+	bottom: 188px;
+	overflow: hidden;
+	position: fixed;
+z-index: 999;
+}
+.back-top{
+	color: #1e1e1e;
+	outline: none;
+	text-decoration: underline;
+}
+#eventjoin2 {
+	position:fixed;
+	width:152px;
+	height:174px;
+	left:86%;
+	top:30%;
+	z-index:1000;
+	background:url(http://feature.uutuu.com/WA/images/eventwin.png);
+}
+#eventjoin2 a {
+	width:152px;
+	height:174px;
+	display:block;
+	cursor:pointer;
+}

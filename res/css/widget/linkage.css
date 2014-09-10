@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/**
+ * @author				mitchell
+ * @description		链动组件
+ * @lastmodified		$2010-07-29$
+ */
+.linkage{
+	font-family:"宋体";
+	float:left;
+	margin-top:5px;
+	margin-left:10px;
+}
+.linkage a{
+	font-size:14px;
+}
+
+
+.linkage .close{
+	font-size:0px;
+	cursor:pointer;
+	text-align:center;
+	font-weight:lighter;
+	color:#888;
+	margin-bottom:5px;
+	margin-left:3px;
+	position:relative;
+	background-image:url(../../images/icon_close.png);
+	background-position:top;
+	width:9px;
+	height:9px;
+}
+
+.linkage .close:hover{
+		background-position:bottom;
+}

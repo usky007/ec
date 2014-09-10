@@ -1,0 +1,112 @@
+.ad_box {
+	width:980px;
+	height:442px;
+	position:absolute;
+	z-index:1;
+	left:0px;
+	top:0px;
+}
+.scrollable {
+	position:relative;
+	overflow:hidden;
+	width: 980px;
+	height:442px;
+	border-bottom:10px solid #666;
+}
+.scrollable .items {
+	width:20000em;
+	position:absolute;
+}
+.scrollable .items .ad {
+	float:left;
+	width:980px;
+	height:442px;
+	border:0px solid #999;
+	position:relative;
+}
+.scrollable .items .ad .info {
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.scrollable .items .ad .shadow {
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.scrollable .items .ad .memo_bg {
+	position:absolute;
+	left:0px;
+	top:397px;
+	background-color:#000;
+	height:45px;
+	width:980px;
+	filter:alpha(opacity=50);
+	opacity:0.5;
+}
+.scrollable .items .ad .memo {
+	position:absolute;
+	left:0px;
+	top:397px;
+	color:#FFF;
+	height:45px;
+	width:980px;
+	line-height:45px;
+	text-indent:30px;
+}
+.dashed {
+	margin-top:-11px;
+	border:0px;
+	border-top:1px dotted #EEE;
+	height:0px;
+	font-size:0px;
+	margin-left:15px;
+	margin-right:15px;
+	position:relative;
+}
+.tabs {
+	position:relative;
+	margin-top:-15px;
+}
+.tabs .dashed {
+	width:950px;
+	border-top:1px dotted #EEE;
+	height:0px;
+	font-size:0px;
+	position:absolute;
+	left:10px;
+	top:9px;
+}
+.tabs a {
+	background-image:url(../images/ad_point.png);
+	_background-image:url(../images/ad_point.gif);
+	width:24px;
+	height:24px;
+	background-position:top;
+	line-height:24px;
+	font-weight:bold;
+	color:#FFF;
+	font-size:12px;
+	display:block;
+	float:left;
+	text-align:center;
+	position:absolute;
+	top:0px;
+	font-size:12px;
+	text-decoration:none;
+}
+.tabs a.current, .tabs a:hover {
+	color:#FFF;
+	font-size:12px;
+	background-position:bottom !important;
+	text-decoration:none;
+}
+.plane {
+	position:relative;
+	margin-top:-22px;
+}
+.plane img {
+	position:absolute;
+	top:0px;
+	left:25px;
+}

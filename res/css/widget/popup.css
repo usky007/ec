@@ -1,0 +1,15 @@
+.msgwin{
+	width:220px;
+	height:68px;
+	background-image:url(../../images/popup_bg.gif);
+	text-align:center;
+	font-size:12px;
+	color:#fff;
+	padding: 3px 6px 6px 1px;
+	line-height:26px;
+}
+.msgwin span{
+	font-size:14px;
+	margin:0px 5px ;
+	line-height:32px;
+}

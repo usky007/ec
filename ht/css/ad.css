@@ -1,0 +1,83 @@
+.driving_ad_box {
+	width:548px;
+	height:388px;
+	float:right;
+	margin-top:23px;
+	margin-right:6px;
+}
+.scrollable {
+	position:relative;
+	overflow:hidden;
+	width: 548px;
+	height:388px;
+}
+.scrollable .items {
+	width:20000em;
+	position:absolute;
+}
+.scrollable .items .ad {
+	float:left;
+	width:548px;
+	height:388px;
+	position:relative;
+}
+.scrollable .items .ad .info {
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.scrollable .items .ad .shadow {
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.scrollable .items .ad .memo_bg {
+	position:absolute;
+	left:0px;
+	top:235px;
+	background-color:#000;
+	height:45px;
+	width:980px;
+	filter:alpha(opacity=50);
+	opacity:0.5;
+}
+.scrollable .items .ad .memo {
+	position:absolute;
+	left:0px;
+	top:235px;
+	color:#FFF;
+	height:45px;
+	width:980px;
+	line-height:45px;
+	text-indent:30px;
+}
+.dashed {
+	margin-top:-10px;
+	border:0px;
+	border-top:1px dotted #EEE;
+	height:0px;
+	font-size:0px;
+	margin-left:15px;
+	margin-right:15px;
+	position:relative;
+}
+.tabs {
+	position:relative;
+	left:-450px;
+	top:33px;
+}
+.tabs a {
+	background-image:url(../images/ad_point.png);
+	width:24px;
+	height:24px;
+	background-position:top;
+	line-height:24px;
+	display:block;
+	float:left;
+	position:absolute;
+	font-size:0;
+}
+.tabs a.current, .tabs a:hover {
+	background-position:bottom !important;
+	text-decoration:none;
+}

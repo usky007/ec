@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/**
+ * @author				mitchell
+ * @description		定义TAB页组件的样式
+ * @lastmodified		$2010-06-22$
+ */
+.tabs_white,.tabs_white ul li,.tabs_white ul li a,.tabs_white ul li.active,.tabs_white ul li.active a{
+	background-image:url(../../images/widget/tabs/white/sprite.png);
+}
+
+.tabs_white{
+	width:100%;
+	float:left;
+	height:28px;
+	background-position:0px 0px;
+}
+.tabs_white ul{
+	float:left;
+	padding-left:10px;
+}
+.tabs_white ul li{
+	float:left;
+	background-position:0px -28px;
+	margin-right:4px;
+	display:inline;
+}
+.tabs_white ol.ext{
+	float:left;
+	padding-left:0px;
+	line-height:24px;
+	height:28px;
+}
+.tabs_white ol.ext input{
+	margin-left:10px;
+}
+.tabs_white ol.ext a{
+	text-decoration:underline;
+}
+.tabs_white ul li a{
+	display:inline-block;
+	height:28px;
+	padding:0px 15px;
+	background-position:right -84px;
+	background-repeat:no-repeat;
+	line-height:28px;
+	font-weight:bold;
+	color:#868686;
+}
+.tabs_white ul li:hover{
+	background-position:0px -56px;
+}
+.tabs_white ul li:hover a{
+	background-position:right -112px;
+	color:#FFF
+}
+.tabs_white ul li.active{
+	background-position:0px -140px;
+}
+.tabs_white ul li.active a{
+	background-position:right -196px;
+}
+.tabs_white ul li.active:hover{
+	background-position:0px -168px;
+}
+.tabs_white ul li.active:hover a{
+	background-position:right -224px;
+	color:#868686
+
+}

@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "layout.css";
+body {
+	background:url(../images/bg_r.jpg) repeat-y #f4f5f0;
+}
+#box {
+	width:100%;
+	background:url(../images/bg.jpg) center top no-repeat;
+}
+#content {
+	width:900px;
+	position:relative;
+}
+.main_box {
+	background:url(../images/video_bg.png) no-repeat center center;
+	margin-bottom:50px;
+	width:690px; 
+	height:503px;
+	margin:0 90px;
+	padding-top:20px;
+	padding-left:33px;
+}
+h2 {
+	margin:0px;
+	font-size:28px;
+	font-weight:lighter;
+	color:#616161;
+	font-family:"微软雅黑";
+}
+h3 {
+	color:#616161;
+	font-family:tahoma;
+	font-size:14px;
+	text-align:left;
+	line-height:30px;
+	margin:0;
+	padding:0;
+}
+.top10_morecity {
+	background:#293d82;
+	padding-left:35px;
+	padding-bottom:12px;
+	padding-right:35px;
+	width:828px;
+	border-left:1px solid #e2e2e2;
+	border-right:1px solid #e2e2e2;
+}
+.top10_morecity ul li {
+	float:left;
+	width:100px;
+	margin:0 30px;
+	margin-top:12px;
+}
+.top10_morecity ul li a {
+	font-family:"微软雅黑";
+	color:#eaf3f7;
+	font-size:14px;
+	line-height:20px;
+	display:block;
+	text-decoration:none;
+}
+.top10_morecity ul li a:hover {
+	font-family:"微软雅黑";
+	color:#eaf3f7;
+	text-decoration:none;
+}
+.top10_morecity_close {
+	margin-top:30px;
+	text-align:center;
+}
+.exp_nav {
+	height:59px;
+	border-left:1px solid #e2e2e2;
+	border-right:1px solid #e2e2e2;
+	border-top:1px solid #e2e2e2;
+}
+.exp_nav li {
+	float:left;
+	height:59px;
+	cursor:pointer;
+}
+.exp_nav li.morecity {
+	float:left;
+	width:326px;
+	margin:0;
+	padding:0;
+	display:block;
+	cursor:pointer;
+	background-position:top;
+}
+.exp_nav li.citybg {
+	background:url(../images/exp_btn_01.jpg); 
+}
+.exp_nav li.lohasbg {
+	background:url(../images/exp_btn_02.jpg); 
+}
+.exp_nav li.current {
+	background-position:bottom;
+}
+.exp_nav li.city a {
+	width:326px;
+	height:59px;
+	margin:0;
+	padding:0;
+	display:block;
+	background-position:top;
+}
+.exp_nav li.share a {
+	width:242px;
+	height:59px;
+	float:right;
+	margin:0;
+	padding:0;
+	background:url(../images/exp_btn_03.jpg);
+}
+
+.exp_box_bg { background:url(images/exp_box_bg.jpg) 0px 305px  no-repeat; padding-bottom:30px}
+
+.videoshare {
+	position:absolute;
+	width:116px;
+	height:250px;
+	left:830px;
+	top:20px;
+	z-index:1000;
+	background:url(../images/videoshare.png);
+	cursor:pointer;
+}
+.videoshare a {
+	width:116px;
+	height:250px;
+	display:block;
+	cursor:pointer;
+}

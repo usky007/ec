@@ -1,0 +1,192 @@
+/* CSS Document */
+
+
+#header {
+	padding-top:4px;
+	margin-top:0px;
+	background-color:#eae7e7;
+	background-image:url(../../images/sprites/entry.png);
+	background-position:0px 0px;
+	background-repeat:repeat-x;
+}
+.nav{
+	background-image:url(../../images/sprites/entry.png);
+	background-position:right -101px;
+	height:88px;
+	width:480px;
+	float:right;
+	text-align:right;
+	margin-right:10px;
+}
+	.nav a{
+		font-weight:bold
+	}
+	.nav .split{
+		margin:0px 5px;
+		*margin:0px 2px;
+	}
+.main{
+	height:476px;
+/*	background-image:url(../../images/sprites/entry.png);*/
+/*	background-position:right -191px;*/
+	background-image:url(../../images/logon.gif);
+	background-position:0px;
+	background-repeat:no-repeat;
+	padding:25px;
+	position:relative;
+}
+
+.entry_input{
+	background-image:url(../../images/sprites/entry.png);
+	background-position:0px -100px;
+	height:27px;
+	width:200px;
+}
+.entry_input input{
+	margin-top:3px;
+	border:none;
+	background-color:transparent;
+	width:180px;
+	margin-left:10px;
+	height:20px;
+	font-size:13px;
+	font-weight:bold;
+	line-height:20px;
+	color:#666;
+}
+.entry_input input.error{
+	color:#FF3366;
+	font-weight:lighter;
+}
+
+.entry_input_focus{
+	background-position:0px -127px;
+}
+.logon{
+	margin-bottom:10px;
+}
+.logon .logon_table{
+	width:300px;
+}
+.logon .logon_table td{
+}
+.logon .logon_table .status{
+	margin-top:5px;
+}
+.logon .logon_table .lb{
+	width:40px;
+	font-size:14px;
+	font-weight:bold;
+}
+.logon .logon_table .btn_blue{
+	margin-left:35px;
+}
+.logon .logon_table .psw_forgot{
+	margin-left:22px;
+}
+
+.main .dialog{
+	position:absolute; left:85px;top:30px;width:300px;height:300px;
+}
+	.sign_in{
+	}
+		.sign_in img{
+			background-image:url(../../images/sprites/icon.png);
+			width:12px;height:12px;
+			background-position:-55px -190px;
+			position:absolute;
+			margin-left:-15px;
+		}
+
+.feeds_box{
+	position:absolute;
+	left:355px;
+	top:25px;
+	width:580px;
+	height:270px;
+	overflow:hidden;
+}
+	.feeds_box .label{
+		border-bottom:1px solid #BBB;
+		color:#0085CF;
+		font-weight:bold;
+		font-size:16px;
+		line-height:16px;
+		padding-bottom:8px;
+		position:absolute;
+		top:0px;
+		z-index:2;
+		width:100%;
+		background-color:#FFF;
+
+	}
+		.feeds_box .label img{
+			position:relative;
+			top:2px;
+		}
+	.feeds_box .list{
+		position:absolute;
+		top:25px;
+		height:240px;
+		z-index:1;
+		overflow:hidden;
+	}
+	.feeds_box .gradient_mask{
+		background-image:url(../../images/gradient_mask.png);
+		_background-image:none;
+		height:10px;
+		width:100%;
+		z-index:2;
+		position:absolute;
+		top:260px;
+		left:0px;
+	}
+.feeds_box ul{
+	padding-top:10px;
+	padding-bottom:5px;
+	background-image:url(../../images/dotted.gif);
+	background-position:top;
+	background-repeat:repeat-x;
+	width:580px;
+	float:left;
+	clear:both;
+}
+
+	.feeds_box li.avator{
+		display:inline;
+		width:66px;
+		height:66px;
+		float:left;
+	}
+
+	.feeds_box li.feeds{
+		float:left;
+		width:448px;
+		line-height:20px;
+		margin-top:2px;
+	}
+
+	.feeds_box li.action{
+		float:right;
+		width:65px;
+		text-align:right;
+	}
+.wall{
+	position:absolute;
+	left:55px;
+	top:320px;
+	width:882px;
+	height:153px;
+	margin:25px auto;
+
+}
+.wall li{
+	margin-right:1px;
+	margin-bottom:1px;
+	height:48px;
+	float:left;
+}
+.wall img{
+	width:48px;
+	height:48px;
+}

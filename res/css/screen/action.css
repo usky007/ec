@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/**
+ * @author				mitchell
+ * @description		定义页各种徽章样式
+ * @lastmodified		$2010-06-21$
+ */
+
+.action_100101_56{width:56px; height:56px; background-image:url(../../images/sprites/action_56.png); background-position:0px 0px;}
+.action_100102_56{width:56px; height:56px; background-image:url(../../images/sprites/action_56.png); background-position:-60px 0px;}
+.action_100103_56{width:56px; height:56px; background-image:url(../../images/sprites/action_56.png); background-position:-120px 0px;}
+.action_100104_56{width:56px; height:56px; background-image:url(../../images/sprites/action_56.png); background-position:-180px 0px;}
+.action_100105_56{width:56px; height:56px; background-image:url(../../images/sprites/action_56.png); background-position:-240px 0px;}
+.action_100106_56{width:56px; height:56px; background-image:url(../../images/sprites/action_56.png); background-position:-300px 0px;}
+.action_100107_56{width:56px; height:56px; background-image:url(../../images/sprites/action_56.png); background-position:-360px 0px;}
+.action_100108_56{width:56px; height:56px; background-image:url(../../images/sprites/action_56.png); background-position:-420px 0px;}
+
+
+.action_100101_40{width:40px; height:40px; background-image:url(../../images/sprites/action_40.png); background-position:0px 0px;}
+.action_100102_40{width:40px; height:40px; background-image:url(../../images/sprites/action_40.png); background-position:-50px 0px;}
+.action_100103_40{width:40px; height:40px; background-image:url(../../images/sprites/action_40.png); background-position:-100px 0px;}
+.action_100104_40{width:40px; height:40px; background-image:url(../../images/sprites/action_40.png); background-position:-150px 0px;}
+.action_100105_40{width:40px; height:40px; background-image:url(../../images/sprites/action_40.png); background-position:-200px 0px;}
+.action_100106_40{width:40px; height:40px; background-image:url(../../images/sprites/action_40.png); background-position:-250px 0px;}
+.action_100107_40{width:40px; height:40px; background-image:url(../../images/sprites/action_40.png); background-position:-300px 0px;}
+.action_100108_40{width:40px; height:40px; background-image:url(../../images/sprites/action_40.png); background-position:-350px 0px;}

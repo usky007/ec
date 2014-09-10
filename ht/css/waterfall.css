@@ -1,0 +1,220 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.box_weibo{
+	position:relative;
+	z-index:1;
+	background:#fff;
+	border:1px solid #ccc;
+	padding-bottom:10px;
+	background:#fff;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	overflow:hidden;
+	-moz-box-shadow: 0px 1px 1px #e2e2e2;
+	-webkit-box-shadow: 0px 1px 1px #e2e2e2;
+	box-shadow: 0px 1px 1px #e2e2e2;
+	margin-bottom:33px;
+}
+.box_pic {
+	position:relative;
+	z-index:1;
+}
+.box_pic:hover .box_zoom {
+	display:block;
+}
+.box_zoom {
+	position:absolute;
+	left:158px;
+	display:none;
+	z-index:100;
+}
+.box_test {
+	background:url(../images/box_bg.jpg) no-repeat left bottom #e5e5e5;
+	padding:12px;
+	padding-bottom:22px;
+	line-height:20px;
+}
+.box_test a {
+	line-height:20px;
+	text-decoration:none;
+	color:#777;
+}
+.box_test a:hover {
+	color:#1fa5d8;
+}
+.user_fb {
+	padding:8px 15px 15px 15px;
+	margin-bottom:8px;
+	height:40px;
+	border-bottom:1px solid #ededed;
+}
+.user_fb img {
+	float:left;
+	width:40px;
+	height:40px;
+}
+.user_fb a {
+	float:left;
+	color:#222478;
+	text-decoration:none;
+}
+.user_fb a:hover {
+	text-decoration:underline;
+}
+.user_fb_id {
+	display:block;
+	margin-left:50px;
+	width:145px;
+}
+.user_zf {
+	padding:8px 15px 8px 15px;
+	min-height:40px;
+}
+.user_zf a {
+	color:#529bc5;
+	text-decoration:none;
+}
+.user_zf a:hover {
+	color:#529bc5;
+	text-decoration:underline;
+}
+.user_zf img {
+	float:left;
+	width:40px;
+	height:40px;
+}
+.user_zf_id {
+	display:block;
+	margin-left:50px;
+	line-height:16px;
+}
+.rule_box {
+	width:850px;
+	background:#fff;
+	margin:0 auto;
+	position:relative;
+	text-align:center;
+	padding:30px 0;
+}
+.box_close {
+	position:absolute;
+	left:860px;
+}
+.box_title {
+	font-size:30px;
+	line-height:30px;
+	height:30px;
+	font-family:"微软雅黑";
+	color:#1e1c5e;
+	padding:30px 0;
+	text-align:center;
+}
+
+.t_red {
+	color:#a90c22;
+}
+.t_grey {
+	color:#c5c5ce;
+	font-size:12px;
+}
+
+.inputbox {
+	height:28px;
+	line-height:28px;
+	border:1px solid #ededed;
+	width:250px
+}
+.photo_box {
+	width:850px;
+	margin:0 auto;
+	background:#fff;
+	position:relative;
+}
+.photo_box_menu {
+	width:850px;
+	margin:0 auto;
+	background:#fff;
+	position:relative;
+}
+.photo {
+	width:750px;
+	text-align:center;
+	padding:30px 50px 20px 50px
+}
+.more_user_fb {
+	padding:8px 50px 15px 50px;
+	margin-bottom:8px;
+	height:90px;
+	border-bottom:1px solid #ededed;
+}
+.more_user_fb img {
+	margin-bottom:10px;
+}
+.more_user_fb a {
+	color:#a7be38;
+	text-decoration:none;
+}
+.more_user_fb a:hover {
+	color:#a7be38;
+	text-decoration:underline;
+}
+.more_user_fb_id {
+	display:block;
+	margin-left:100px;
+}
+.more_user_zf {
+	padding:8px 50px 8px 50px;
+	min-height:60px;
+}
+.more_user_zf a {
+	color:#a7be38;
+	text-decoration:none;
+}
+.more_user_zf a:hover {
+	color:#a7be38;
+	text-decoration:underline;
+}
+.more_user_zf img {
+	float:left;
+	width:60px;
+	height:60px;
+}
+.more_user_zf_id {
+	display:block;
+	margin-left:100px;
+	line-height:16px;
+}
+.more_more {
+	height:65px;
+	text-align:center;
+	border-top:1px solid #ededed;
+	margin-top:8px;
+}
+.more_more a {
+	line-height:65px;
+	color:#a7be38;
+	text-decoration:none;
+}
+.loading {
+	display: none;
+	margin-bottom: 15px;
+	padding: 15px 0;
+	text-align: center;
+	font-weight: 700;
+	border: double rgba(34,25,25,.14);
+	border-width: 3px 0 0 0;
+}
+.back-to{
+	right: 5px;
+	bottom: 188px;
+	overflow: hidden;
+	position: fixed;
+z-index: 999;
+}
+.back-top{
+	color: #1e1e1e;
+	outline: none;
+	text-decoration: underline;
+}
+

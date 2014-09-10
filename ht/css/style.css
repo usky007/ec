@@ -1,0 +1,63 @@
+﻿
+/*内页图片滚动*/
+
+.flashlist {
+	height:350px;
+}
+.flashlist .f_out {
+	height:350px;
+	overflow:hidden;
+	position:relative;
+	z-index:99;
+}
+.picintro h2 a {
+	color:#FFF;
+	font-family:"微软雅黑";
+	font-size:20px;
+	font-weight:bold;
+	line-height:37px;
+}
+.picintro p {
+	color:#767676;
+	line-height:20px;
+}
+.picintro p a {
+	color:#abadac;
+}
+.flash_tab {
+	width:520px;
+	height:5px;
+	padding-top:5px;
+}
+.flash_tab .tabs {
+	width:150px;
+	height:5px;
+	overflow:hidden;
+	margin:auto;
+}
+.flash_tab .tabs ul li {
+	width:35px;
+	height:5px;
+	margin:0 5px;
+	float:left;
+	display:block;
+}
+.flash_tab .tabs ul li.opdiv,.noopdiv {
+	padding:0;
+	opacity:1
+}
+.flash_tab .tabs ul li.opdiv a {
+	width:35px;
+	height:5px;
+	background:#d1d1d1;
+	display:block;
+}
+.flash_tab .tabs ul li.opdiv a:hover {
+	background:#258abc;
+}
+.flash_tab .tabs ul li.noopdiv a {
+	width:35px;
+	height:5px;
+	background:#258abc;
+	display:block;
+}

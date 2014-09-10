@@ -1,0 +1,42 @@
+/* CSS Document */
+div.tag_panel
+{
+	border:1px solid #CCC;
+	background-color:#FFF;
+	padding: 6px;
+	font-size:9pt;
+	color:#000;
+	text-align:left;
+	overflow:auto;
+}
+div.tag_panel div.selected
+{
+	padding: 6px;
+	background-color:#20a8f9;
+	color:#FFF;
+	cursor:pointer;
+}
+div.tag_panel div.unselected
+{
+	padding: 6px;
+	background:none;
+	cursor:pointer;
+}
+div.tag_panel span.matched
+{
+	font-weight: bold
+}
+div.tag_button
+{
+	position:relative;
+	top:-1px;
+	width:15px;
+	height:20px;
+	border:1px solid black;
+	cursor:pointer;
+	background-color:#404040;
+	color:White;
+	text-align:center;
+	font-family:Wingdings 3;
+	font-size:5pt;
+}

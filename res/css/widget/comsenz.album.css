@@ -1,0 +1,67 @@
+.share_album_pop{ width: 550px;margin-top:30px;}
+.share_album_pop h1{ margin-bottom: 30px;}
+.share_album_pop .photo_list{ padding:  0 35px;}
+.share_album_pop .photo_list li {
+	float:left;
+	margin:0 5px 20px;
+	overflow:hidden;
+	text-align:center;
+	width:150px;
+}
+.share_album_pop .photo_list li .pbox {
+	display:block;
+	height:135px;
+}
+.share_album_pop .photo_list img {
+	background:none repeat scroll 0 0 #FFFFFF;
+	border:1px solid #CCCCCC;
+	padding:4px;
+}
+.share_album_pop .album_bg a{ padding: 2px;  _padding: 1px; width: 108px; height: 108px;}
+.share_album_pop .album_bg a img{ width: 100px; height: 100px; border: 4px solid #fff;}
+.share_album_pop .album_bg a.selectalbum img{border: 3px solid #ff2f66;margin-left: -3px; margin-top: -3px;}
+.share_album_pop .graybtn{ background-position: 0 -25px;}
+.share_album_pop .album_bg{
+	background:url("../../images/widget/comsenz/album_bg.gif") no-repeat scroll 0 0 transparent;
+	height:116px;
+	margin:0 auto 5px;
+	overflow:hidden;
+	width:112px;
+}
+.share_album_pop .album_bg a {
+	display:table-cell;
+	height:100px;
+	padding:6px 6px 0;
+	text-align:center;
+	vertical-align:middle;
+	width:100px;
+}
+.share_album_pop .album_bg a img {
+	border:medium none;
+	padding:0;
+}
+.share_album_pop .album_list p {
+	padding:3px 0;
+	width:120px;
+}
+.share_album_pop .album_bg img {
+	max-height:100px !important;
+	max-width:100px !important;
+	vertical-align:middle;
+}
+
+.share_album_pop .page { margin: 10px 0 0; padding: 3px; text-align: center; clear:both; background-image:none; background-color:transparent}
+    .share_album_pop .page * { margin: 0 3px 0 0; padding: 3px 5px; border: 1px solid #E6E7E1; background: #FFF; color: #09C; }
+    .share_album_pop .page em { border-color: #E6E7E1; color: #09C; font-style: normal; }
+    .share_album_pop .page strong { background: #19A2D1; color: #FFF; }
+    .share_album_pop .page a { color: #09C; }
+    .share_album_pop .page a:hover { background: #19A2D1; text-decoration: none; color:#FFF; }
+	
+.share_album_pop .popup_btn{ padding: 3px; text-align: center; clear:both;margin-bottom:20px;}
+.share_album_pop .popup_btn .input{margin:0px 15px;}
+
+
+
+
+/*no album*/
+.share_album_pop .c_form{margin: 40px;}

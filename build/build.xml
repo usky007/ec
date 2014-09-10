@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project name="uutuu" default="compress" basedir=".">
+  <description>
+    build file for yanzi project
+  </description>
+  <!-- set global properties for this build -->
+  <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+  <property name="jsdir" location="../res/js"/>
+  <property name="jsbase" location="../res/js"/>
+  <property name="cssdir" location="../res"/>
+  <property name="imgdomain" value="img.mico.cc"/>
+  <property name="configfile" value="../application/config/config.online.php"/>
+  <property name="ext" value="sh"/>
+  <tstamp>
+    <format property="ts" pattern="yyMMddhhmm"/>
+  </tstamp>
+
+  <target name="encode">
+    <native2ascii encoding="utf-8" src="${jsbase}/core" dest="${jsdir}/compress" includes="mico.resource.*.js"/>
+    <native2ascii encoding="utf-8" src="${jsbase}/zxc/core" dest="${jsdir}/compress" includes="zxc.resource.*.js"/>
+  </target>
+  
+  <target name="css_compress_sh">
+    <basename property="filename" file="${file}"/>
+    <echo message="processing css: ${filename}"/>
+    <replaceregexp match="^(?!@import|\s*$)" replace="# " flags="gi" encoding="utf-8" file="${cssdir}/compress/${filename}" byline="true"/>
+    <replaceregexp match="^" replace="#!/bin/sh${line.separator}" flags="im" encoding="utf-8" file="${cssdir}/compress/${filename}"/>
+    <replaceregexp match="^@import url\(\&quot;?(.+?)\&quot;?\);.*$" replace="cat \1 &gt;&gt; ${filename}.css" flags="gi" encoding="utf-8" file="${cssdir}/compress/${filename}"  byline="true"/>
+    <exec executable="sh" dir="${cssdir}/compress">
+    	<arg line="${filename}"/>
+    </exec>
+    <replaceregexp match="@charset\s+\&quot;UTF\-8\&quot;;" replace="" flags="gi" encoding="utf-8" file="${cssdir}/compress/${filename}.css"  byline="true"/>
+    <replaceregexp match="^" replace="@charset &quot;UTF-8&quot;;${line.separator}" flags="im" encoding="utf-8" file="${cssdir}/compress/${filename}.css"/>
+    <replaceregexp match="url\(\&quot;?(?:\.\.\/\.\.\/)(.+?)(\.jpg|\.gif|\.png|\.cur)\&quot;?\)" replace="url(&quot;http://${imgdomain}/\1.v${ts}\2&quot;)" flags="gi" encoding="utf-8" file="${cssdir}/compress/${filename}.css"  byline="true"/>
+  </target>
+  
+  <target name="css_compress_bat">
+    <basename property="filename" file="${file}"/>
+    <echo message="processing css: ${filename}"/>
+    <replaceregexp match="^(?!@import|\s*$).*$" replace="" flags="gi" encoding="utf-8" file="${cssdir}/compress/${filename}" byline="true"/>
+    <replaceregexp match="^" replace="@ECHO OFF${line.separator}" flags="im" encoding="utf-8" file="${cssdir}/compress/${filename}"/>
+    <replaceregexp match="^@import url\(\&quot;?(.+?)\&quot;?\);.*$" replace="type \1 &gt;&gt; ${filename}.css" flags="gi" encoding="utf-8" file="${cssdir}/compress/${filename}"  byline="true"/>
+    <replaceregexp match="\/" replace="\\\" flags="gi" encoding="utf-8" file="${cssdir}/compress/${filename}" />
+    <exec executable="cmd.exe" dir="${cssdir}/compress">
+    	<arg line="/K ${filename}"/>
+    </exec>
+    <replaceregexp match="@charset\s+\&quot;UTF\-8\&quot;;" replace="" flags="gi" encoding="utf-8" file="${cssdir}/compress/${filename}.css"  byline="true"/>
+    <replaceregexp match="^" replace="@charset &quot;UTF-8&quot;;${line.separator}" flags="im" encoding="utf-8" file="${cssdir}/compress/${filename}.css"/>
+    <replaceregexp match="url\(\&quot;?(?:\.\.\/\.\.\/)(.+?)(\.jpg|\.gif|\.png|\.cur)\&quot;?\)" replace="url(&quot;http://${imgdomain}/\1.v${ts}\2&quot;)" flags="gi" encoding="utf-8" file="${cssdir}/compress/${filename}.css"  byline="true"/>
+  </target>
+  
+  <target name="css">
+    <mkdir dir="${cssdir}/compress"/>
+    <copy todir="${cssdir}/compress" overwrite="true">
+      <fileset dir="${cssdir}" includes="yanzi.css" />
+      <fileset dir="${cssdir}" includes="custom.css" />
+    </copy>
+    <copy todir="${cssdir}/compress" overwrite="true">
+      <fileset dir="${cssdir}" includes="central.css" />
+      <mapper type="glob" from="*.css" to="*.${ext}"/>
+    </copy>
+     <foreach target="css_compress_${ext}" param="file"> 
+      <path id="css.path">
+        <fileset dir="${cssdir}/compress" includes="*.${ext}"/>
+      </path>		
+    </foreach>
+   <delete>
+      <fileset dir="${cssdir}/compress" includes="*.${ext}"/>
+      <fileset dir="${cssdir}/compress" includes="yanzi.css"/>
+      <fileset dir="${cssdir}/compress" includes="custom.css"/>
+    </delete>
+    <move todir="${cssdir}/compress" overwrite="true">
+      <fileset dir="${cssdir}/compress" includes="*.css" />
+      <mapper type="glob" from="*.${ext}.css" to="*.css"/>
+    </move>
+  </target>
+  
+  <target name="js_compress_sh">
+    <basename property="filename" file="${file}"/>
+    <echo message="processing js: ${filename}"/>
+    <replaceregexp match="^(?!include|\s*$)" replace="# " flags="gi" encoding="utf-8" file="${jsdir}/compress/${filename}" byline="true"/>
+    <replaceregexp match="^" replace="#!/bin/sh${line.separator}" flags="im" encoding="utf-8" file="${jsdir}/compress/${filename}"/>
+    <replaceregexp match="^include\(\&quot;(?:js\/)(.+?)\&quot;\);?.*$" replace="cat ${jsbase}/\1 &gt;&gt; ${filename}.js" flags="gi" encoding="utf-8" file="${jsdir}/compress/${filename}"  byline="true"/>
+    <replaceregexp match=" (?:\S+?)\/([a-zA-Z]+\.resource\.[a-zA-Z-_]+\.js)" replace=" \1" flags="gi" encoding="utf-8" file="${jsdir}/compress/${filename}"  byline="true"/>
+    <exec executable="sh" dir="${jsdir}/compress">
+    	<arg line="${filename}"/>
+    </exec>
+    <java jar="yuicompressor-2.2.4.jar" fork="true">
+      <arg line="--type js --charset utf8 ${jsdir}/compress/${filename}.js -o ${jsdir}/compress/${filename}.js.min"/>
+    </java>
+  </target>
+  
+  <target name="js_compress_bat">
+    <basename property="filename" file="${file}"/>
+    <echo message="processing js: ${filename}"/>
+    <replaceregexp match="^(?!include|\s*$).*$" replace="" flags="gi" encoding="utf-8" file="${jsdir}/compress/${filename}" byline="true"/>
+    <replaceregexp match="^" replace="@ECHO OFF${line.separator}" flags="im" encoding="utf-8" file="${jsdir}/compress/${filename}"/>
+    <replaceregexp match="^include\(\&quot;(?:js\/)(.+?)\&quot;\);?.*$" replace="type @jsbase@\1 &gt;&gt; ${filename}.js" flags="gi" encoding="utf-8" file="${jsdir}/compress/${filename}"  byline="true"/>
+    <replace token="@jsbase@" value="${jsbase}\" file="${jsdir}/compress/${filename}" />
+    <replaceregexp match=" (?:\S+?)\/([a-zA-Z]+\.resource\.[a-zA-Z-_]+\.js)" replace=" \1" flags="gi" encoding="utf-8" file="${jsdir}/compress/${filename}"  byline="true"/>
+    <replaceregexp match="\/" replace="\\\" flags="gi" encoding="utf-8" file="${jsdir}/compress/${filename}" />
+    <exec executable="cmd.exe" dir="${jsdir}/compress">
+    	<arg line="/K ${filename}"/>
+    </exec>
+    <java jar="yuicompressor-2.2.4.jar" fork="true">
+      <arg line="--type js --charset utf8 ${jsdir}/compress/${filename}.js -o ${jsdir}/compress/${filename}.js.min"/>
+    </java>
+  </target>
+  
+  <target name="js" depends="encode">
+    <mkdir dir="${jsdir}/compress"/>
+    <copy todir="${jsdir}/compress" overwrite="true">
+      <fileset dir="${jsdir}/central" includes="*.js" />
+      <mapper type="glob" from="*.js" to="*.${ext}"/>
+    </copy>
+    <foreach target="js_compress_${ext}" param="file"> 
+      <path id="js.path">
+        <fileset dir="${jsdir}/compress" includes="*.${ext}"/>
+      </path>		
+    </foreach>
+    <delete>
+      <fileset dir="${jsdir}/compress">
+      	<include name="*.${ext}"/>
+      	<include name="*.js"/>
+      </fileset>
+    </delete>
+    <move todir="${jsdir}/compress" overwrite="true">
+      <fileset dir="${jsdir}/compress" includes="*.min" />
+      <mapper type="glob" from="*.${ext}.js.min" to="*.js"/>
+    </move>
+  </target>
+  
+  <target name="set_ver">
+    <replaceregexp match="('|\&quot;)ver[0-9]*('|\&quot;)" replace="'ver${ts}'" flags="i" encoding="utf-8" file="${configfile}" />
+  </target>
+  
+  <target name="compress" depends="css,js,set_ver"/> 
+  
+  <target name="compress_win">
+    <antcall target="compress">
+      <param name="ext" value="bat"/>
+    </antcall>
+  </target>
+</project>

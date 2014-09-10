@@ -1,0 +1,1338 @@
+html, body, div, span, applet, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+iframe {
+    background: none repeat scroll 0 0 #FFF;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+    background: none repeat scroll 0 0 #E4E6E8;
+    color: #878686;
+    font: 12px/13px STXihei, "Microsoft Yahei", Helvetica,Arial,sans-serif;
+    margin-bottom: 50px;
+}
+
+#posts {
+    opacity: 0.9;
+    position: absolute;
+    float: left;
+   	padding-right: 3px;
+   	padding-left: 2px;
+}
+
+ol, ul {
+    list-style: none outside none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none;
+}
+:focus {
+    outline: 0 none;
+}
+
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+#sidebar_pos {
+	float: right;
+	position: relative;
+	width: 150px;
+	margin-bottom: 60px;
+	clear: left;
+	min-height: 200px;
+    border-radius: 6px;
+  	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+#sidebar {
+	padding: 5px 10px;
+	clear: left;
+	background: #FCFCFC;
+  	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+  	-webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+  	-moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+
+  	border-radius: 6px;
+  	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	
+	right: 20px;
+}
+
+#sidebar .sidebar_head {
+	height: 5px;
+	position: absolute;
+	top: -20px; left: 0;
+	background: #C5C7C9;
+	
+	font-size: 1px;
+	width: 150px;
+}
+#sidebar #search {
+	position: relative;
+	right: auto;
+	bottom: auto;
+}
+#sidebar ul {
+}
+
+#sidebar li {
+	height: 30px;
+    font: 14px/20px STXihei, "Microsoft Yahei", Helvetica,Arial,sans-serif;
+   	border-bottom: 1px dotted #CCC;
+   	padding: 7px 0 0 5px;
+}
+
+#sidebar a {
+	color: #0085CF;
+}
+
+#sidebar a:hover {
+	color: #0085CF;
+	background: #EEE;
+}
+
+#sidebar #about {
+	margin: 1em 0;
+	line-height: 1.2;
+}
+
+#content {
+    margin: 15px 20px 20px;
+    position: relative;
+}
+
+.post {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.6);
+    
+    -webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		border-radius: 6px;
+
+    padding: 0px;
+		margin: 0px 20px 20px 0px;
+    width: 390px;
+}
+
+.post .inside {
+	border-radius: 6px;
+  -webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+
+  background: none repeat scroll 0 0 #333;
+  width: 100%;
+  position: relative;
+}
+
+.post .meta {
+    margin: 0 0 0.5em;
+}
+
+.post .ainfo {
+    font-family: STXihei, "Microsoft Yahei", BergamoStdItalic,Georgia,Times,serif;
+    margin: 0 0 0.5em;
+    min-height: 20px;
+    color: #EEE;
+}
+
+.post .name {
+}
+
+.post .ainfo .name {
+    font-weight: bold;
+}
+
+.post .ainfo .adate {
+	color: #BBB;
+}
+
+.post .ainfo a {
+	text-decoration: none;
+}
+
+.post .url {
+	margin-bottom: 20px;
+}
+
+.post .url a {
+	color: #3EBAE3;
+}
+
+.post .info {
+    margin: 0 0 0.5em;
+    min-height: 20px;
+}
+
+.post .info .postdate {
+	padding-top: 3px;
+	float: right;
+}
+
+.post .info .author {
+    float: left;
+}
+
+.post .info .author .avatar  {
+	float: left;
+}
+
+.post .info .author .avatar img {
+	width: 20px;
+	height: 20px;
+}
+
+.post .info .author .name {
+	margin: 0 0 0 26px;
+	padding-top: 4px;
+	font-family: STXihei, "Microsoft Yahei", Time;
+}
+
+.post .info .author .name a {
+    color: #3EBAE3;
+    background: none;
+	text-decoration: none;
+}
+.post .date {
+    color: #3EBAE3;
+    font: 12px/16px STXihei, "Microsoft Yahei", Times,Georgia,serif;
+}
+
+.post .microblog {
+	line-height: 1.6;
+	font-size: 14px;
+	font-family: STXihei, "Microsoft Yahei",Times,Georgia,serif;
+	color: #EEE;
+	margin-bottom: 1em;
+}
+
+.post .microblog.retweet {
+	line-height: 1.6;
+	font-size: 14px;
+	font-family: STXihei, "Microsoft Yahei",Times,Georgia,serif;
+	color: #FFC000;
+	margin-top: 1.7em;
+	margin-bottom: 0.5em;
+}
+
+.post a {
+	color: #FFF;
+	font-weight: bold;
+	background: #555;
+	font-size: 13px;
+}
+
+.post a:hover {
+	color: #FFF;
+	font-weight: bold;
+	background: #666;
+	font-size: 13px;
+}
+
+.post h2 {
+    color: #FFFFFF;
+    display: inline;
+    font-weight: bold;
+    margin: 0 0.2em 0 0;
+}
+
+.post h2 a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.post .content {
+    color: #878686;
+    min-height: 40px;
+    padding: 14px;
+}
+
+.post .hiddencontent {
+	position:absolute;
+	visibility: hidden;
+}
+
+.content p, .content blockquote {
+    line-height: 1.6em;
+    margin: 0 0 0.8em;
+}
+
+.content a {
+    color: #FFFFFF;
+}
+
+.content a:hover {
+    color: #FF8000;
+}
+
+.post .content *:last-child {
+    margin-bottom: 0;
+}
+
+#blogger {
+	margin: 10px 20px;
+	padding: 0px;
+	border-bottom: 5px solid #C5C7C9;
+}
+
+.blogger {
+	width: 100%;
+}
+
+.blogger .content {
+	min-height: 60px;
+}
+
+.blogger .inside {
+	padding: 5px 0px 0px 0px;
+}
+
+.blogger .media {
+	width: 60px;
+	height: 60px;
+	float: left;
+}
+
+.blogger .media .avatar {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.blogger .info {
+	padding: 7px 0 0 75px;
+}
+
+.media img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+}
+
+.blogger .info .hot {
+	width: 160px;
+	float: right;	
+	margin-top: 0px;
+}
+
+.blogger .info .hot ul {
+}
+
+.blogger .info .hot li {
+	width: 70px;
+	height: 50px;
+	background: none repeat scroll 0 0 #FFF;
+	margin: 0 2px 0 8px;
+	float: left;
+	
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.blogger .info .hot .n {
+	font: 12px/13px Georgia,Times,serif;
+	font-weight: bold;
+	color: #999;
+	width: 70px;
+	margin: 7px 0 0 0;
+	text-align: center;
+}
+
+.blogger .info .hot .w {
+	font: 14px/16px STXihei, "Microsoft Yahei", Simsun,Georgia,Times,serif;
+	margin: 6px 0 5px 0;
+	color: #0075BF;
+	width: 70px;
+	text-align: center;
+}
+
+.blogger .info .hot a:hover .w {
+	color: #0085CF;
+	font-weight: bold;
+}
+
+.blogger .info .name {
+    color: #333333;
+    font: 27px/20px STXihei,"Microsoft Yahei",Simsun,Georgia,Times,serif;
+    margin-bottom: 0;
+}
+
+.blogger .info .name a {
+    border: 0 none;
+    color: #333333;
+}
+
+.blogger .info .name a:hover {
+    border: 0 none;
+    color: #333333;
+}
+
+.blogger .info focusblock {
+	margin-left: 50px;
+}
+
+.blogger .info focusblock span {
+	background: none repeat scroll 0 0 #F0F0F0;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    color: #AAAAAA;
+    font: 14px/20px STXihei,"Microsoft Yahei",Simsun,Georgia,Times,serif;
+    margin: 0 5px 0 0;
+    padding: 2px 10px 4px;
+    vertical-align: top;
+    display: none;
+}
+
+.blogger .info focusblock.followed .followed {
+	display: inline;
+}
+
+.blogger .info focusblock.followit .followit {
+	display: inline;
+}
+
+.blogger .info focusblock .op.followed {
+	background: none repeat scroll 0 0 #F0F0F0;
+    color: #A04050;
+}
+
+.blogger .info focusblock a:hover .op.followed {
+    background: none repeat scroll 0 0 #FAFAFA;
+}
+
+.blogger .info focusblock .op.followit {
+	background: none repeat scroll 0 0 #0090DF;
+	color: #FFFFFF;
+}
+.blogger .info focusblock a:hover .op.followit {
+    background: none repeat scroll 0 0 #00A0EF;
+}
+
+.blogger .info markblock {
+	display: inline;
+}
+
+.blogger .info markblock img {
+	display: none;
+	background-image: url(../../images/timeline/star.png);
+	width: 32px;
+	height: 32px;
+}
+
+.blogger .info markblock.marked .marked {
+	display: inline;
+}
+
+.blogger .info markblock.marking .marking {
+	display: inline;
+}
+
+.blogger .info markblock.markit .markit {
+	display: inline;
+}
+
+.blogger .info markblock img.marked {
+	background-position: 32 0;
+}
+
+.blogger .info markblock img.marking {
+    background-position: 96 0;
+}
+
+.blogger .info markblock img.markit {
+	background-position: 0 0;
+}
+.blogger .info markblock a:hover img.markit {
+    background-position: 64 0;
+}
+
+.blogger .info .location {
+	color: #666;
+    font: 13px/15px STXihei, "Microsoft Yahei", Simsun,Georgia,Times,serif;
+    margin-bottom: 0.6em;
+}
+
+.blogger .info .url {
+    margin: 1.5em 0 1em;
+}
+
+.blogger .info .url a {
+	color: #0085CF;
+}
+
+.blogger .info .microblog {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.post.photo .media {
+    width: 390px;
+    max-height: 420px;
+    overflow:hidden;
+    background: url(../../images/loading_view_dark.gif) no-repeat scroll center center transparent;
+    position: relative;
+}
+
+.post .media img, .post .media object, .post .media embed, .post .media iframe {
+    display: block;
+    width: 100%;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+}
+
+.post.photo .media img {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+.post.photo.withcaption .media img {
+    border-bottom-left-radius: 0px 0px;
+    border-bottom-right-radius: 0px 0px;
+    -webkit-border-bottom-left-radius: 0px 0px;
+    -webkit-border-bottom-right-radius: 0px 0px;
+	-moz-border-radius-bottomleft: 0px 0px;
+	-moz-border-radius-bottomright: 0px 0px;
+}
+
+.post .media img.play {
+	display: none;
+	position: absolute;	
+	top: 10px;
+	left: 10px;
+}
+.post.video .media img.play {
+	display: block;
+	width: auto;
+}
+
+.post.small {
+    width: 200px;
+}
+.post.small .media {
+    width: 200px;
+}
+
+.post.quote .inside {
+    background: #3caed4;
+    background: -webkit-gradient(linear, left top, right top, from(#3a9cbc), to(#3ebde7));
+    background: -moz-linear-gradient(90deg,  #3a9cbc,  #3ebde7);
+}
+
+.post.quote .meta {
+    color: #FFFFFF;
+    margin: 0 0 10px;
+    padding: 0 0 0 40px;
+}
+
+.post.quote .date {
+    color: #FFFFFF;
+}
+
+.post.quote .ldquo, .post.quote .rdquo {
+    font: 70px/40px Times,serif;
+    position: absolute;
+}
+.post.quote .ldquo {
+    color: #3EBDE7;
+}
+
+.post.quote .rdquo {
+    bottom: 58px;
+    color: #2E9DBB;
+    right: 14px;
+}
+
+.post.quote .info .author .name {
+	padding-top: 3px;
+}
+
+.post.quote .info .author .name a{
+    color: #EEE;
+    background: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.post.quote .featured {
+    color: #000000;
+    font: 23px/32px Tahoma,Simsun,Times,serif;
+    margin: 0 0 0.4em;
+    padding: 0 70px 0 0;
+}
+
+.post.quote .featured a{
+    color: #222;
+}
+
+.post.quote .featured a:hover {
+    color: #FF8000;
+}
+
+.post.quote .source {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.post.quote .source a {
+    color: #FFFFFF;
+}
+.post.quote .tags a {
+    color: #000000;
+}
+.post.link .content {
+    padding-right: 70px;
+}
+.post.link a.link {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAIAAAC0D9CtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowMTgwMTE3NDA3MjA2ODExOTEwOUYxRDgwMEIxNDFBRiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowRjQxRDNFQUVGODcxMURGOUU0NEI5ODA2OEU5QkNCNyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowRjQxRDNFOUVGODcxMURGOUU0NEI5ODA2OEU5QkNCNyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkY5N0YxMTc0MDcyMDY4MTE4NDk1QUNDMzZFOEJFODM2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjAxODAxMTc0MDcyMDY4MTE5MTA5RjFEODAwQjE0MUFGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+U0hU9gAAAbBJREFUeNqEU0soRFEY/u5/rveYaUwMZYryiAUhUhbKgsiCkpK8VnasRB6NvbJjYcLKTimPslHeWShTiKjJIxpKU95dc+9xL5pxr4uvzunvfOc7/zn/9x+BMREGxNvljDzYErX44pj5Dgy8oNPYk+SWPhRV6LY8BDA7xlZnTTRyaTXaBxBjgSn2t9nkMAK3YY1c2YzmHvyNOz9zN6lpGRHx1EzeNQpB+EcTa+Ep6bSzTGqs1HWCKMy9PMLj1uafKChX0nIYxVl5xxC+VyIosfFeWpvjCU6kZhplksR4ViHK63WrQYkWpyC90u4KP/UiIx8WW5glgWC1G096fQ6F7HBHHGzA4jQUJeQeQZGNmhD9mVW9Xm5x+MGKIrIrn/xboRzJcmM3VN++49onqgM3l3C6dN0RGRWsakVtB6JjjQd5NzRP5YpGtPXr3vN0ryYxyRy4ZX11mqd0fsRzS+BI+SLECNU+89t6hujyRNOAc/Ku87wyWB1/9cHMCNuc14pJnwVR3dhe4jYHXFkmTXTnx8QA21ow+wsAd7qU0hpkFyDuw0f/GXZX2N4agm+hPe8CDAA5p4cMEw5FrQAAAABJRU5ErkJggg%3D%3D") no-repeat scroll 100% 1px transparent;
+    color: #FFFFFF;
+    font: 22px/24px BergamoStdItalic,Georgia,Times,serif;
+    padding: 0 22px 0 0;
+    text-decoration: none;
+}
+.post.audio .artist {
+    color: #FFFFFF;
+    font: 22px/24px BergamoStdItalic,Georgia,Times,serif;
+    margin: 0 0 0.2em;
+}
+.post.audio .track-name {
+    color: #FFFFFF;
+}
+.post.audio .audioplayer embed {
+    width: 100% !important;
+}
+
+.post.answer .content {
+    min-height: 132px;
+    padding-right: 80px;
+}
+.post.answer .question {
+    color: #FFFFFF;
+    font: 17px/24px STXihei, "Microsoft Yahei", Simsun,Georgia,Times,serif;
+    margin: 0 0 0.6em;
+}
+
+.post.answer .word {
+    color: #FCB000;
+    font: 15px/17px STXihei, "Microsoft Yahei", Simsun,Georgia,Times,serif;
+    margin: 1em 0 0.6em;
+    line-height: 1.4;
+}
+
+.post.answer .asker {
+    height: 90px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 70px;
+    border-top-right-radius: 6px 6px;
+    -webkit-border-top-right-radius: 6px 6px;
+		-moz-border-radius-topright: 6px 6px;
+}
+.post.answer .asker img {
+    display: block;
+    height: 70px;
+    width: 70px;
+    border-top-right-radius: 6px 6px;
+    -webkit-border-top-right-radius: 6px 6px;
+		-moz-border-radius-topright: 6px 6px;
+}
+
+.post.mixed .media {
+	width: 170px;
+	max-height: 130px;
+	float: right;
+	overflow:hidden;
+	margin: 4px 2px 0px 20px;
+	position: relative;
+}
+
+.post.mixed .content {
+	min-height: 160px;
+}
+
+.post.mixed .media img {
+	width: 170px;
+	overflow: hidden;
+}
+
+.post.white {
+	background: none repeat scroll 0 0 #E8E8E8;
+}
+
+.post.white .inside {
+	background: none repeat scroll 0 0 #FFF;
+}
+
+.post.white .microblog {
+	color: #333;
+}
+
+.post.white .url a{
+	color: #0085CF;
+}
+
+.post.mixed .name a{
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.post.white .name a{
+	color: #555;
+}
+
+.post.mixed .author {
+	width: auto;
+}
+
+.post.white .date {
+	color: #888;
+}
+
+.post.mixed .postdate {
+	padding-top: 3px;
+	float: none;
+}
+
+.post.mixed .microblog {
+	font-size: 16px;
+}
+
+.post.mixed .microblog.forward {
+	font-size: 14px;
+	color: #FCB000;
+	margin: 1em 0 1em 0;
+}
+
+.post.white .microblog.forward {
+	color: #0065AF;
+}
+
+.post.rev .media{
+	float: left;
+	margin: 4px 20px 0px 0px;
+}
+
+.post.answer.white {
+	background: none repeat scroll 0 0 #E8E8E8;
+}
+
+.post.answer.white .inside {
+	background: none repeat scroll 0 0 #FFF;
+}
+
+.post.answer.white .question {
+	color: #333;
+}
+
+.post.answer.white .word {
+	color: #0065AF;
+}
+
+.post.answer.white .url a{
+	color: #0085CF;
+}
+
+.post.answer.white .ainfo .name {
+	font-size: 13px;
+}
+
+.post.answer.white .ainfo .name a {
+	color: #666;
+	font-size: 13px;
+	background: none;
+}
+
+.post.answer.white .ainfo .adate {
+	color: #888;
+}
+
+.post.white a {
+	color: #FFF;
+	background: #2EAAF3;
+}
+
+.post.white a.light{
+	color: #0065AF;
+	background: #E0E0E0;
+}
+
+.post.white a:hover {
+	color: #FFF;
+	background: #0085CF;
+}
+
+#pager {
+    margin: 25px 0 50px 164px;
+}
+
+
+.post .notes {
+    background: url("../../images/timeline/qb.png") no-repeat scroll 0 0 transparent;
+    border-top-left-radius: 6px 6px;
+    border-bottom-right-radius: 6px 6px;
+	position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: block;
+    text-decoration: none;
+    font: 11px/12px STXihei, "Microsoft Yahei", Helvetica,Arial,sans-serif;
+
+    padding: 5px 10px;
+    border: 0px;
+    width: auto;
+}
+
+.post .notes a{
+    background: no-repeat scroll 0 0 transparent;
+    text-decoration: none;
+	font: 12px/16px STXihei, "Microsoft Yahei", Simsun,Georgia,Times,serif;
+    font-weight: normal;
+    border: 0px;
+    color: #EEE;
+}
+
+.post .notes a:hover{
+    background: no-repeat scroll 0 0 transparent;
+    text-decoration: none;
+	font: 12px/16px STXihei, "Microsoft Yahei", Simsun,Georgia,Times,serif;
+    border: 0px;
+	color: #FFF;
+}
+
+.post .notes .q {
+	font: 12px/16px STXihei, "Microsoft Yahei", Simsun,Georgia,Times,serif;
+    font-weight: normal;
+    color: #E8E8E8;
+}
+
+.post.white .notes .q {
+	color: #666;
+}
+
+.post.white .notes a {
+	color: #666;
+}
+
+.post.white .notes a:hover {
+	color: #222;
+}
+
+#footer {
+	width: 100%;
+	height: 50px;
+    background: none repeat scroll 0 0 #C5C7C9;
+}
+
+#footer .copyright {
+	padding: 15px 0px;
+	margin: 0px auto;
+	color: #444;
+	font: 12px/16px STXihei, "Microsoft Yahei", Simsun,Georgia,Times,serif;
+}
+
+#footer .copyright a {
+	color: #666;
+}
+
+#footnav {
+	clear: both;
+    position: relative;
+	height: 40px;
+}
+
+#footnav .pagenav {
+	float: right;
+	position: relative;
+	top: 30px;
+}
+
+.pagenav li {
+	width: 80px;
+	height: 35px;
+	background: none repeat scroll 0 0 #C5C7C9;
+	margin: 0 3px 0 2px;
+	float: left;
+	
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.pagenav a:hover .pagebtn{
+	color: #FFF;
+	font-weight: bold;
+}
+
+.pagenav .pagebtn {
+  	font: 13px/15px STXihei, "Microsoft Yahei", Simsun,Georgia,Times,serif;
+	padding: 11px 0 5px 0;
+	color: #666;
+	width: 80px;
+	height: 35px;
+	text-align: center;
+}
+
+.pagebtn.disable {
+	color: #AAA;
+	font-weight: normal;
+}
+
+.post .comments {
+	background: none repeat scroll 0 0 #3A3A3C;
+	color: #E9E9E9;
+	position: relative;
+	padding: 10px;
+    border-bottom-left-radius: 6px 6px;
+    border-bottom-right-radius: 6px 6px;
+    -webkit-border-bottom-left-radius: 6px 6px;
+    -webkit-border-bottom-right-radius: 6px 6px;
+	-moz-border-radius-bottomleft: 6px 6px;
+	-moz-border-radius-bottomright: 6px 6px;
+	overflow: hidden;
+}
+
+.post .comments .loading {
+	width: 100%;
+	position:absolute;
+	margin: 0 auto;
+	text-align: center;
+	bottom: 0px;
+}
+
+.post .comments .comment {
+   	border-top: 1px dotted #666;
+   	padding: 10px 5px 0 5px;
+}
+
+.post .comments .avatar {
+	background: none repeat scroll 0 0 #DDD;
+	position: relative;
+	float: left;
+	width: 20px;
+	height: 20px;
+	padding: 0px;
+}
+
+.post .comments .text {
+	line-height: 1.6;
+	font-size: 13px;
+	font-family: STXihei, "Microsoft Yahei",Times,Georgia,serif;
+	min-height: 24px;
+	margin: 0 0 10px 30px;
+
+}
+
+.post .comments .text .time {
+	font-size: 12px;
+	color: #999;
+}
+
+.post.white .comments .text .time {
+	color: #999;
+}
+
+.post .comments .avatar img {
+	width: 20px;
+	height: 20px;
+}
+
+.post.white .comments {
+	background: none repeat scroll 0 0 #F5F5F5;
+	color: #444;
+}
+
+.post.white .comments .comment {
+   	border-top: 1px dotted #DDD;
+}
+
+.post .comments .navi {
+	width: 200px;
+	height: 15px;
+	margin: 15px 0 5px;
+}
+
+.post .comments .navi ul {
+}
+
+.post .comments .navi li {
+	padding: 0 5px 0 5px;
+	float: left;
+}
+
+.post .comments .commentform {
+   	padding: 5px 5px 10px 5px;
+}
+
+.post .comments .commentform .commentinput {
+  	font: 13px/15px STXihei, "Microsoft Yahei", Simsun,Georgia,Times,serif;
+	width: 300px;
+	padding: 3px;
+	border:none;
+	background:#CCC;
+	color:#333;
+}
+
+.post .comments .commentform .commentbtn {
+  	font: 13px/15px STXihei, "Microsoft Yahei", Simsun,Georgia,Times,serif;
+	padding: 2px 5px;
+	width: 45px;
+	color:#333;
+	margin: 0 0 0 5px;
+	cursor: pointer;
+}
+
+.post .comments .comment .replybtn {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.tform textarea {
+  	font: 14px/16px STXihei, "Microsoft Yahei", Simsun,Georgia,Times,serif;
+  	color: #555;
+  	padding: 5px;
+}
+
+.tform input {
+  	font: 14px/16px STXihei, "Microsoft Yahei", Simsun,Georgia,Times,serif;
+}
+
+.tform .doing_post {
+	background: url("../../images/timeline/doing_post.gif") repeat scroll 0% 0% transparent;
+	cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    margin: 0 5px 0 0;
+    overflow: hidden;
+    position: relative;
+    width: 80px;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+
+.tform .sbutton {
+	background: none repeat scroll 0 0 #C5C7C9;
+    color: #666666;
+    display: block;
+    font: 13px/15px STXihei,"Microsoft Yahei",Simsun,Georgia,Times,serif;
+    height: 20px;
+    text-align: center;
+    width: 80px;
+	padding: 8px 0 5px;
+	 -webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		border-radius: 6px;
+	vertical-align: middle;
+}
+
+.sbutton:hover {
+	color: #FFFFFF;
+}
+
+
+.tform .sbutton3 {
+	background: none repeat scroll 0 0 #C5C7C9;
+	color: #666666;
+    font: 13px/15px STXihei,"Microsoft Yahei",Simsun,Georgia,Times,serif;
+    height: 35px;
+    padding: 11px 0 5px;
+    text-align: center;
+    width: 80px;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+    vertical-align: baseline;
+}
+
+
+#skygqOverlay {
+	position:fixed;
+	z-index:2000;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background:black;
+}
+
+.wrap_out {
+	border:5px solid #000 opacity: 0.2;
+	padding:5px;
+	background:#eee;
+	box-shadow:0 0 6px rgba(0,0,0,.5);
+	-moz-box-shadow:0 0 6px rgba(0,0,0,0.5);
+	-webkit-box-shadow:0 0 6px rgba(0,0,0,.5);
+	position:fixed;
+	z-index:2001;
+    
+    -webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		border-radius: 6px;
+}
+
+.wrap_in {
+ 	font: 13px/15px STXihei, "Microsoft Yahei", Simsun,Georgia,Times,serif;
+	background:#fafafa;
+	border:1px solid #ccc;
+
+	-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		border-radius: 6px;
+}
+
+.wrap_bar {
+	width:100%;
+	background:#f7f7f7;
+	border-top:3px solid #f9f9f9;
+	border-bottom:4px solid #eee;
+	margin-top:2px;
+}
+
+.wrap_title {
+	line-height:5px;
+	background:#f3f3f3;
+	border-top:4px solid #f5f5f5;
+	border-bottom:5px solid #f1f1f1;
+	margin-top:3px;
+}
+
+.wrap_title span {
+	position:relative;
+	margin-left:10px;
+	cursor:text;
+}
+
+.wrap_body {
+	display:inline-block;
+	border-top:1px solid #ddd;
+	background:white;
+}
+
+.wrap_close {
+	margin-top:-18px;
+	color:#34538b;
+	font-weight:bold;
+	margin-right:10px;
+	font-family:Tahoma;
+	text-decoration:none;
+	cursor:pointer;
+	float:right;
+}
+
+.wrap_close:hover {
+	text-decoration:none;
+	color:#0085CF;
+}
+
+.submit_btn {
+	display:inline-block;
+	padding:3px 12px 1.99px;
+	background:#486aaa;
+	border:1px solid;
+	border-color:#a0b3d6 #34538b #34538b #a0b3d6;
+	color:#f3f3f3;
+	line-height:16px;
+	cursor:pointer;
+	overflow:visible;
+}
+
+.submit_btn:hover{
+	text-decoration:none;color:#ffffff;
+}
+
+.cancel_btn {
+	display:inline-block;
+	padding:3px 12px 1.99px;
+	background:#eee;
+	border:1px solid;
+	border-color:#f0f0f0 #bbb #bbb #f0f0f0;
+	color:#333;
+	line-height:16px;
+	cursor:pointer;
+	overflow:visible;
+}
+
+.updateinfo {
+	font: 12px/20px STXihei, "Microsoft Yahei", Georgia,Times,serif;
+	font-weight: normal;
+	color: #C03535;
+	margin-left: 5px;
+}
+
+#sidebar .updateinfo a {
+	color: #C03535;
+}
+
+.doing_face {
+	background: url("../../images/timeline/doing_face.gif") repeat scroll 0% 0% transparent;
+	cursor: pointer;
+    display: inline-block;
+    height: 32px;
+    margin: 0 5px 0 0;
+    overflow: hidden;
+    position: relative;
+    width: 32px;
+    vertical-align: middle;
+    word-wrap: break-word;
+    border:1px solid #fff;
+}
+
+.doing_att {
+	background: url("../../images/timeline/doing_att.gif") repeat scroll 0% 0% transparent;
+	cursor: pointer;
+    display: inline-block;
+    height: 32px;
+    margin: 0 5px 0 0;
+    overflow: hidden;
+    position: relative;
+    width: 32px;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+ 
+#getattach {
+	cursor: pointer;
+	xheight: 100%;
+    opacity: 0;
+    width: 40px;
+}
+
+.uploaddiv{
+	background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    margin: 0;
+    padding: 10px;
+}
+
+.uploadpic{
+	max-width : 330px ;
+	max-height : 330px ;
+}
+
+.uploaddiv a {
+    color: #0085CF;
+    outline: medium none;
+    text-decoration: none;
+}
+
+.facediv {
+	background: none repeat scroll 0 0 #FFFFFF;
+    padding: 8px;
+    width: 375px;
+    z-index: 100000;
+}
+.facediv ul li{
+	float: left;
+    height: 25px;
+    overflow: hidden;
+    width: 25px;
+    list-style: none outside none;
+}
+
+.post.photo.feature {
+	border-radius: 0px;
+	border: 2px solid #878686;
+	box-shadow: 0 0 0;
+	width: 386px;
+}
+
+.post.feature .inside {
+	border-radius: 0px;
+}
+
+.post.photo.feature .media {
+    width: 386px;
+    height: 290px;
+}
+
+.post.photo.feature .media img {
+	border-radius: 0px;
+	width: 386px;
+}
+
+.feature .overlay {
+	background-color: #000000;
+	opacity: 0.6;
+	width: 386px;
+	height:290px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.feature .name {	
+	color: #878686;
+	font: 40px/40px Arial, "Microsoft Yahei", Georgia,Times,serif;
+	font-weight: bolder;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding:10px;
+	width: 366px;
+}
+
+.feature .overlay.hover {
+	opacity: 0.1;
+}
+
+.feature .delete {
+	position: absolute;
+	display: none;
+	top: -8px;
+	left: 362px;
+	border-radius: 16px;
+    -webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+.feature .processing {
+	display: none;
+}

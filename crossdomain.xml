@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<cross-domain-policy>
+<allow-access-from domain="*.uutuu.com" />
+<allow-access-from domain="*.uutuu.cn" />
+<allow-access-from domain="58.215.76.*"/>
+<allow-access-from domain="192.168.1.*"/>
+<allow-access-from domain="127.0.0.1"/>
+<allow-access-form domain="localhost"/>
+</cross-domain-policy>

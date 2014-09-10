@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "global.css";
+#boxmain {
+	width:100%;
+	background:url(../images/header.jpg) center top;
+}
+#contentmain {
+	width:1000px;
+	height:165px;
+	margin:0 auto;
+}
+
+#content {
+	width:1000px;
+	margin:0 auto;
+	padding:0;
+}
+.head {
+	height:165px;
+}
+
+.nav {
+	width:950px;
+	padding-top:20px;
+}
+.nav li {
+	float:left;
+	width:65px;
+	margin:25px 20px 0 80px;
+}
+.nav li a {
+	display:block;
+	height:23px;
+}
+.nav li a:hover {
+	background-position:bottom;
+}
+.nav li a.current {
+	background-position:bottom;
+}
+.nav li.exp {
+	margin:25px 20px 0 10px;
+	width:122px;
+}
+.nav li.logo{	
+    width:290px;
+	height:75px;
+	margin:0 20px 0 30px;
+}
+.nav li.logo a{	
+	height:75px;
+}
+.nav li.iro {
+	width:127px;
+	margin:25px 20px 0 30px;
+}
+

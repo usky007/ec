@@ -1,0 +1,97 @@
+<?php defined('SYSPATH') OR die('No direct access allowed.');
+/**
+ * Session cache driver.
+ *
+ * Cache library config goes in the session.storage config entry:
+ * $config['storage'] = array(
+ *     'driver' => 'apc',
+ *     'requests' => 10000
+ * );
+ * Lifetime does not need to be set as it is
+ * overridden by the session expiration setting.
+ *
+ * $Id: Cache.php 329 2011-06-21 03:08:23Z zhangjyr $
+ *
+ * @package    Core
+ * @author     Kohana Team
+ * @copyright  (c) 2007-2008 Kohana Team
+ * @license    http://kohanaphp.com/license.html
+ */
+class Session_Cache_Driver implements Session_Driver {
+
+	protected $cache;
+	protected $encrypt;
+
+	public function __construct()
+	{
+		// Load Encrypt library
+		if (Kohana::config('session.encryption'))
+		{
+			$this->encrypt = new Encrypt;
+		}
+
+		Kohana::log('debug', 'Session Cache Driver Initialized');
+	}
+
+	public function open($path, $name)
+	{
+		$category = Kohana::config('session.storage');
+
+		if (empty($category))
+		{
+			// Load the default group
+			$category = 'default';
+		}
+
+		$this->cache = &Cache::instance($category);
+
+		return is_object($this->cache);
+	}
+
+	public function close()
+	{
+		return TRUE;
+	}
+
+	public function read($id)
+	{
+		$id = 'session_'.$id;
+		if ($data = $this->cache->get($id))
+		{
+			return Kohana::config('session.encryption') ? $this->encrypt->decode($data) : $data;
+		}
+
+		// Return value must be string, NOT a boolean
+		return '';
+	}
+
+	public function write($id, $data)
+	{
+		$id = 'session_'.$id;
+		$expires = isset($_SESSION["expires"]) ? $_SESSION["expires"] : NULL;
+		$data = Kohana::config('session.encryption') ? $this->encrypt->encode($data) : $data;
+
+		return $this->cache->set($id, $data, NULL, $expires);
+	}
+
+	public function destroy($id)
+	{
+		$id = 'session_'.$id;
+		return $this->cache->delete($id);
+	}
+
+	public function regenerate()
+	{
+		session_regenerate_id(TRUE);
+
+		// Return new session id
+		return session_id();
+	}
+
+	public function gc($maxlifetime)
+	{
+		// Just return, caches are automatically cleaned up
+		return TRUE;
+	}
+
+} // End Session Cache Driver

@@ -1,0 +1,148 @@
+	.dashbroad_box{
+		width:804px;
+		margin:auto -3px;
+		background-image:url(../../images/dashbroad_nav.png);
+		background-position:top left;
+		background-repeat:no-repeat;
+		position:relative;
+		
+	}
+		.dashbroad_box .mask_left{
+			display:block;
+			position:absolute;
+			top:50px;
+			left:0px;
+			width:10px;
+			height:215px;
+			background-image:url(../../images/dashbroad_info_left.png);
+			z-index:3;
+			display:none;
+		}
+		.dashbroad_box .mask_right{
+			display:block;
+			position:absolute;
+			top:50px;
+			left:794px;
+			float:right;
+			width:10px;
+			height:215px;
+			background-image:url(../../images/dashbroad_info_right.png);
+			z-index:3;
+			display:none;
+		}
+
+		.dashbroad_box .turn_left{
+			display:block;
+			position:absolute;
+			top:15px;
+			left:0px;
+			width:19px;
+			height:28px;
+			cursor:pointer;
+			background-image:url(../../images/dashbroad_nav_left.png);
+			z-index:3;
+		}
+		.dashbroad_box .turn_right{
+			display:block;
+			position:absolute;
+			top:15px;
+			left:785px;
+			width:19px;
+			height:28px;
+			cursor:pointer;
+			background-image:url(../../images/dashbroad_nav_right.png);
+			z-index:3;
+		}
+
+		.dashbroad_box .space{
+			height:20px;
+		}
+		.dashbroad_box .dsb_header{
+			width:804px;
+			overflow:hidden;
+			position:relative;
+			height:55px;
+		}
+			.dashbroad_box .dsb_header ul{
+				width:3200px;
+				position:absolute;
+				cursor:pointer;
+				left:0;
+				z-index:2;
+				
+			}
+				.dashbroad_box .dsb_header li{
+					width:268px;
+					height:50px;
+					margin-top:5px;
+					float:left;
+					text-align:center;
+					line-height:50px;
+				}
+					.dashbroad_box .dsb_header li a{
+						font-weight:bold;
+					}
+		.dashbroad_box .dsb_info{
+			width:804px;
+			height:232px;
+			margin-top:-5px;
+			position:relative;
+			overflow:hidden;
+			background-image:url(../../images/dashbroad_info.png);
+			background-position:left bottom;
+			height:0px;
+		}
+			.dashbroad_box .dsb_info ul{
+				width:3200px;
+				position:absolute;
+				left:0;
+				z-index:2;
+				margin-top:5px;
+			}
+				.dashbroad_box .dsb_info li{
+					width:268px;
+					float:left;
+					text-align:center;
+					height:212px;
+				}
+		.dashbroad_box .dashbroad_footer{
+			clear:both;height:10px;
+		}	
+			/*list*/
+			.broad_list{
+				margin:auto;
+				width:250px;
+			}
+				.broad_list tr{
+					height:21px;
+					line-height:21px;
+				}
+					.broad_list td.gold{
+						text-align:right;
+					}
+
+					.broad_list td.address{
+						text-align:left;
+					}
+					.broad_list td.order{
+						text-align:left;
+					}
+		.dashbroad_box .data_header{
+			padding-top:100px;
+			display:none;
+		}
+			.dashbroad_box .data_header li{
+				background-color:#CCC;
+				width:268px;
+				height:18px;
+				float:left;
+			}
+		.dashbroad_box .data_info{
+			display:none;
+		}
+			.dashbroad_box .data_info li{
+				background-color:#DDD;
+				width:268px;
+				height:28px;
+				float:left;
+			}

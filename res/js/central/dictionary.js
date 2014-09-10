@@ -1,0 +1,16 @@
+function include(filename) {
+	document.write("<scr" + "ipt language=\"JavaScript\" " +
+		"type=\"text/javascript\" src=\"" + js_context.res_url +
+		 filename + "\"><\/script>");
+}
+include("js/lib/jquery-1.7.2.js");
+//ZXC
+include("js/zxc/core/zxc.js");
+include("js/zxc/core/zxc.resource.js");
+include("js/zxc/core/zxc.resource.zh-cn.js");
+include("js/zxc/util/zxc.util.js");
+include("js/zxc/widget/zxc.widget.suggestion.js");
+// page
+include("js/page/page.js");
+include("js/page/page.dictionary.js");
+include("js/page/page.finalize.js");

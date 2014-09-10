@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/**
+ * @author				mitchell
+ * @description		各种容器的样式
+ 							column_label  | column_lite |  column_lite_bottom | column_gradient_bottom |album | album_bottom
+ * @lastmodified		$2010-06-22$
+ */
+
+.column_label{
+	background-image:url(../../images/sprites/g_1.png);
+	background-position:0px -350px;
+	float:left;
+}
+
+	.column_label .sub_col{
+		background-image:url(../../images/column_label_right.gif);
+		background-position:top right;
+		background-repeat:no-repeat;
+		padding:10px 20px 0px 20px;
+	}
+		.column_label .sub_col .label{
+			font-weight:bold;
+			height:25px;
+		}
+		.column_label .sub_col .info{
+		}
+
+
+/*--------------------------*/
+
+.column_lite{
+	background-image:url(../../images/sprites/g_1.png);
+	background-position:-500px -350px;
+	float:left;
+	
+}
+
+.column_lite .sub_col{
+	background-image:url(../../images/column_gradient_right.gif);
+	background-position:top right;
+	background-repeat:no-repeat;
+	padding:10px 20px 0px 20px;
+	float:left;
+}
+.column_lite .sub_col .label{
+	font-weight:bold;
+	height:25px;
+}
+.column_lite .sub_col .info{
+	
+}
+
+/*--------------------------*/
+
+.column_white{
+	background-image:url(../../images/column_white_left.png);
+	background-position:top left;
+	float:left;
+	
+}
+
+.column_white .sub_col{
+	background-image:url(../../images/column_white_right.png);
+	background-position:top right;
+	background-repeat:no-repeat;
+	padding:10px 20px 0px 20px;
+	float:left;
+}
+.column_white .sub_col .label{
+	font-weight:bold;
+	height:25px;
+}
+.column_white .sub_col .info{
+	
+}
+/*--------------------------*/
+.column_white_bottom{
+	background-image:url(../../images/column_white_left.png);
+	background-position:bottom left;
+	float:left;
+	
+}
+.column_white_bottom .sub_col{
+	background-image:url(../../images/column_white_right.png);
+	background-position:bottom right;
+	background-repeat:no-repeat;
+	text-align:right;
+	font-size:0px;
+	padding:0px 20px 10px 20px;
+}
+
+
+/*--------------------------*/
+.column_lite_bottom{
+	background-image:url(../../images/sprites/g_1.png);
+	background-position: 0px bottom;
+	float:left;
+	
+}
+.column_lite_bottom .sub_col{
+	background-image:url(../../images/column_label_right.gif);
+	background-position:bottom right;
+	background-repeat:no-repeat;
+	text-align:right;
+	font-size:0px;
+	padding:0px 20px 10px 20px;
+}
+/*--------------------------*/
+.column_gradient_bottom{
+	background-image:url(../../images/sprites/g_1.png);
+	background-position: -500px bottom;
+	float:left;
+}
+.column_gradient_bottom .sub_col{
+	height:25px;
+	background-image:url(../../images/column_gradient_right.gif);
+	background-position:bottom right;
+	background-repeat:no-repeat;
+	padding:0px 20px 10px 20px;
+}
+

@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "layout.css";
+body {
+	background:#fff;
+}
+#content{ position:relative;}
+#content_2 {
+	width:1000px;
+	margin:0 auto;
+	padding:0;
+}
+#boxmain {
+	width:100%;
+	background:url(../images/header.png) center top;
+}
+.tab {
+	width:1000px;
+	margin:0 auto;
+	border-bottom:1px solid #efefef;
+	margin-bottom:35px;
+}
+.tab ul li {
+	float:left;
+	margin:35px 50px 5px 50px;
+	width:92px;
+}
+.tab ul li a {
+	display:block;
+	height:22px;
+}
+.tab ul li a:hover {
+	background-position:bottom;
+}
+.tab ul li a.current {
+	background-position:bottom;
+}
+.info {
+	width:190px;
+	border:1px solid #ccc;
+	float:left;
+	line-height:20px;
+	padding:20px;
+	margin:0 8px;
+	background:#f7f7f7;
+	border-top:5px solid #f4902b;
+	padding-bottom:10px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	overflow:hidden;
+	-moz-box-shadow: 0px 1px 1px #e2e2e2;
+	-webkit-box-shadow: 0px 1px 1px #e2e2e2;
+	box-shadow: 0px 1px 1px #e2e2e2;
+}
+.wf2012 {
+	width:230px;
+	border:1px solid #ccc;
+	float:left;
+	margin:10px 8px;
+	background:#f7f7f7;
+	border-top:1px solid #e2e2e2;
+	padding-bottom:10px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	overflow:hidden;
+	-moz-box-shadow: 0px 1px 1px #e2e2e2;
+	-webkit-box-shadow: 0px 1px 1px #e2e2e2;
+	box-shadow: 0px 1px 1px #e2e2e2;
+}
+.wf2012 .test {
+	padding:20px;
+	line-height:20px;
+}
+.wf2012 .test a {
+	line-height:20px;
+	color:#d2833d;
+	text-decoration:none;
+}
+#eventjoin {
+	position:absolute;
+	width:181px;
+	height:239px;
+	left:985px;
+	top:20px;
+	z-index:1000;
+	background:url(../images/videoshare2.png);
+}
+#eventjoin a {
+	width:181px;
+	height:239px;
+	display:block;
+	cursor:pointer;
+}

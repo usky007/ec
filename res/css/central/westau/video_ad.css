@@ -1,0 +1,29 @@
+
+
+#TB_overlay {
+	display:none;
+	position: fixed;
+	z-index:1003;
+	top: 0px;
+	left: 0px;
+	background-color:#000;
+	filter:alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.8;
+	height:100%;
+	width:100%;
+}
+#TB_window {
+	position:fixed;
+	background: #999;
+	z-index: 1004;
+	color:#000000;
+	display:none;
+	text-align:left;
+	top:50%;
+	left:50%;
+}
+.box_close { position:absolute; left:550px; cursor:pointer;}
+.photo_box { width:540px; margin:0 auto; background:#fff; position:relative;}
+.photo { width:480px; text-align:center; padding:30px;}
+

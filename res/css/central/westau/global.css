@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "reset.css";
+
+/*----------golbal style--------*/
+.lock {
+	position: fixed;
+	left: 50%;
+	margin-left: -505px;
+	width: 1010px;
+}
+
+.b{ font-weight:bold}
+.i{ font-style:italic}
+.u{text-decoration:underline;}
+.small{ font-size:12px;}
+.large{font-size:14px;}
+.larger{font-size:16px;}
+.largerr{font-size:18px;}
+.snap{word-break:break-all;text-align:justify;text-justify:inter-ideograph;}
+
+.clear{ clear:both}
+.left{float:left; clear:none}
+.right{float:right;clear:none}
+.block{ display:block}
+
+.center{ display:block; text-align:center; margin: 0.5em auto; }
+
+.hide{display:none; visibility:visible}
+
+.hideInfo{ visibility:hidden; display:block}
+.show{display:block; visibility:visible}
+
+/*-------border style-----*/
+.solid{border:1px solid #999; }
+.dashed{border:1px dashed #999; }
+
+/*------color group-----*/
+
+.white{color:#FFF}
+.gray{color:#888 }
+.black{ color:#333}
+
+.red{ color:#ce0f06 }
+.orange{ color:#F50 }
+.blue{ color:#20b0ef}
+
+.pink{color:#cd1180}
+.skyblue{ color:#3f7ea6 }
+.purple{ color:#722c8f}
+
+
+/*--- background style -------*/
+
+.bgOnce{ background-repeat:no-repeat}
+.bgTop{ background-position:top}
+.bgCenter{ background-position:center}
+
+
+/*-------form style-----*/
+
+input.input{line-height:16px;height:15px;border:1px solid #CCC; line-height:18px; background-color:none;margin: 0px;padding-top: 2px; font-size:12px;}
+input.button{border:1px solid #f73;height:24px; line-height:22px;width:auto;background-color:#FFF;color:#FFF;cursor:pointer; background-image:url(../images/buttonBg.gif); padding:0px 7px; padding-bottom:3px; *padding-bottom:0px;margin: 0px;}
+input.radio{}
+input.check{}
+
+input.iTip{ color:#CCC;}
+input.disable{ background-color:#E7E7E7; background-image:none; border:#999 1px solid}
+
+/*--------------------------------*/ 
+
+
+/* ------------------------------- */
+/*document style
+/* ------------------------------- */
+p.noIndent{ text-indent:0px;}
+
+/* ------------------------------- */
+/* special HTML Elements 
+/* ------------------------------- */
+	
+	/*--space and line[B]--*/
+	.space{height:10px;clear:both;font-size:0px;}
+	.lineSolid{height:0px;clear:both;font-size:0px;border-top:1px solid #668a45; _overflow:hidden;} 
+	.lineDashed{height:0px;clear:both;font-size:0px;border-top:1px dashed #bfbfbf; _overflow:hidden; margin:15px 0px}
+	
+	/*-- add 200416 --*/
+
+	.split{width:5px !important; color:#999 !important; cursor:default !important;}
+	/*--space and line[E]-*/
+	
+
+	/*--loading[B]--*/
+	#loading {width:100px;height:8px; background-color:#F96;background-image:url(../images/loadingMini.gif); border:1px solid  #F66;padding:1px;position:fixed;right:0;bottom:0px; z-index:99}
+	/*--loading[E]--*/
+
+	/*--icon[B]--*/
+	img.icon{margin-bottom:-2px;}
+	/*--icon[E]--*/
+	/*--overlay[B]-/
+	#overlayDiv{position:absolute;display:none;z-index:99999; top:0px; left:0px;width:50px;background-color:#F50; color:#FFF; font-size:11px; margin:3px; padding:1px 2px;}
+	--overlay[E]--*/
+

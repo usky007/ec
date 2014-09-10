@@ -1,0 +1,15 @@
+/* CSS Document */
+
+
+.update_submit,.update_cancel{
+	border:1px solid #E6E7E1;
+	padding:0px 6px;
+	margin-left:5px;
+	line-height:24px;
+	display:inline-block;
+}
+.update_submit:hover,.update_cancel:hover{
+	background-color:#0085cf;
+	color:#FFF;
+	border-color:#0085CF;
+}

@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "layout.css";
+body {
+	background:url(../images/pattern_index.jpg) repeat;
+}
+#content {
+	width:1000px;
+	margin:0 auto;
+	padding:0;
+}
+.city_nav {
+	height:68px;
+	border:1px solid #e3e3e3;
+	background:#FFF;
+}
+.city_nav ul li {
+	float:left;
+	height:41px;
+	width:95px;
+	border-right:1px dotted #000;
+	padding-top:27px;
+	padding-left:30px;
+}
+.city_nav ul li a {
+	display:block;
+	height:14px;
+	width:52px;
+}
+.city_nav ul li a:hover {
+	background-position:bottom;
+}
+.city_nav ul li a.current {
+	background-position:bottom;
+}
+.city_nav ul li.top {
+	float:left;
+	height:68px;
+	line-height:68px;
+	width:160px;
+	border-right:1px dotted #000;
+	text-align:center;
+	background:url(../images/charm_nav_00.jpg) center bottom no-repeat #faf6f2;
+	padding:0;
+}
+.city_main {
+	background:#b00d23;
+	border-left:1px solid #e3e3e3;
+	border-right:1px solid #e3e3e3;
+	height:336px;
+}
+.main_info { width:449px; height:321px; float:left; padding-top:15px; }
+.main_info_text { margin:0 50px;color:#fff; font-family:"微软雅黑"; line-height:22px;}
+.main_ad { width:547px; float:right;height:336px;position:relative;}
+
+.city_video { border-left:1px solid #e3e3e3; border-right:1px solid #e3e3e3; background:#fff; padding:50px 30px;}
+.city_video_title { font-size:18px; color:#1e1348; font-family:"微软雅黑"; margin-bottom:20px;}
+.video { width:600px; height:450px; float:left; }
+.map {  float:right; width:280px;}
+
+.city_viewpoint { border-left:1px solid #e3e3e3; border-right:1px solid #e3e3e3; padding:50px 30px; background:url(../images/city_bg_bottom.jpg) no-repeat right bottom #f6f3ef;}
+.view { float:left; width:630px; padding-bottom:180px;}
+.v_link { float:right; width:280px; padding-top:12px;}
+
+.feel_box { margin-top:20px;}
+.feel_box li { float:left; width:195px; height:300px; background:#fff; margin-right:8px; margin-bottom:15px; border-bottom:1px solid #d9d9d9;border-top:1px solid #fff;border-left:1px solid #fff;border-right:1px solid #fff; display:block}
+.feel_box li:hover { float:left; width:195px; height:300px; background:#f4f4f4 url(../images/city_greatbox_bg.jpg) no-repeat right bottom; margin-right:8px; margin-bottom:15px; border:1px solid #b00d23; cursor:pointer;}
+.feel_box .text { line-height:20px; font-size:12px; padding:20px 12px 0 12px;}
+.feel_box .title { font-size:14px; font-family:"微软雅黑"; font-weight:bold;}
+
+.link_box { width:236px; height:465px; background:#fff; border-bottom:1px solid #d9d9d9; margin-top:60px; padding:17px; line-height:20px;}
+
+ 

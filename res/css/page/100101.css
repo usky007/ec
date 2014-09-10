@@ -1,0 +1,28 @@
+/* CSS Document */
+
+#header {
+	padding-top:4px;
+	margin-top:0px;
+	background-color:#eae7e7;
+	background-image:url(../../images/sprites/entry.png);
+	background-position:0px 0px;
+	background-repeat:repeat-x;
+}
+.nav{
+	background-image:url(../../images/sprites/entry.png);
+	background-position:right -101px;
+	height:88px;
+	width:480px;
+	float:right;
+	text-align:right;
+	margin-right:10px;
+}
+.main{
+	padding:25px;
+	padding-top:5px;
+	float:left;
+}
+.page_label_min{margin-left:30px;margin-top:10px; line-height:30px;height:30px;padding-bottom:0px;font-size:18px;}
+.form_box{margin:30px 100px;}
+.form tr{height:35px;}
+.form tr td.label{font-weight:bold;width:80px;}

@@ -1,0 +1,140 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {
+	/*background:url(../images/bodyBg.gif) repeat;*/
+}
+
+.topbar {
+	background:url(../images/topBg.jpg) center top no-repeat #276694;
+	height: 418px;
+	text-align:center;
+}
+.topbar .logo {
+	float:right;
+	padding-top:297px;
+	width:103px;
+	height:103px;
+	background:url(../images/JAlogo.png) no-repeat left center;
+	display:inline; /*margin:0 40px 0 0;*/
+}
+.topbar .logo a {
+	width:103px;
+	height:103px;
+	display:block;
+	float:right;
+}
+.topbar .logo a:hover {
+}
+.topbar .sub {
+	float: right;
+	margin-right:0;
+	width:260px;
+	margin-top:25px;
+	height:24px;
+}
+.navbar {
+	margin: 0px auto 0 auto;
+	background-color: #242221;
+	background-image:url(../images/navBg.jpg);
+	background-repeat:no-repeat;
+	height:49px;
+	
+}
+.navbar .wrapper {
+	position:relative;
+	overflow:visible;
+}
+.navbar ul {
+	margin:0;
+	padding:0 0 0 100px;
+}
+.navbar ul li {
+	list-style:none;
+	margin:0;
+	padding:0;
+	float:left;
+}
+.navbar ul li a {
+	padding:0 35px;
+	text-align:center;
+	display:block;
+	color:#fff;
+	font-weight:bold;
+	font-size:14px;
+	height:49px;
+	line-height:49px;
+	background-position:center top;
+}
+
+.navbar ul li a.selected {
+	color:#ffa228;
+	background-position:center bottom;
+}
+.navbar ul li a.grey {
+	color:#909090;
+	background-position:center bottom;
+}
+.navbar ul li a:hover {
+	text-decoration:none;
+	background-position:center bottom;
+}
+
+
+
+.indexBg {
+	background:url(../images/mainGg.jpg) no-repeat top center;
+}
+.subCreatBg {
+	background:url(../images/subCreatBg.jpg) no-repeat top center;
+}
+.subBg {
+	background:url(../images/subBg.jpg) no-repeat top center;
+}
+.pad35 {
+	padding:35px 0
+}
+.padBottom50 {
+	padding-bottom:50px;
+}
+.mainbox .wrapper {
+	padding:20px;
+}
+.mainbox .banner {
+	width:1000px;
+	margin:0 auto;
+}
+.feelTitle {
+	margin-bottom:5px;
+	margin-top:20px;
+}
+.rowFeelleft {
+	height:auto;
+	overflow:hidden;
+	width:610px;
+}
+.feelImg {
+	width: 282px;
+	display: inline;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+.rowFeelright {
+	height:auto;
+	overflow:hidden;
+	width:340px;
+}
+
+.thaiInfo { float:left; margin-top:10px; width:330px; height:267px; background:#e5e5e5; color:#423f3e; padding:40px 25px 0 25px; border-top:5px solid #d70c19;}
+.thaiInfo .title { text-align:center; font-size:20px; font-weight:bold; line-height:24px; margin-bottom:20px;}
+.thaiMap { float:right; margin-top:10px;}
+
+.planBox { float:left; width:650px; }
+.planBoxTitle { height:40px; line-height:40px; background:#c80909; font-size:20px; color:#fff; font-weight:bold; padding-left:30px;}
+.planText { border-left:1px solid #efefef;border-right:1px solid #efefef;border-bottom:1px solid #efefef; padding:30px;}
+.planText .date { width:250px; height:43px; line-height:43px; text-align:center; background:url(../images/dateBg.jpg) no-repeat;}
+.planText .date .bigsize { font-size:28px; line-height:28px; color:#633c0f; font-weight:bold;}
+.planText .planDay { background:url(../images/lineBg.jpg) repeat-y 20px; padding-left:80px; padding-top:50px; line-height:30px; font-size:15px;}
+
+.linedashed { border-bottom:1px dotted #dedede; height:3px; margin:10px 0;}

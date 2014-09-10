@@ -1,0 +1,824 @@
+@charset "UTF-8";
+/**
+ * @author				mitchell
+ * @description		定义页面元素样式
+ * @lastmodified		$2010-06-21$
+ */
+
+/*load image to split element --*/
+
+.split, .label_gray, .label_gray .label_right {
+	background-image:url(../../images/sprites/global_2.png);
+}
+div, ul, td {
+	color:#777777;
+}
+a {
+	color:#0085cf
+}
+a:hover {
+	color:#ff4271
+}
+a.highlight {
+	color:#FF3366
+}
+a.highlight:hover {
+	color:#FF5500;
+}
+
+a.gray_link{
+	color:#777777;
+}
+a.gray_link:hover{
+	color:#FF3366;
+}
+a.lowlight{
+	color:#A1A1A1;
+	text-decoration:underline;
+}
+a.lowlight:hover{
+	color:#FF3366;
+}
+.under_line{
+	text-decoration:underline !important;
+}
+.none_line{
+	text-decoration:none !important;
+}
+.bold{
+	font-weight:bold;
+}
+
+/*avator*/
+.avator_user_largest{
+	width:120px;
+	height:120px;
+	background-image:url(../../images/sprites/g_2.png);
+	background-position:-150px 0px;
+	padding:7px 8px 9px;
+	float:left;
+}
+.avator_user_larger{
+	width:72px;
+	height:72px;
+	background-image:url(../../images/sprites/g_2.png);
+	background-position:-60px 0px;
+	padding:3px 4px 5px;
+	float:left;
+}
+.avator_user_normal{
+	width:48px;
+	height:48px;
+	background-image:url(../../images/sprites/g_2.png);
+	background-position:0px 0px;
+	padding:3px 4px 5px;
+	float:left;
+}
+.avator_user_small{
+	width:32px;
+	height:32px;
+}
+.avator_user_min{
+	width:16px;
+	height:16px;
+	border:1px #AAA solid;
+}
+
+.avator_city_large{
+	width:90px;
+	border-top:1px solid #e3e2e2;
+	border-left:1px solid #b9b8b8;
+	border-right:1px solid #b9b8b8;
+	border-bottom:1px solid #7B7B7B;
+	padding:5px;
+	background-color:#FFF;
+	float:left;
+}
+/*强制字体*/
+.sim_sun{
+	font-family:"宋体"
+}
+.lighter{
+	font-weight:lighter;
+}
+/*color picker*/
+
+.pink {
+	color:#ff3366;
+}
+.orange {
+	color:#FF5A00
+}
+.blue {
+	color:#0085CF
+}
+.green{
+	color:#009933;
+}
+.gray{
+	color:#AAA;
+}
+
+.trans{
+	border:none;
+	background-color:transparent;
+}
+/*------hr line style*/
+hr.space {
+	background:#fff;
+	visibility:hidden;
+	height:20px;
+}
+div.dotted{
+	background-image:url(../../images/dotted.gif);
+	background-repeat:repeat-x;
+	background-position:center;
+	height:1px;
+	font-size:0px;
+	clear:both;
+	padding:10px 0px;
+}
+/* split */
+.split {
+	background-position:-150px -2496px;
+	width:2px;
+	height:14px;
+}
+
+
+.loading{ /*--100819*/
+	width:120px;
+	height:8px;
+	background-color:#CCC;
+	border:1px solid  #bbb;
+	background-image:url(../../images/loading_bar.gif);
+	position:fixed;
+	_position:absolute;
+	margin-top:3px;
+	margin-right:3px;
+	top:0px;
+	right:0px;
+	z-index:99999;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	font-size:0px;
+}
+.loading .shadow{
+	float:left;
+	opacity:0.1;
+	filter:alpha(opacity=10);
+	font-size:0px;
+	overflow:hidden;
+	height:8px;
+	width:1px;
+	background-color:#000;
+}
+
+.dom_loading{
+	background-image:url(../../images/loading_longer.gif);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+/**
+ * @author				mitchell
+ * @description		追加定义链接文字内部的三角符号样式
+ * @lastmodified		$2010-07-09$
+ */
+
+a.arrow_right{
+	-moz-user-select:none
+}
+a.arrow_right img{
+	background-image:url(../../images/sprites/icon.png);
+	width:12px;
+	height:12px;
+	background-position:-40px -190px;
+}
+a.arrow_right:hover img{
+	background-position:-55px -190px;
+}
+a.arrow_down{
+	-moz-user-select:none
+}
+a.arrow_down img{
+	background-image:url(../../images/sprites/icon.png);
+	width:12px;
+	height:12px;
+	background-position:-10px -190px;
+}
+a.arrow_down:hover img{
+	background-position:-25px -190px;
+}
+a.arrow_up{
+	-moz-user-select:none
+}
+a.arrow_up img{
+	background-image:url(../../images/sprites/icon.png);
+	width:12px;
+	height:12px;
+	background-position:-70px -190px;
+}
+a.arrow_up:hover img{
+	background-position:-85px -190px;
+}
+
+
+.point{
+	font-family: arial; font-size: 12px; font-weight: normal;
+}
+ /**
+ * @author:            mitchell
+ * @module:           replay
+ * @description:      所有带引号回复的样式
+ * @last modify:		$2011-01-14$
+ */
+.replay{
+	padding-left:20px;
+	background-image:url(../../images/q_start.gif);
+	background-position:2px 2px;
+	background-repeat:no-repeat;
+	padding-top:5px;
+	/*background-color:#f9f9f9;*/
+}
+.replay span.end{
+	padding-right:18px;
+	display:inline-block;
+	background:url(../../images/q_end.gif) no-repeat right bottom
+}
+
+
+ /**
+ * @author:            mitchell
+ * @module:           feeds
+ * @description:      动态专用style
+ * @last modify:		$2010-07-20$
+ */
+ 
+.feeds .name{ color:#0085CF;}
+.feeds .city{
+	color:#0085CF;
+	text-decoration:underline
+}
+.feeds .place{
+	color:#0085CF;
+	text-decoration:underline
+}
+.feeds .props{ color:#F0F}
+.feeds .medal{ color:#F0F}
+.feeds .money{
+	font-weight:bold;
+	color:#FF3366;
+}
+.feeds .time{ color:#CF0}
+.feeds .lv{ color:#F00}
+.feeds .comment{ color:#F0F}
+.feeds .score{ color:#F0F}
+.feeds .impression{ color:#F0F}
+
+/*label style*/
+.label_gray {
+	background-position:0px -135px;
+	float:left;
+	padding-bottom:10px;
+}
+.label_gray .label_right {
+	background-position:right -163px;
+	height:28px;
+	line-height:28px;
+	font-weight:bold;
+	padding:0px 15px;
+}
+.label_gray .label_right .icon{
+	float:left;
+	position:relative;
+	margin-top:-28px;
+	margin-left:-5px;
+}
+
+.label_dotted {
+	background-image:url(../../images/dotted.gif);
+	background-position:bottom;
+	background-repeat:repeat-x;
+	height:35px;
+	clear:both;
+	padding-top:10px;
+	margin-bottom:5px;
+}
+.label_dotted .label_title {
+	float:left;
+	line-height:35px;
+	height:35px;
+	font-weight:bold;
+	background-image:url(../../images/icon_14.gif);
+	background-position:0px center;
+	background-repeat:no-repeat;
+	padding-left:12px;
+
+}
+.label_dotted .label_ext {
+	float:right;
+	line-height:35px;
+}
+
+.label_search{
+	font-weight:bold;
+	font-size:12px;
+	height:20px;
+	line-height:20px;
+	background-image:url(../../images/sprites/icon_2.png);
+	background-position:0px -180px;
+	background-repeat:no-repeat;
+	padding-left:20px;
+	color:#A1A1A1;
+	clear:both;
+}
+
+
+/*--------page block---------*/
+
+ /**
+ * @author:            mitchell
+ * @module:           page label
+ * @description:      带头像的标签 
+ * @last modify:		$2010-07-08$
+ */
+.page_label {
+	font-weight:bold;
+	font-size:14px;
+	line-height:27px;
+	padding-bottom:21px;
+	padding-left:10px;
+	float:left;
+}
+	.page_label img {
+		margin-right:10px;
+	}
+	.page_label a {
+		text-decoration:underline;
+	}
+ /**
+ * @author:            mitchell
+ * @module:           page label
+ * @description:      仅有图标的标签 
+ * @last modify:		$2010-07-08$
+ */
+.page_label_min{
+	font-weight:bold;
+	font-size:14px;
+	line-height:30px;
+	padding-bottom:21px;
+	padding-left:0px;
+	float:left;
+}
+	.page_label_min img {
+		margin-right:5px;
+		float:left;
+	}
+
+.tip{
+	background-color:#fffcdb;
+	border:1px solid #FF3366;
+	margin:10px 1px;
+	padding:10px;
+	color:#777;
+	line-height:22px;
+}
+.tip_gray{
+	background-color:#f5f5f5;
+	border:5px solid #e5e5e5;
+	padding:15px;
+	border-radius:5px;
+	-moz-border-radius:5px; /*ff3*/
+}
+
+ /**
+ * @author:            mitchell
+ * @module:           user city status
+ * @description:      标签 
+ * @last modify:		$2010-07-08$
+ */
+.user_city_status {
+	float:left;
+	padding:0px 15px;
+}
+	.user_city_status .status {
+		float:left;
+		font-weight:bold;
+	}
+	.user_city_status .status .loc {
+		font-size:14px;
+		color:#0085cf;
+		font-weight:bold;
+		display:inline-block;
+		width:160px;
+	}
+	.user_city_status .link {
+		float:right
+	}
+	.user_city_status .link a{
+		text-decoration:underline;
+		margin-right:5px;
+	}
+	.user_city_status .link img {
+		margin:0px 7px;
+	}
+	
+ /**
+ * @author:            mitchell
+ * @module:           friend
+ * @description:      好友列表
+ * @last modify:		$2010-07-08$
+ */
+.friend {
+}
+	.friend .sub_col {
+		width:200px;
+
+	}
+	.friend .sub_col .search_friend{
+		background-color:#FFFFFF;
+		background-image:url(../../images/sprites/global_2.png);
+		border-top:1px solid #CACACA;
+		border-left:1px solid #E1E1E1;
+		border-right:1px solid #E1E1E1;
+		border-bottom:1px solid #EBEBEB;
+		background-position:-318px -2475px;
+		float:none;
+		margin:10px 0px;
+		width:auto;
+		height:24px;
+	}
+	.friend .sub_col .search_friend .btn{
+		width:28px;
+		height:20px;
+		cursor:pointer;
+		float:left;
+	}
+	.friend .sub_col .search_friend .input{
+		margin:3px 10px 0px;
+		width:145px;
+		cursor:text;
+		float:left;
+	}
+	.friend .sub_col .user {
+		height:440px;
+		overflow-y:scroll;
+		background-color:#FFF;
+		padding:5px;
+		border-top:1px solid #c9c9c9;
+		border-left:1px solid #e1e1e1;
+		border-right:1px solid #e1e1e1;
+		border-bottom:1px solid #eaeaea;
+	}
+	.friend .sub_col ul.user li {
+		padding-top:5px;
+		height:25px;
+		height:23px\0;
+	}
+	.friend .sub_col ul.user span.icon{
+		display:block;
+		float:left;
+		margin-left:5px;
+		_margin-left:3px;
+		margin-top:-2px\9;
+	}
+	.friend .sub_col ul.user span.name{
+		display:block;
+		float:left;
+		margin-left:5px;
+		width:80px;
+	}
+	.friend .sub_col ul.user span.count{
+		display:block;
+		float:left;
+		margin:0px 5px;
+		font-family:Verdana, Geneva, sans-serif;
+		width:40px;
+		text-align:right;
+	}
+	
+	
+ /**
+ * @author:            mitchell
+ * @module:           filter
+ * @description:      各种过滤器的统一格式
+ * @last modify:		$2010-07-08$
+*/
+
+
+ /**
+ * @author:            mitchell
+ * @module:           city item
+ * @description:      城市列表的显示格式
+ * @last modify:		$2010-07-08$
+ */
+.city_item {
+	padding-bottom:4px;
+	float:left;
+	height:90px;
+}
+	.city_item .city_top {
+		width:500px;
+		height:40px;
+	}
+	.city_item .city_top .left {
+		font-weight:bold;
+		line-height:15px;
+		background-image:url(../../images/flag_01.png);
+		background-repeat:no-repeat;
+		line-height:36px;
+		height:36px;
+		padding-left:45px;
+	}
+	.city_item .city_top .left a {
+		font-weight:bold;
+	}
+	.city_item .city_top .left img {
+	}
+	.city_item .city_top .left .city {
+		font-size:16px;
+		margin-right:10px;
+	}
+	.city_item .city_top .right {
+		line-height:35px;
+	}
+	.city_item .city_bottom {
+		width:500px;
+		height:25px;
+		text-align:left;
+	}
+	.city_item .city_bottom .right a{
+		text-decoration:underline;
+	}
+	
+ /**
+ * @author:            mitchell
+ * @module:           location item
+ * @description:      景点列表的显示格式
+ * @last modify:		$2010-07-08$
+ */
+.location_item {
+	width:516px;
+	padding:4px 12px;
+	height:88px;
+	clear:both;
+	background-image:url(../../images/location_item_bg.png);
+	background-position:top left;
+	margin-bottom:10px;
+}
+.location_item:hover{
+	background-position:bottom left;
+}
+
+	.location_item div {
+		line-height:30px;
+		height:30px;
+	}
+	.location_item .name {
+		float:left;
+	}
+	.location_item .name a {
+		font-size:15px;
+		font-weight:bold
+	}
+	.location_item .info {
+		float:right
+	}
+	.location_item .cate {
+		float:left;
+		clear:left;
+		white-space:nowrap;
+		color:#A1A1A1;
+	}
+	.location_item .cate a{
+		text-decoration:underline;
+		color:#A1A1A1;
+	}
+	.location_item .lockup {
+		float:right;
+		clear:right;
+		white-space:nowrap;
+		color:#A1A1A1;
+	}
+	.location_item .official {
+		float:left;
+		clear:left;
+		white-space:nowrap;
+		width:350px;
+	}
+	.location_item .handle {
+		float:right;
+		clear:right;
+		white-space:nowrap;
+		padding-top:0px;
+		width:auto;
+	}
+	.location_item .handle a{
+		text-decoration:underline;
+	}
+	
+ /**
+ * @author:            mitchell
+ * @module:           city list
+ * @description:      各种城市名归组的显示格式(仅显示名称时)
+ * @last modify:		$2010-07-08$
+ */
+
+.hot_city_list {
+	float:left;
+	clear:both;
+	width:520px;
+	padding:7px 5px;
+}
+.hot_city_list li {
+	float:left;
+	margin:3px 5px;
+}
+.hot_city_list li a {
+	color:#FF3366;
+	font-size:14px;
+	font-weight:bold;
+	white-space:nowrap
+}
+
+.new_city_list {
+	float:left;
+	clear:both;
+	width:520px;
+	padding:7px 5px;
+}
+.new_city_list li {
+	float:left;
+	margin:3px 5px;
+}
+.new_city_list li a{
+	color:#0085CF;
+	font-size:14px;
+	font-weight:bold;
+	white-space:nowrap
+}
+.new_city_list li .handle{
+	font-size:11px;
+	cursor:pointer;
+	text-align:center;
+	font-weight:lighter;
+	color:#888;
+	margin-top:-5px;
+	position:absolute;
+}
+.city_group {
+	float:left;
+	clear:both;
+	padding:7px 5px;
+	width:700px;
+}
+.city_group li {
+	float:left;
+	margin:0px 5px;
+	font-size:14px;
+}
+.city_group li a {
+	color:#0085CF;
+	font-size:14px;
+	font-weight:bold;
+	white-space:nowrap
+}
+.city_group li .handle{
+	font-size:11px;
+	cursor:pointer;
+	text-align:center;
+	font-weight:lighter;
+	color:#888;
+	margin-top:-5px;
+	position:absolute;
+}
+
+/* box */
+.rating_box {
+	background-image:url(../../images/sprites/g_2.png);
+	background-position:-100px -160px;
+	width:80px;
+	height:80px;
+	float:left;/*set as default*/
+}
+	.rating_box li.rating {
+		color:#ff1917;
+		text-align:center;
+		height:55px;
+		line-height:55px;
+		font-weight:bold;
+		font-size:22px;
+		font-family:Tahoma, Geneva, sans-serif;
+	}
+	.rating_box li.item {
+		color:#FFFFFF;
+		text-align:center;
+		height:25px;
+		line-height:22px;
+		font-size:14px;
+		font-family:Tahoma, Geneva, sans-serif;
+	}
+.rating_box_na{
+	background-image:url(../../images/sprites/g_2.png);
+	background-position:0px -200px;
+	width:80px;
+	height:80px;
+	float:left;/*set as default*/
+}
+	.rating_box_na .rating{
+		color:#aaa;
+		text-align:center;
+		height:80px;
+		line-height:80px;
+		font-weight:bold;
+		font-size:26px;
+		font-family:arial
+	}
+	.rating_box_na .item{
+		display:none;
+	}
+
+
+.rating_lite_box {
+	background-image:url(../../images/sprites/g_2.png);
+	background-position:-200px -160px;
+	width:58px;
+	height:58px !important;
+	float:left;/*set as default*/
+	line-height:58px !important;
+	color:#ff1917;
+	font-weight:bold;
+	text-align:center;
+	font-size:22px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+.mark_box {
+	background-image:url(../../images/sprites/g_2.png);
+	background-position:0px -100px;
+	height:80px;
+	width:80px;
+	float:left;/*set as default*/
+}
+.mark_box li.num {
+	color:#FF3366;
+	text-align:center;
+	height:55px;
+	line-height:55px;
+	font-weight:bold;
+	font-size:22px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+.mark_box li.item {
+	color:#6b6b6b;
+	text-align:center;
+	height:25px;
+	line-height:22px;
+	font-weight:bold;
+	font-size:14px;
+}
+
+ /**
+ * @author:            mitchell
+ * @module:           mark
+ * @description:      收藏|去过|关注 等操作按钮的样式
+ * @last modify:		$2010-07-08$
+ */
+.mark{
+	position:relative;
+	float:left;
+	width:75px;
+}
+.mark a{
+	position:absolute;
+	width:65px;
+	height:25px;
+	display:block;
+	float:left;
+	z-index:5;
+	background-color:#FFF;
+	filter:alpha(opacity=0); 
+	opacity:0; 
+}
+.mark .data{
+	text-decoration:none;
+	font-size:14px;
+	font-weight:bold;
+	color:#0085CF;
+}
+.mark .data img{
+	margin-bottom:-8px;
+	margin-right:1px;
+}
+
+.mark .check img{
+	background-position:bottom;
+}
+
+.mark .check{
+	color:#0085CF;
+	font-size:12px;
+}
+
+
+

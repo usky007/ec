@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "layout.css";
+body {
+	background:url(../images/pattern_index.jpg) repeat;
+}
+#banner_box {
+	background:url(../images/index_banner_bg.jpg) no-repeat center top;
+	height:452px;
+	border-bottom:1px solid #fff;
+}
+#banner_main {
+	width:980px;
+	margin:0 auto;
+	position:relative;
+}
+.index_box { margin:10px 10px 30px 10px;}
+
+.find_box { margin-top:10px;}
+.find_box li { float:left; width:234px; height:241px; background:url(../images/index_findbox_bg.png) no-repeat; padding:11px 0 0 11px}
+
+.feel_box { margin-top:10px;}
+.feel_box li { float:left; width:192px; height:356px; background:#fff; margin-right:4px; border-bottom:1px solid #d9d9d9;}
+.feel_box .text { line-height:20px; font-size:12px; padding:20px 12px 0 12px;}
+.feel_box .title { font-size:20px; font-family:"微软雅黑"; font-weight:bold;}
+
+.notice { background:url(../images/notice.png) no-repeat left top; margin-left:10px; height:80px; padding-left:210px; }

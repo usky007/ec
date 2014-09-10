@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/**
+ * @author				mitchell
+ * @description		mouse hover tip style
+ * @lastmodified		$2010-07-20$
+ */
+
+
+#tooltip_lite{
+	position:absolute;
+	border:2px solid #AAA;
+	padding:3px 5px;
+	background-color:#FFF;
+	color:#0085CF;
+	height:auto;
+	width:auto;	
+}
+

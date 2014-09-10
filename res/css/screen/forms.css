@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/**
+ * @author				mitchell
+ * @description		定义表单元素样式
+ * @lastmodified		$2010-06-21$
+ */
+ 
+/*load image to split element --*/
+.search_input, .search_input_focus{
+	background-image:url(../../images/sprites/form.png);
+}
+.btn_blue, .btn_blue_80, .btn_blue_normal, .btn_blue_130, .btn_blue_plus,
+.btn_pink, .btn_pink_80, .btn_pink_normal, .btn_pink_130,
+.btn_white,.btn_white_80,.btn_white_130
+{
+	border:none;
+	*border:0px;
+	height:25px;
+	line-height:23px;
+	cursor:pointer;
+	background-image:url(../../images/sprites/form.png);
+	background-color:transparent;
+	padding-bottom:3px;
+	color:#FFF;
+	font-weight:bold
+
+}
+.btn_blue[disabled], .btn_blue_80[disabled], .btn_blue_normal[disabled],.btn_blue_130[disabled],.btn_blue_plus[disabled],
+.btn_pink[disabled], .btn_pink_80[disabled] .btn_pink_normal[disabled],.btn_pink_130[disabled],
+.btn_white[disabled],.btn_white_80[disabled],.btn_white_130[disabled]
+{
+	color:#999;
+	cursor:default;
+	background-image:url(../../images/sprites/form.png);
+}
+
+input.text{
+	line-height:20px;
+	height:20px;
+	border:1px solid #AAA;
+	margin:0px;
+	padding-top:2px;
+	width:130px;
+	background-color:#FFFFFF;
+	color:#666666;
+}
+
+textarea{
+	color:#666666;
+	width:300px;
+	height:150px;
+	padding:5px;
+	border:1px solid #AAA;
+	background-color:#F9F9F9;
+	overflow:auto;
+}
+input.text:hover,input.text:focus,textarea:focus{
+	border:1px solid #AAA;
+	background-color:#fffcdb;
+}
+
+.search_input{
+	background-position:0px 0px;
+	float:left;
+	width:168px;
+	height:24px;
+	line-height:24px;
+	*padding-top:2px;
+	*height:22px;
+}
+.search_input_focus{
+	background-position:0px -24px;
+}
+.search_input:hover{
+	background-position:0px -24px;
+}
+.search_input input{
+	border:none;
+	background-color:transparent;
+	padding-left:30px;
+	width:135px;
+	height:20px;
+	_height:18px;
+}
+
+input.blank_tip{ /*无内容时的提示*/
+	color:#AAAAAA;
+}
+
+
+/*btn style*/
+.btn_blue{
+	background-position:-150px -50px;
+	width:60px;
+}
+.btn_blue_80{
+	background-position:-150px -80px;
+	width:80px;
+}
+
+.btn_blue_normal{
+	background-position:-150px -120px;
+	width:100px;
+}
+
+.btn_blue_130{
+	background-position:-150px -160px;
+	width:130px;
+}
+
+.btn_blue_plus{
+	background-position:-150px -200px;
+	font-weight:normal;
+
+	width:115px;
+	text-align:left;
+	padding-left:35px
+}
+.btn_blue_plus_80{
+	border:none;
+	*border:0px;
+	height:25px;
+	line-height:23px;
+	cursor:pointer;
+	background-color:transparent;
+	padding-bottom:3px;
+	color:#FFF;
+	font-weight:normal;
+	background-image:url(../../images/btn_blue_plus_80.gif);
+	width:80px;
+	text-align:left;
+	padding-left:35px
+}
+.btn_pink{
+	background-position:0px -50px;
+	width:60px;
+}
+.btn_pink_80{
+	background-position:0px -80px;
+	width:80px;
+}
+.btn_pink_normal{
+	background-position:0px -120px;
+	width:100px;
+}
+
+.btn_pink_130{
+	background-position:0px -160px;
+	width:130px;
+}
+.btn_white{
+	background-position:-300px -50px;
+	width:60px;
+	color:#0085CF;
+}
+.btn_white_80{
+	background-position:-300px -80px;
+	width:80px;
+	color:#0085CF;
+}
+.btn_white_130{
+	background-position:-300px -160px;
+	width:130px;
+	color:#0085CF;
+}
+/*button[disabled][B]*/
+.btn_blue[disabled],.btn_pink[disabled]{
+	background-position:-300px -50px;
+}
+.btn_blue_80[disabled],.btn_pink_80[disabled],.btn_white_80[disabled]{
+	background-position:-300px -80px;
+}
+.btn_blue_normal[disabled],.btn_pink_normal[disabled]{
+	background-position:-300px -120px;
+}
+.btn_blue_130[disabled],.btn_pink_130[disabled]{
+	background-position:-300px -160px;
+}
+.btn_blue_plus[disabled]{
+	background-position:-300px -200px;
+	font-weight:normal;
+
+}
+.btn_blue_plus_80[disabled]{
+	color:#999;
+	cursor:default;
+	background-image:url(../../images/btn_white_plus_80.gif);
+	font-weight:normal;
+
+	
+}
+/*button[disabled][E]*/
+
+.btn_a_blue{
+	border:1px solid #E6E7E1;
+	padding:0px 6px;
+	margin-left:2px;
+	line-height:24px;
+	display:inline-block;
+}
+.btn_a_blue:hover{
+	background-color:#0085cf;
+	color:#FFF;
+	border-color:#0085CF;
+}
+
+
+/*radio button*/
+.btn_radio{
+	display:inline
+}
+	.btn_radio input{
+		height:25px;
+		border:none;
+		background-color:transparent;
+		cursor:pointer;
+		/*font-weight:bold;*/
+		padding:0px;
+	}
+	.btn_radio .btn_radio_left{
+		width:63px;color:#0085CF;
+		background-image:url(../../images/btn_radio_left.gif);
+		background-position:top;
+
+	}
+	.btn_radio .btn_radio_right{
+		width:63px;color:#0085CF;
+		background-image:url(../../images/btn_radio_right.gif);
+		background-position:top;
+	}
+	.btn_radio .btn_radio_center{
+		width:61px;color:#0085CF;
+		background-image:url(../../images/btn_radio_center.gif);
+		background-position:top;
+	}
+	
+	.btn_radio .active{
+		background-position:bottom;color:#FFF;
+	}

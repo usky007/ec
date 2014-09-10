@@ -1,0 +1,117 @@
+#TB_overlay {
+	display:none;
+	position: fixed;
+	z-index:100;
+	top: 0px;
+	left: 0px;
+	background-color:#000;
+	filter:alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.8;
+	height:100%;
+	width:100%;
+}
+#TB_window {
+	position:fixed;
+	background: #999;
+	z-index: 102;
+	color:#000000;
+	display:none;
+	text-align:left;
+	top:50%;
+	left:50%;
+}
+.box_close {
+	position:absolute;
+	left:805px;
+	cursor:pointer;
+}
+.photo_box {
+	width:800px;
+	margin:0 auto;
+	background:#fff;
+	position:relative;
+}
+.photo {
+	width:700px;
+	text-align:center;
+	padding:30px 50px 20px 50px
+}
+.more_user_fb {
+	padding:8px 50px 15px 10px;
+	border-bottom:1px solid #ededed;
+}
+.more_user_fb a {
+	color:#d2833d;
+	text-decoration:none;
+}
+.more_user_fb a:hover {
+	color:#d2833d;
+	text-decoration:underline;
+}
+.more_user_fb_id {
+	display:block;
+	margin-left:40px;
+	margin-bottom:20px;
+	line-height:20px;
+}
+.more_user_zf {
+	padding:8px 50px 8px 40px;
+	min-height:60px;
+}
+.more_user_zf a {
+	color:#d2833d;
+	text-decoration:none;
+}
+.more_user_zf a:hover {
+	color:#d2833d;
+	text-decoration:underline;
+}
+.more_user_zf_id {
+	display:block;
+	margin-left:10px;
+	line-height:20px;
+}
+.more_more {
+	height:65px;
+	text-align:center;
+	border-top:1px solid #ededed;
+	margin-top:8px;
+}
+.more_more a {
+	line-height:65px;
+	color:#dd8c19;
+	text-decoration:none;
+}
+
+.hmain_ad {
+	float:right;
+	width:495px;
+	height:315px;
+	position:relative;
+}
+.hilton_ad_box {
+	width: 495px;
+	height:315px;
+	position:absolute;
+	z-index:1;
+	left:0px;
+	top:0px;
+}
+.scrollable {
+	position:relative;
+	overflow:hidden;
+	width: 495px;
+	height:315px;
+}
+.scrollable .items {
+	width:20000em;
+	position:absolute;
+}
+.scrollable .items .ad {
+	float:left;
+	width: 495px;
+	height:315px;
+	border:0px solid #999;
+	position:relative;
+}

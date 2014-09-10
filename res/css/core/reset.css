@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/**
+ * @author				mitchell
+ * @description		Resets default browser CSS.
+ * @lastmodified		$2010-06-21$
+ */
+a, body, div, ul, form {
+	margin: 0px;
+	padding: 0px;
+	border:none;
+	font-family:tahoma,"宋体";
+	_font-family:宋体;
+	font-size:13px;
+	-webkit-text-size-adjust:none; /* fix small font in chrome*/
+	color:#777777;
+}
+input,textarea{
+	font-size:13px;
+	font-family:tahoma,"宋体";
+	color:#333333;
+	outline:none;
+}
+input{
+	_font-size:12px;
+}
+img{
+	border:none;
+}
+pre{
+	font:13px verdana;
+	color:#777777;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	clear:both;
+}
+li{
+	list-style-type:none;
+}
+ol{
+	display:block;
+	overflow:hidden;
+	padding:0px;
+	margin:0px;
+}
+h1,h2,h3{
+}
+textarea{
+	border:#999999 1px solid;
+	resize:none;
+}
+select{
+	height:20px;
+}
+a{
+	cursor:pointer;
+	outline:none;
+	font-weight:normal;
+	text-decoration:none;
+	color:#777777;
+}
+a:hover {
+	color:#999999;
+}
+a:focus{
+	outline: none;
+}
+table {
+	border-collapse:collapse;
+}
+td {
+	color:#333333;
+	padding:0px;
+}
+iframe {
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+
+hr{
+	background:#ddd;
+	color:#ddd;
+	clear:both;
+	float:none;
+	width:100%;
+	height:1px;
+	border:none;
+	margin:0px; 
+	font-size:0px;
+	padding:0px;
+	*margin-top:-7px;  
+	*margin-bottom:-7px;
+	*font-size:1px;
+	*line-height:1px;
+	*display:block;
+}

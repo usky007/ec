@@ -1,0 +1,273 @@
+@charset "UTF-8";
+/**
+ * @author				mitchell
+ * @description		定义页各种图标素样式
+ * @lastmodified		$2010-06-21$
+ */
+
+/*icon format*/
+
+.icon{
+	margin-bottom:-3px;
+}
+/*load image to split element --*/
+.icon_search, .icon_zone, .icon_collect,
+.icon_blog, .icon_album, .icon_diary, .icon_vote, .icon_group, .icon_activity, .icon_repost, .icon_hotness,
+.icon_friend_mayor,.icon_friend_male,.icon_friend_female,.icon_online,
+.icon_52_01,.icon_52_02,.icon_52_03,.icon_52_04,
+.icon_airport_28,.icon_supermarket_28,.icon_dynamic_28,.icon_help_28,.icon_bazaar_28,.icon_life_tip_28
+{
+	background-image:url(../../images/sprites/icon.png);
+}
+
+
+
+.icon_search, .icon_zone, .icon_collect {
+	width:24px;
+	height:24px;
+}
+.icon_blog, .icon_album, .icon_diary, .icon_vote, .icon_group, .icon_activity, .icon_repost, .icon_hotness,
+.icon_friend_mayor,.icon_friend_male,.icon_friend_female,.icon_online,.icon_loading,.icon_bag{
+	width:18px;
+	height:18px;
+}
+
+
+.icon_52_01,.icon_52_02,.icon_52_03,.icon_52_04{
+	width:52px;
+	height:52px;
+}
+.icon_airport_28,.icon_supermarket_28,.icon_dynamic_28,.icon_help_28,.icon_bazaar_28,.icon_life_tip_28{
+	width:28px;
+	height:28px;
+}
+/* icon_24 
+ * left main menu
+ */
+.icon_search {
+	background-image:url(../../images/sprites/icon_2.png);
+	background-position:0px 0px;
+}
+.icon_zone {
+	background-image:url(../../images/sprites/icon_2.png);
+	background-position:0px -40px;
+}
+.icon_collect {
+	background-image:url(../../images/sprites/icon_2.png);
+	background-position:0px -80px;
+}
+
+/* icon_18
+ * left sub menu
+ */
+.icon_blog {
+	background-position:0px -36px;
+}
+.icon_album {
+	background-position:-36px -36px;
+}
+.icon_diary {
+	background-position:-72px -36px;
+}
+.icon_vote {
+	background-position:-108px -36px;
+}
+.icon_group {
+	background-position:-144px -36px;
+}
+.icon_activity {
+	background-position:-180px -36px;
+}
+.icon_repost {
+	background-position:-216px -36px;
+}
+.icon_hotness {
+	background-position:-252px -36px;
+}
+/* icon_28
+ * left sub menu
+ */
+.icon_airport_28{
+	background-position:0px -150px;
+}
+.icon_supermarket_28{
+	background-position:-30px -150px;
+}
+.icon_dynamic_28{
+	background-position:-60px -150px;
+}
+.icon_help_28{
+	background-position:-90px -150px;
+}
+.icon_bazaar_28{
+	background-position:-120px -150px;
+
+}
+.icon_life_tip_28{
+	background-position:-150px -150px;
+
+}
+
+/*
+.icon_friend_mayor{
+	background-position:0px -75px;
+}
+.icon_friend_male{
+	background-position:-25px -75px;
+}
+.icon_friend_female{
+	background-position:-50px -75px;
+}
+*/
+
+/* icon_12*/
+.icon_arrow_blue_down{
+	background-image:url(../../images/sprites/icon.png);
+	width:12px;
+	height:12px;
+	background-position:-10px -190px;
+}
+
+.icon_arrow_blue_right{
+	background-image:url(../../images/sprites/icon.png);
+	width:12px;
+	height:12px;
+	background-position:-40px -191px;
+}
+.icon_close{
+	background-image:url(../../images/icon_close.png);
+	width:9px;
+	height:9px;
+}
+
+/* icon_18*/
+.icon_loading{
+	background-image:url(../../images/loading.gif);
+	background-repeat:no-repeat;
+}
+.icon_bag{
+	background-image:url(../../images/sprites/icon_2.png);
+	background-position:0px -120px;
+	background-repeat:no-repeat;
+}
+
+.icon_online{
+	background-image:url(../../images/sprites/icon_2.png);
+	background-position:0px -210px;
+	width:14px;
+	height:16px;
+	margin-bottom:-3px;
+}
+
+.icon_help_01_18{
+	background-image:url(../../images/sprites/icon_2.png);
+	background-position:0px -150px;
+	background-repeat:no-repeat;
+	width:18px;
+	height:18px;
+}
+
+.icon_city_list_btn_18{
+	background-color:transparent;
+	background-image:url(../../images/icon_city_list.png);
+	background-repeat:no-repeat;
+	height:18px;
+	width:18px;
+	background-position:center;
+	background-repeat:no-repeat;
+
+}
+.icon_share_sina_18{
+	background-image:url(../../images/sina_share.gif);
+	width:18px;
+	height:18px;
+	position:relative;
+	top:3px;
+}
+.icon_share_douban_18{
+	background-image:url(../../images/douban_share.gif);
+	width:18px;
+	height:18px;
+	position:relative;
+	top:3px;
+}
+
+.icon_share_kaixin_18{
+	background-image:url(../../images/kaixin_share.gif);
+	width:18px;
+	height:18px;
+	position:relative;
+	top:3px;
+}
+
+.icon_grid_18{
+	background-image:url(../../images/icon_grid.gif);
+	width:18px;
+	height:18px;
+	position:relative;
+	top:5px;
+}
+.icon_list_18{
+	background-image:url(../../images/icon_list.gif);
+	width:18px;
+	height:18px;
+	position:relative;
+	top:5px;
+}
+
+/* icon_28*/
+.icon_visited_28{
+	height:28px;
+	width:28px;
+	background-image:url(../../images/icon_visited_28.png);
+	background-position:top;
+}
+.icon_visited_28_highlight{
+	height:28px;
+	width:28px;
+	background-image:url(../../images/icon_visited_28.png);
+	background-position:bottom;
+}
+
+.icon_add_28{
+	height:28px;
+	width:28px;
+	background-image:url(../../images/icon_add_28.png);
+	background-position:top;
+}
+.icon_add_28_highlight{
+	height:28px;
+	width:28px;
+	background-image:url(../../images/icon_add_28.png);
+	background-position:bottom;
+}
+
+/* icon_48*/
+.icon_help_01_48{
+	background-image:url(../../images/icon_help_01_48.png);
+	width:48px;
+	height:48px;
+}
+.icon_success_01_48{
+	background-image:url(../../images/icon_success_01_48.png);
+	width:48px;
+	height:48px;
+}
+.icon_failed_01_48{
+	background-image:url(../../images/icon_failed_01_48.png);
+	width:48px;
+	height:48px;
+}
+/* icon_52*/
+.icon_52_01{
+	background-position:0px -80px;
+}
+.icon_52_02{
+	background-position:-60px -80px;
+}
+.icon_52_03{
+	background-position:-120px -80px;
+}
+.icon_52_04{
+	background-position:-180px -80px;
+}

@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "layout.css";
+body {
+	background:url(../images/pattern_index.jpg) repeat;
+}
+#content {
+	width:1000px;
+	margin:0 auto;
+	padding:0;
+}
+.city_main {
+	background:#fff;
+	border-left:1px solid #e3e3e3;
+	border-right:1px solid #e3e3e3;
+	height:336px;
+}
+.main_info {
+	width:449px;
+	height:321px;
+	float:left;
+	padding-top:15px;
+	background:url(../images/theme_info.jpg) no-repeat center;
+}
+.main_ad {
+	width:547px;
+	float:right;
+	height:336px;
+	position:relative;
+}
+.tips_box {
+	border-left:1px solid #e3e3e3;
+	border-right:1px solid #e3e3e3;
+	background:#f6f3ef;
+}
+.tips_left { width:578px; float:left; padding:30px 35px; }
+.tips_test { float:left; width:280px; margin-left:35px; line-height:20px; font-family:"微软雅黑"; font-size:12px;}
+.tips_test a { color:#1582bd; text-decoration:none; font-family:"微软雅黑"; font-size:12px;}
+.tips_test a:hover { text-decoration:underline;}
+.tips_test02 { float:left; width:390px; margin-left:35px; line-height:20px; font-family:"微软雅黑"; font-size:12px; border-bottom:1px solid #fff; height:108px;}
+.blue_tit { color:#1582bd; }
+
+.tips_right { width:280px; float:left; background:url(../images/tips_rbox_bg.jpg) left repeat-y #fff; padding-bottom:300px; padding-left:40px; padding-right:30px; padding-top:30px; font-family:"微软雅黑"; line-height:20px; font-size:12px; }
+.tips_right a { font-family:"微软雅黑"; line-height:20px; font-size:12px; text-decoration:none; }
+.tips_right img { vertical-align:top; margin-bottom:5px;}

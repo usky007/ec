@@ -1,0 +1,10 @@
+Page.onPageLoad.add(function(){
+	$('h1').click(function(){
+		if(window.confirm('我遵守操作数据字典的规则，出了事情我负责')){
+			location.href="/admin/dictionary/record";
+		}else{
+			window.alert('一点责任感都没有，所以你没得做咯');
+			location.href="/admin/";
+		}
+	});
+});

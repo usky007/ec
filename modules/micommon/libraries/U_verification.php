@@ -1,0 +1,1 @@
+<?phpclass U_verification{	public function json($obj, $field)	{		if(!json_decode($obj[$field]))			$obj->add_error($field, 'Illegal_json');	} }

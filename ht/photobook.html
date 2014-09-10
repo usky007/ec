@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<html xmlns:wb="http://open.weibo.com/wb">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<meta name="keywords" content="美国，从“心”发现" />
+<meta name="description" content="美国，从“心”发现" />
+<title>美国，从“心”发现</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/photobook.css"/>
+<link rel="stylesheet" href="css/waterfall.css">
+<html xmlns:wb="http://open.weibo.com/wb">
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div id='TB_overlay'></div>
+<div id='TB_window'>
+  <!-- 微博图片弹框开始 -->
+  <div class="photo_box" style="display: none;">
+    <div class="box_close"><a><img src="images/close.png" /></a></div>
+    <div class="photo"></div>
+  </div>
+  <!-- 微博图片弹框结束 -->
+</div>
+<link type="text/css" href="css/lrtk.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<!-- 微信开始 -->
+<a id="goweibo" href="http://weibo.com/GoUSAcn" target="_blank"></a>
+<div id="code"></div>
+<div id="code_img"></div>
+<a id="gotop" href="javascript:void(0)"></a>
+<!-- 微信结束 -->
+
+<div class="topbar" style="margin-bottom:30px">
+  <div class="wrapper">
+    <div class="navbar">
+      <ul>
+        <li class="home"><a href="index.html" style="background-image:url(images/nav00.jpg);"></a></li>
+        <li><a href="sub_selfdriving01.html" style="background-image:url(images/nav01.jpg);"></a></li>
+        <li><a href="sub_shopping01.html" style="background-image:url(images/nav02.jpg);"></a></li>
+        <li><a href="sub_landscape01.html" style="background-image:url(images/nav03.jpg);"></a></li>
+        <li class="logo"><a href="http://www.gousa.cn/" target="_blank"></a></li>
+        <li><a href="sub_culture01.html" style="background-image:url(images/nav04.jpg);"></a></li>
+        <li class="activity"><a href="photobook.html" style="background-image:url(images/nav_a.gif);"></a></li>
+        <li><a href="sub_tips.html" style="background-image:url(images/nav06.jpg);"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="mainbox subBg pad35">
+  <div class="phtobookMain">
+    <ul id="waterfall">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li>
+      <div class="info">
+      <div class="boxblue"></div>
+      <div class="box">
+      <div class="center pubublue strong">晒图活动</div>
+        <h3 class="black strong">活动时间：</h3>
+        2014.09.01—2014.10.31<br>
+        <h3 class="black strong">活动规则：</h3>
+        1、晒出与当周活动主题相符的美照；（主题如：美心美景、心路历程、醉心美淘、多元文化）<br>
+        2、关注并@旅行者传媒 @美国国家旅游局 <br>
+        3、加话题#美国从心发现#分享后即可参与。<br />
+        <h3 class="black strong">活动奖品：</h3>
+        <span class="spblue">幸运参与奖</span>：每周从参与当周主题晒图活动且转发数超过50的微博中，随机抽取7人，送出纪念品1份；<br>
+        <br>
+        <span class="spblue">月度幸运奖</span>：每月从参与晒图活动且转发数较高的微博中，随机抽取1人，送出纪念品1份；<br />
+        </p>
+        <br />
+        <div class="soliddline"></div>
+        <br />
+      <div class="center pubublue strong">竞猜活动</div>
+      <h3 class="black strong">活动时间：</h3>
+      2014.09.01—2014.10.31<br>
+        <h3 class="black strong">活动规则：</h3>
+        1、每期（每2周一期）主题发布的同时，旅行者传媒将发起1个关于【当期主题】的趣味小竞猜；<br>
+        2、在微博评论中正确回答当期问题，即可参与。<br />
+
+        <h3 class="black strong">活动奖品：</h3>
+        <span class="spblue">幸运竞猜奖</span>：每期将从正确回答竞猜问题的热心用户中，随机抽取7人，送出纪念品1份；<br>
+        <br />
+        </p>
+        </div>
+      </div>
+      </li>
+      <div class="clear"></div>
+    </ul>
+    <div class="loading"  style="display: none;"> <img  id='loading_start' style='display:none;' src="images/loading.gif"> <span id='loading_more' style='display:none;cursor:pointer;'>点击加载更多...</span> <img  id='loading_end' style='display:none;' src="images/end.png"> </div>
+    <!--
+    <div style="display:block;" class="back-to" id="toolBackTop"> <a title="返回顶部" href="#top" class="back-top"> <img src="images/icon_up.gif" /> </a> </div>
+    -->
+  </div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2387253-9', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+<script language="javascript" src="js/wechat.js" ></script>
+<script type="text/javascript">
+var js_context={
+  'base_url'      : 'http:\/\/yanzi-feature.uutuu.com\/',
+  "res_url"       : "http:\/\/yanzi-feature.uutuu.com\/feature\/res\/",
+  "js_url"        : "http:\/\/yanzi-feature.uutuu.com\/res\/",
+  "waterfall"     : 'http:\/\/yanzi-feature.uutuu.com\/waterfall\/waterfall',
+  //"keyword"       : 'live',  
+   "camp_name"     : 'tourism',
+   "order"         : 'new'
+};
+</script>
+<script type="text/javascript" src="http://yanzi-feature.uutuu.com/res/js/central/waterfall.js" ></script>
+</html>

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/**
+ * @author				mitchell
+ * @description		各种图片所使用的样式（使用的是24位PNG 所以无透明通道）
+ * @lastmodified		$2010-07-01$
+ */
+
+/*pic format*/
+
+/*load image to split element --*/
+.pic_magnifier
+{
+	background-image:url(../../images/sprites/pic.png);
+}
+
+.pic_magnifier{
+	background-position:0px 0px;
+	width:80px;
+	height:80px;
+}

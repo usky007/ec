@@ -1,0 +1,30 @@
+/* CSS Document */
+
+#header {
+	padding-top:4px;
+	margin-top:0px;
+	background-color:#eae7e7;
+	background-image:url(../../images/sprites/entry.png);
+	background-position:0px 0px;
+	background-repeat:repeat-x;
+}
+.nav{
+	background-image:url(../../images/sprites/entry.png);
+	background-position:right -101px;
+	height:88px;
+	width:480px;
+	float:right;
+	text-align:right;
+	margin-right:10px;
+}
+	.nav a{
+		font-weight:bold
+	}
+	.nav .split{
+		margin:0px 5px;
+		*margin:0px 2px;
+	}
+.main{
+	min-height:100px;
+	padding:25px;
+}

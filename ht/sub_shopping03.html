@@ -1,0 +1,423 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<html xmlns:wb="http://open.weibo.com/wb">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<meta name="keywords" content="美国，从“心”发现" />
+<meta name="description" content="美国，从“心”发现" />
+<title>美国，从“心”发现</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/city_ad.css">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/bigpicroll.js"></script>
+<link type="text/css" href="css/lrtk.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+<!-- 微信开始 -->
+<a id="goweibo" href="http://weibo.com/GoUSAcn" target="_blank"></a>
+<div id="code"></div>
+<div id="code_img"></div>
+<a id="gotop" href="javascript:void(0)"></a>
+<!-- 微信结束 -->
+<!-- 点击大图文字开始 -->
+<div id='TB_overlay'></div>
+<div id='TB_window'>
+  <div class="great00_box" style="display: none;">
+    <div class="photo_box">
+      <div class="box_close"><img src="images/close.png" /></div>
+      <div class="more_user_fb">
+        <div class="more_user_fb_id" style="padding-top:30px;">
+          <embed src="http://player.youku.com/player.php/sid/XNzU4NjY2NTM2/v.swf" allowfullscreen="true" quality="high" width="700" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash"> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="great01_box" style="display:none;">
+    <div class="photo_box">
+      <div class="box_close"><img src="images/close.png" /></div>
+      <div class="photo"><img src="images/shopping/SC01.jpg"/></div>
+      <div class="more_user_fb">
+        <div class="more_user_fb_id">湖畔购物中心的梅西百货。梅西百货是美国联合百货公司旗下公司，是美国著名的连锁百货，其旗舰店位于纽约市海诺德广场。如今梅西百货已经成为了纽约人及游客的汇集之地。</div>
+      </div>
+    </div>
+  </div>
+  <div class="great02_box" style="display: none;">
+    <div class="photo_box">
+      <div class="box_close"><img src="images/close.png" /></div>
+      <div class="photo"><img src="images/shopping/SC02.jpg"/></div>
+      <div class="more_user_fb">
+        <div class="more_user_fb_id">杂志街是新奥尔良最繁华的商业街，两侧遍布着许多商店和画廊。它位于葱郁的奥杜邦公园和花园街区之间，当地人喜欢在这里消磨时间，闲逛散心。游客可在这里淘到一些由当地特色的小礼品。比如Derby Pottery商店出售手工瓷砖，新月城出售水表，Hemline是当地时尚聚集之地，Dirthe Coast有当地特色T恤衫，Mignon Faget出售独一无二的路易斯安那的珠宝，Perlis服装店出售马球衫。 </div>
+      </div>
+    </div>
+  </div>
+  <div class="great03_box" style="display: none;">
+    <div class="photo_box">
+      <div class="box_close"><img src="images/close.png" /></div>
+      <div class="photo"><img src="images/shopping/SC03.jpg"/></div>
+      <div class="more_user_fb">
+        <div class="more_user_fb_id">滨公园购物中心位于圣安东尼奥著名的河滨步道(River Walk)旁, 可欣赏河滨美景并有梅西百货以及一百多间商店。 </div>
+      </div>
+    </div>
+  </div>
+  <div class="great04_box" style="display: none;">
+    <div class="photo_box">
+      <div class="box_close"><img src="images/close.png" /></div>
+      <div class="photo"><img src="images/shopping/CS04.jpg"/></div>
+      <div class="more_user_fb">
+        <div class="more_user_fb_id">Bayona位于法国区，它丰富而不剧烈，优雅而不做作，创新而不超前。菜单每天都有变化，主要是鱼类、禽类和野味，分为长期经典菜和每日特色菜。最后上桌的美味佳肴总是会让人惊讶，并微笑着暗自庆幸自己发现了上等的美食。</div>
+      </div>
+    </div>
+  </div>
+  <div class="great05_box" style="display: none;">
+    <div class="photo_box">
+      <div class="box_close"><img src="images/close.png" /></div>
+      <div class="photo"><img src="images/shopping/CS05.jpg"/></div>
+      <div class="more_user_fb">
+        <div class="more_user_fb_id">这家卡真风味的乡村餐馆乍看是个小酒吧，能够让你在法国区享受平价但是绝对美味的一餐。试试这里的兔肉和香肠什锦菜肴，或红豆和米饭，吃过之后你就知道卡真天堂的味道了。只要不到15美元就能吃得非常饱。</div>
+      </div>
+    </div>
+  </div>
+  <div class="great06_box" style="display: none;">
+    <div class="photo_box">
+      <div class="box_close"><img src="images/close.png" /></div>
+      <div class="photo"><img src="images/shopping/CS06.jpg"/></div>
+      <div class="more_user_fb">
+        <div class="more_user_fb_id">1906年，一位西西里岛移民在这里发明了世界闻名的木佛塔三明治——圆形中空面包里夹上火腿、香肠、菠萝伏洛干酪和腌橄榄沙拉，尺寸和井盖相当。今天，这里仍然是全市最好的出售三明治的地方。</div>
+      </div>
+    </div>
+  </div>
+  <div class="great07_box" style="display: none;">
+    <div class="photo_box">
+      <div class="box_close"><img src="images/close.png" /></div>
+      <div class="photo"><img src="images/city/london07.jpg"/></div>
+      <div class="more_user_fb">
+        <div class="more_user_fb_id">与伦敦塔近在咫尺的塔桥是从泰晤士河口算起的第一座桥（泰晤士河上共建桥15座），有"伦敦正门"之称。该桥始建于1886年，1894年6月30日对公众开放，将伦敦南北区连成一体。桥基上建有两座高耸的方形主塔，高四十多米，每座主塔上建有白色大理石屋顶和五个小尖塔，远看仿佛两顶王冠。两塔之间的跨度为六十多米，塔基和两岸用钢缆吊桥相连。桥身分为上、下两层，上层为宽阔的悬空人行道，两侧装有玻璃窗，行人可饱览泰晤士河两岸的美丽风光；下层可供车辆通行。当泰晤士河上有巨型船只通过时，下层桥面从中间分开慢慢折起，待船只过后再缓缓落下，恢复车辆通行。桥塔内设博物馆、展览厅、商店、酒吧等。登塔远眺，可尽情欣赏泰晤士河上下游十里风光。</div>
+      </div>
+    </div>
+  </div>
+  <div class="great08_box" style="display: none;">
+    <div class="photo_box">
+      <div class="box_close"><img src="images/close.png" /></div>
+      <div class="photo"><img src="images/city/london08.jpg"/></div>
+      <div class="more_user_fb">
+        <div class="more_user_fb_id">要尽览伦敦的母亲河——泰晤士河的绝美风光，你一定得乘一次泰晤士河游船。在游船上，你会拥有观赏一些建筑物的极佳视角，如议会大厦、圣保罗大教堂、伦敦眼、伦敦塔和塔桥、格林尼治海事区域以及金丝雀码头（Canary Wharf）林立的高楼群。有好几家公司提供各种沿河航运服务，既有突突响的小客船，也有往返泰特现代艺术馆和泰特英国馆的快速游轮。如果有时间的话，你可以逆流而上去皇家植物园邱园或汉普顿宫。主要的中心码头有Westminster、Waterloo、Embankment、Blackfriars、London Bridge、London Tower、Canary Wharf和Greenwich。可以使用Oyster卡买一日漫游通票（仅限客运船）。</div>
+      </div>
+    </div>
+  </div>
+  <div class="great09_box" style="display: none;">
+    <div class="photo_box">
+      <div class="box_close"><img src="images/close.png" /></div>
+      <div class="photo"><img src="images/city/london09.jpg"/></div>
+      <div class="more_user_fb">
+        <div class="more_user_fb_id">曾经一度作为皇家马厩的广场，今日已经成为伦敦西区（West End）中枢，也是公共集会与活动的举行地点。每年的圣诞夜，广场上充满节日气氛，人们在两个大喷水池旁唱歌跳舞，彻夜不归。广场中央矗立着50米的高柱，上面是海战英雄霍拉肖•纳尔逊（Horatio Nelson，1758-1805)的雕像。1805年，纳尔逊指挥英国海军舰队打败法西联合舰队赢得特拉法加海战的胜利，此役确立了英国的海上霸权，他也被誉为"英国皇家海军之魂"。石柱底下是高大的方形石座和多层台阶，石座的四壁镶着纳尔逊生平所指挥的四场著名战役的铜雕，最低一层台阶的四角安放着埃德温•兰西尔爵士雕塑四只大铜狮子。广场北侧即为国家画廊以及圣马丁教堂，南端则为通向白金汉宫的海军总部大楼拱门。</div>
+      </div>
+    </div>
+  </div>
+  <div class="great105_box" style="display: none;">
+    <div class="photo_box">
+      <div class="box_close"><img src="images/close.png" /></div>
+      <div class="more_user_fb">
+        <div class="more_user_fb_id" style="padding-top:30px;">
+          <embed src="http://player.youku.com/player.php/sid/XNzU4NjYzMDY4/v.swf" allowfullscreen="true" quality="high" width="700" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash"> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="great106_box" style="display: none;">
+    <div class="photo_box">
+      <div class="box_close"><img src="images/close.png" /></div>
+      <div class="more_user_fb">
+        <div class="more_user_fb_id" style="padding-top:30px;">
+          <embed src="http://player.youku.com/player.php/sid/XNzU4NzU3NTUy/v.swf" allowfullscreen="true" quality="high" width="700" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash"> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 点击大图文字结束 -->
+<div class="topbar">
+  <div class="wrapper">
+    <div class="navbar">
+      <ul>
+        <li class="home"><a href="index.html" style="background-image:url(images/nav00.jpg);"></a></li>
+        <li><a href="sub_selfdriving01.html" style="background-image:url(images/nav01.jpg);"></a></li>
+        <li><a href="sub_shopping01.html" style="background-image:url(images/nav02.jpg);" class="current"></a></li>
+        <li><a href="sub_landscape01.html" style="background-image:url(images/nav03.jpg);"></a></li>
+        <li class="logo"><a href="http://www.gousa.cn/" target="_blank"></a></li>
+        <li><a href="sub_culture01.html" style="background-image:url(images/nav04.jpg);"></a></li>
+        <li class="activity"><a href="photobook.html" style="background-image:url(images/nav_a.gif);"></a></li>
+        <li><a href="sub_tips.html" style="background-image:url(images/nav06.jpg);"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="subnavbar">
+  <div class="wrapper">
+    <ul>
+      <li><a href="sub_shopping01.html">佛罗里达</a></li>
+      <li><a href="sub_shopping02.html">佐治亚州</a></li>
+      <li class="current"><a href="sub_shopping03.html">路易斯安那</a></li>
+      <li><a href="sub_shopping04.html">马萨诸塞州</a></li>
+      <li><a href="sub_shopping05.html">俄勒冈州</a></li>
+      <li class="you"><a href="sub_shopping016.html">华盛顿特区</a></li>
+    </ul>
+  </div>
+</div>
+<div class="mainbox">
+  <div class="wrapper">
+    <div class="left">
+      <!-- 代码 开始 -->
+      <div class="hdwrap">
+        <div class="hdflash f_list">
+          <div class="flashlist">
+            <div class="f_out"> <img src="images/shoppingC01.jpg" width="520" height="345" /></div>
+            <div class="f_out"> <img src="images/cultureC03.jpg" width="520" height="345" /> </div>
+            <div class="f_out"> <img src="images/shoppingC03.jpg" width="520" height="345" /> </div>
+          </div>
+          <div class="flash_tab">
+            <div class="tabs f_tabs">
+              <ul>
+                <li class="f_tab opdiv"> <a href="javascript:void(0);"> </a> </li>
+                <li class="f_tab opdiv"> <a href="javascript:void(0);"> </a> </li>
+                <li class="f_tab opdiv"> <a href="javascript:void(0);"> </a> </li>
+              </ul>
+            </div>
+          </div>
+          <script type="text/javascript">
+    FeatureList(".f_list", {
+      "onclass": "noopdiv",
+      "offclass": "opdiv",
+      "pause_on_act": "mouseover",
+      "interval": 5000,
+      "speed": 5
+    });
+  </script>
+        </div>
+      </div>
+      <!-- 代码 结束 -->
+    </div>
+    <div class="brandInfo"> <img src="images/s3_03logo.jpg">
+      <div class="info"><p>记得出示你的护照让商家退税，因为新奥尔良是个免税的城市。可以免税血拼的地方有：阿姆斯特朗国际机场、滨公园购物中心(The Riverwalk Shopping Center)、和湖畔购物中心 (Lakeside Shopping Center)的梅西百货。</p>
+      </div>
+      <div class="more"><img src="images/btnVideo.png" width="120" height="31" align="absmiddle" style="margin-right:10px; cursor:pointer" id="great00"><a href="http://www.gousa.cn/cities-in-usa/new-orleans-0" target="_blank">查 看 官 网>></a></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="view">
+  <div class="wrapper">
+    <ul>
+      <li id="great01"><img src="images/shopping/SC01s.jpg">
+        <div class="txt"><span class="titleen">Lakeside Shopping Center</span><br>
+          <span class="titlecn">湖畔购物中心</span> <br>
+          <br>
+          湖畔购物中心的梅西百货。梅西百货是美国联合百货公司旗下公司，是美国著名的连锁百货，其旗舰店位于纽约市海诺德广场。如今梅西百货已经成为了纽约人及游客的汇集之地。</div>
+      </li>
+      <li class="zhong" id="great02"><img src="images/shopping/SC02s.jpg">
+        <div class="txt"><span class="titleen">Magazine Street</span><br>
+          <span class="titlecn">杂志街</span> <br>
+          <br>
+        杂志街是新奥尔良最繁华的商业街，两侧遍布着许多商店和画廊。它位于葱郁的奥杜邦公园和花园街区之间，当地人喜欢在这里消磨时间，闲逛散心。</div>
+      </li>
+      <li class="you" id="great03"><img src="images/shopping/SC03s.jpg">
+        <div class="txt"><span class="titleen">The Riverwalk Shopping Center</span><br>
+          <span class="titlecn">滨公园购物中心</span> <br>
+          <br>
+        滨公园购物中心位于圣安东尼奥著名的河滨步道（River Walk）旁, 可欣赏河滨美景并有梅西百货以及一百多间商店。</div>
+      </li>
+      <li id="great04"><img src="images/shopping/CS04s.jpg">
+        <div class="txt"><span class="titleen">Bayona</span><br>
+          <span class="titlecn">Bayona餐厅</span><br>
+          <br>
+          Bayona位于法国区，它丰富而不剧烈，优雅而不做作，创新而不超前。菜单每天都有变化，主要是鱼类、禽类和野味，分为长期经典菜和每日特色菜。</div>
+      </li>
+      <li class="zhong" id="great05"><img src="images/shopping/CS05s.jpg">
+        <div class="txt"><span class="titleen">Coop's</span><br>
+          <span class="titlecn">Coop's餐厅</span> <br>
+          <br>
+          这家卡真风味的乡村餐馆乍看是个小酒吧，能够让你在法国区享受平价但是绝对美味的一餐。试试这里的兔肉和香肠什锦菜肴，或红豆和米饭，吃过之后你就知道卡真天堂的味道了。</div>
+      </li>
+      <li class="you" id="great06"><img src="images/shopping/CS06s.jpg">
+        <div class="txt"><span class="titleen">Central Grocery</span><br>
+          <span class="titlecn">Central Grocery餐厅</span> <br>
+          <br>
+          1906年，一位西西里岛移民在这里发明了世界闻名的木佛塔三明治——圆形中空面包里夹上火腿、香肠、菠萝伏洛干酪和腌橄榄沙拉，尺寸和井盖相当。</div>
+      </li>
+      <!--<li id="great01"><img src="images/scenery/s3_0101.jpg">
+        <div class="txt"><span class="titleen">Georgia Aquarium</span><br>
+          <span class="titlecn">乔治亚水族馆</span> <br>
+          <br>
+          从2005年开业以来，这座全世界最大的水族馆便迎来络绎不绝的游客。其精妙的布局，多形态的展区，以及丰富的海洋生物，使其成为人们心中的梦幻仙境。</div>
+      </li> -->
+      <!--<li class="zhong"><img src="images/scenery/s3_0101.jpg">
+        <div class="txt"><span class="titleen">Georgia Aquarium</span><br>
+          <span class="titlecn">乔治亚水族馆</span> <br>
+          <br>
+          从2005年开业以来，这座全世界最大的水族馆便迎来络绎不绝的游客。其精妙的布局，多形态的展区，以及丰富的海洋生物，使其成为人们心中的梦幻仙境。</div>
+      </li> -->
+      <!--<li class="you"><img src="images/scenery/s3_0101.jpg">
+        <div class="txt"><span class="titleen">Georgia Aquarium</span><br>
+          <span class="titlecn">乔治亚水族馆</span> <br>
+          <br>
+          从2005年开业以来，这座全世界最大的水族馆便迎来络绎不绝的游客。其精妙的布局，多形态的展区，以及丰富的海洋生物，使其成为人们心中的梦幻仙境。</div>
+      </li> -->
+      <div class="clear"></div>
+    </ul>
+  </div>
+</div>
+<div class="moremore">
+  <div class="wrapper"><a href="http://www.gousa.cn/cities-in-usa/new-orleans-0" target="_blank"></a></div>
+</div>
+<div class="hiltonbox">
+  <div class="wrapper">
+    <div class="hmain_info">
+      <div class="hiltoninfo"> <img src="images/Kaylogo.jpg">
+        <div class="info">Kay珠宝公司由100年前的简单店面发展成为今天拥有近1000家分店的美国首屈一指的珠宝公司，遍布美国几乎所有奥特莱斯。Kay珠宝公司提供给客人独一无二量身打造的购物体验，更承诺不断提供高质量的珠宝以及广泛的珠宝选择。公司拥有自有专业设备，将天然采集回来的未加工的钻石打磨成精美的珠宝。<br>
+        </div>
+        <div class="more"><img src="images/btnVideo.png" width="120" height="31" align="absmiddle" style="margin-right:10px; cursor:pointer" id="great105"><a href="http://www.kayjewelers.com.cn" target="_blank">查 看 官 网>></a></div>
+      </div>
+    </div>
+    <div class="hmain_ad">
+      <div class="hilton_ad_box">
+        <div class="scrollable">
+          <div class="items">
+            <div class="ad">
+              <div class="info"><img src="images/kay01.jpg" /></div>
+            </div>
+            <div class="ad">
+              <div class="info"> <img src="images/kay02.jpg" /> </div>
+            </div>
+            <div class="ad">
+              <div class="info"><img src="images/Kaybanner01.png" /></div>
+            </div>
+            <div class="ad">
+              <div class="info"><img src="images/hiltonbanner04.jpg" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="hiltonbox">
+  <div class="wrapper">
+    <div class="hmain_info">
+      <div class="hiltoninfo"> <img src="images/Outletslogo.jpg">
+        <div class="info">Tanger奥特莱斯44家购物中心遍布美国26个州及加拿大，消费者可以畅快购买在美国本土声名卓著并在国际上广受欢迎的品牌。Tanger奥特莱斯购物中心位于许多主要城市周边富丽堂皇的购物区，以激动人心的折扣价格让你尽情选购心仪的品牌。与美国的零售价相比，您可以在这里节省高达60%。</div>
+        <div class="more"><img src="images/btnVideo.png" width="120" height="31" align="absmiddle" style="margin-right:10px; cursor:pointer" id="great106"><a href="http://reader.uutuu.com/brandusa/" target="_blank">查 看 官 网>></a></div>
+      </div>
+    </div>
+    <div class="hmain_ad">
+      <div class="hilton_ad_box">
+        <div class="scrollable">
+          <div class="items">
+            <div class="ad">
+              <div class="info"><img src="images/TangerOutlets01.jpg" /></div>
+            </div>
+            <div class="ad">
+              <div class="info"> <img src="images/TangerOutlets02.jpg" /> </div>
+            </div>
+            <div class="ad">
+              <div class="info"><img src="images/TangerOutlets03.jpg" /></div>
+            </div>
+            <div class="ad">
+              <div class="info"><img src="images/TangerOutlets04.jpg" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2387253-9', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+<script src="js/lib/tools/scrollable.js"></script>
+<script src="js/lib/tools/scrollable.navigator.js"></script>
+<script src="js/lib/tools/scrollable.autoscroll.js"></script>
+<script language="javascript" src="js/city.js" ></script>
+<script type="text/javascript">
+	var showDialog = function(cla){
+		$('#TB_overlay').show();
+		$('#TB_window').show();
+		$('#TB_window').width($(cla).outerWidth());
+		var top= ($(window).height() - $(cla).outerHeight())/2;
+		var left = ($(window).width() - $(cla).outerWidth())/2; 
+		$('#TB_window').css('top', top+'px');
+		$('#TB_window').css('left', left+'px');
+		$(cla).show();
+		$(cla).find('.box_close').click(function(){
+			closeDialog(cla);
+		});
+	}
+	var closeDialog = function(cla){
+		$('#TB_overlay').hide();
+		$('#TB_window').hide();
+		$(cla).hide();
+	}
+	
+	//弹框的点击事件
+	$('#great00').click(function(e){
+		e.preventDefault();
+		showDialog('.great00_box');
+	});
+	$('#great01').click(function(e){
+		e.preventDefault();
+		showDialog('.great01_box');
+	});
+	$('#great02').click(function(e){
+		e.preventDefault();
+		showDialog('.great02_box');
+	});
+	$('#great03').click(function(e){
+		e.preventDefault();
+		showDialog('.great03_box');
+	});
+	$('#great04').click(function(e){
+		e.preventDefault();
+		showDialog('.great04_box');
+	});
+	$('#great05').click(function(e){
+		e.preventDefault();
+		showDialog('.great05_box');
+	});
+	$('#great06').click(function(e){
+		e.preventDefault();
+		showDialog('.great06_box');
+	});
+	$('#great07').click(function(e){
+		e.preventDefault();
+		showDialog('.great07_box');
+	});
+	$('#great08').click(function(e){
+		e.preventDefault();
+		showDialog('.great08_box');
+	});
+	$('#great09').click(function(e){
+		e.preventDefault();
+		showDialog('.great09_box');
+	});
+	$('#great105').click(function(e){
+		e.preventDefault();
+		showDialog('.great105_box');
+	});
+	$('#great106').click(function(e){
+		e.preventDefault();
+		showDialog('.great106_box');
+	});
+	
+</script>
+</html>

@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "layout.css";
+body {
+	background:url(../images/pattern_index.jpg) repeat;
+}
+#content {
+	width:1000px;
+	margin:0 auto;
+	padding:0;
+}
+.charm_nav {
+	height:68px;
+	border:1px solid #e3e3e3;
+	background:#FFF;
+}
+.charm_nav ul li {
+	float:left;
+	height:41px;
+	width:100px;
+	border-right:1px dotted #000;
+	padding-top:27px;
+	padding-left:20px;
+}
+.charm_nav ul li a {
+	display:block;
+	height:14px;
+	width:68px;
+}
+.charm_nav ul li a:hover {
+	background-position:bottom;
+}
+.charm_nav ul li a.current {
+	background-position:bottom;
+}
+.charm_nav ul li.top {
+	float:left;
+	height:68px;
+	line-height:68px;
+	width:160px;
+	border-right:1px dotted #000;
+	text-align:center;
+	background:url(../images/charm_nav_00.jpg) center bottom no-repeat #faf6f2;
+	padding:0;
+}
+.charm_box {
+	background:#b00d23;
+}
+.charm_red {
+	float:left;
+	width:540px;
+	border-left:0px solid #e3e3e3;
+	padding:25px 0 0 0;
+	text-align:center
+}
+.charm_red img {
+	border:1px solid #fff;
+	margin:20px 0;
+}
+.charm_right {
+	float:right;
+	background:#f6f3ef;
+	border-right:1px solid #e3e3e3;
+	width:417px;
+	padding:45px 20px 20px 20px;
+}
+.charm_right p {
+	text-indent:0;
+	line-height:18px;
+}
+.charm_right a{
+	color:#00C;
+}
+.charm_right .title {
+	font-size:24px;
+	font-family:"微软雅黑";
+}
+.charm_right .line {
+	border-top:1px solid #000;
+	height:2px;
+	width:100%;
+	margin-top:10px;
+}
+.charm_red_bottom {
+	float:left;
+	width:540px;
+	height:300px;
+	border-left:0px solid #e3e3e3;
+	background:url(../images/charm_bottom01.jpg) left bottom no-repeat;
+}
+.charm_right_bottom {
+	float:right;
+	border-right:1px solid #e3e3e3;
+	width:457px;
+	height:300px;
+	background:url(../images/charm_bottom02.jpg) right bottom no-repeat #f6f3ef;
+}

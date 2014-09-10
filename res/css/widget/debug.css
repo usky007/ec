@@ -1,0 +1,9 @@
+.logger {border:#c1d3fb 1px solid;background-color:#FFFFFF;z-index:9999}
+.logger_container {width:605px;}
+.logger_titlebar {background-color:#999999;line-height:30px;vertical-align:middle;cursor:default;padding-left:5px;}
+.logger_titlebar span {margin:0px 5px;color:#ffffff;float:right;}
+.logger_titlebar select {width:120px;}
+.logger_titlebar a {color:#ffffff;}
+.logger_panel {line-height:20px;height:150px;overflow:auto;padding:5px 0px 5px 5px;}
+.logger_panel div .classname {display:none;}
+.logger_panel div.DEBUG .logtype {color: green;}

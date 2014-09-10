@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+/* Style for suggestion widget */
+h1
+{
+	color:red;
+	cursor:pointer;
+}

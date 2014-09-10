@@ -1,0 +1,275 @@
+@charset "UTF-8";
+/**
+ * @author				mitchell
+ * @description		定义页各种徽章样式
+ * @lastmodified		$2010-06-21$
+ */
+ 
+/*.badge_100101_256{width:256px; height:256px; background-image:url(../../images/badge/256/100101.png);}
+.badge_100102_256{width:256px; height:256px; background-image:url(../../images/badge/256/100102.png);}
+.badge_100103_256{width:256px; height:256px; background-image:url(../../images/badge/256/100103.png);}
+.badge_100104_256{width:256px; height:256px; background-image:url(../../images/badge/256/100104.png);}
+.badge_100105_256{width:256px; height:256px; background-image:url(../../images/badge/256/100105.png);}
+
+
+.badge_100101_56{width:56px; height:56px; background-image:url(../../images/sprites/badge_56.png); background-position:0px 0px;}
+.badge_100102_56{width:56px; height:56px; background-image:url(../../images/sprites/badge_56.png); background-position:-60px 0px;}
+.badge_100103_56{width:56px; height:56px; background-image:url(../../images/sprites/badge_56.png); background-position:-120px 0px;}
+.badge_100104_56{width:56px; height:56px; background-image:url(../../images/sprites/badge_56.png); background-position:-180px 0px; }
+.badge_100105_56{width:56px; height:56px; background-image:url(../../images/sprites/badge_56.png); background-position:-240px 0px; }
+
+.badge_100101_40{width:40px; height:40px; background-image:url(../../images/sprites/badge_40.png); background-position:0px 0px; }
+.badge_100102_40{width:40px; height:40px; background-image:url(../../images/sprites/badge_40.png); background-position:-50px 0px; }
+.badge_100103_40{width:40px; height:40px; background-image:url(../../images/sprites/badge_40.png); background-position:-100px 0px; }
+.badge_100104_40{width:40px; height:40px; background-image:url(../../images/sprites/badge_40.png); background-position:-150px 0px; }
+.badge_100105_40{width:40px; height:40px; background-image:url(../../images/sprites/badge_40.png); background-position:-200px 0px; }
+
+
+.badge_300101_256{width:256px; height:256px; background-image:url(../../images/badge/256/300101.png);}
+.badge_300102_256{width:256px; height:256px; background-image:url(../../images/badge/256/300102.png);}
+.badge_300103_256{width:256px; height:256px; background-image:url(../../images/badge/256/300103.png);}
+.badge_300104_256{width:256px; height:256px; background-image:url(../../images/badge/256/300104.png);}
+.badge_300105_256{width:256px; height:256px; background-image:url(../../images/badge/256/300105.png);}
+.badge_300106_256{width:256px; height:256px; background-image:url(../../images/badge/256/300106.png);}
+.badge_300107_256{width:256px; height:256px; background-image:url(../../images/badge/256/300107.png);}
+.badge_300108_256{width:256px; height:256px; background-image:url(../../images/badge/256/300108.png);}
+.badge_300109_256{width:256px; height:256px; background-image:url(../../images/badge/256/300109.png);}
+.badge_300201_256{width:256px; height:256px; background-image:url(../../images/badge/256/300201.png);}
+.badge_300202_256{width:256px; height:256px; background-image:url(../../images/badge/256/300202.png);}
+.badge_300203_256{width:256px; height:256px; background-image:url(../../images/badge/256/300203.png);}
+.badge_300204_256{width:256px; height:256px; background-image:url(../../images/badge/256/300204.png);}
+.badge_300205_256{width:256px; height:256px; background-image:url(../../images/badge/256/300205.png);}
+.badge_300206_256{width:256px; height:256px; background-image:url(../../images/badge/256/300206.png);}
+.badge_300301_256{width:256px; height:256px; background-image:url(../../images/badge/256/300301.png);}
+.badge_300302_256{width:256px; height:256px; background-image:url(../../images/badge/256/300302.png);}
+.badge_300303_256{width:256px; height:256px; background-image:url(../../images/badge/256/300303.png);}
+.badge_300304_256{width:256px; height:256px; background-image:url(../../images/badge/256/300304.png);}
+.badge_300305_256{width:256px; height:256px; background-image:url(../../images/badge/256/300305.png);}
+.badge_300306_256{width:256px; height:256px; background-image:url(../../images/badge/256/300306.png);}
+.badge_300401_256{width:256px; height:256px; background-image:url(../../images/badge/256/300401.png);}
+.badge_300402_256{width:256px; height:256px; background-image:url(../../images/badge/256/300402.png);}
+.badge_300403_256{width:256px; height:256px; background-image:url(../../images/badge/256/300403.png);}
+.badge_300404_256{width:256px; height:256px; background-image:url(../../images/badge/256/300404.png);}
+.badge_300405_256{width:256px; height:256px; background-image:url(../../images/badge/256/300405.png);}
+.badge_300406_256{width:256px; height:256px; background-image:url(../../images/badge/256/300406.png);}
+.badge_300501_256{width:256px; height:256px; background-image:url(../../images/badge/256/300501.png);}
+.badge_300502_256{width:256px; height:256px; background-image:url(../../images/badge/256/300502.png);}
+.badge_300503_256{width:256px; height:256px; background-image:url(../../images/badge/256/300503.png);}
+.badge_300504_256{width:256px; height:256px; background-image:url(../../images/badge/256/300504.png);}
+.badge_300505_256{width:256px; height:256px; background-image:url(../../images/badge/256/300505.png);}
+.badge_300506_256{width:256px; height:256px; background-image:url(../../images/badge/256/300506.png);}
+.badge_300601_256{width:256px; height:256px; background-image:url(../../images/badge/256/300601.png);}
+.badge_300602_256{width:256px; height:256px; background-image:url(../../images/badge/256/300602.png);}
+.badge_300603_256{width:256px; height:256px; background-image:url(../../images/badge/256/300603.png);}
+.badge_300604_256{width:256px; height:256px; background-image:url(../../images/badge/256/300604.png);}
+.badge_300605_256{width:256px; height:256px; background-image:url(../../images/badge/256/300605.png);}
+.badge_300606_256{width:256px; height:256px; background-image:url(../../images/badge/256/300606.png);}
+.badge_300701_256{width:256px; height:256px; background-image:url(../../images/badge/256/300701.png);}
+.badge_300702_256{width:256px; height:256px; background-image:url(../../images/badge/256/300702.png);}
+.badge_300703_256{width:256px; height:256px; background-image:url(../../images/badge/256/300703.png);}
+.badge_300704_256{width:256px; height:256px; background-image:url(../../images/badge/256/300704.png);}
+.badge_300705_256{width:256px; height:256px; background-image:url(../../images/badge/256/300705.png);}
+.badge_300706_256{width:256px; height:256px; background-image:url(../../images/badge/256/300706.png);}
+.badge_301001_256{width:256px; height:256px; background-image:url(../../images/badge/256/301001.png);}
+.badge_301002_256{width:256px; height:256px; background-image:url(../../images/badge/256/301002.png);}
+.badge_301003_256{width:256px; height:256px; background-image:url(../../images/badge/256/301003.png);}
+.badge_301004_256{width:256px; height:256px; background-image:url(../../images/badge/256/301004.png);}
+.badge_301005_256{width:256px; height:256px; background-image:url(../../images/badge/256/301005.png);}
+.badge_301006_256{width:256px; height:256px; background-image:url(../../images/badge/256/301006.png);}
+.badge_301007_256{width:256px; height:256px; background-image:url(../../images/badge/256/301007.png);}
+.badge_301008_256{width:256px; height:256px; background-image:url(../../images/badge/256/301008.png);}
+.badge_301101_256{width:256px; height:256px; background-image:url(../../images/badge/256/301101.png);}
+.badge_301102_256{width:256px; height:256px; background-image:url(../../images/badge/256/301102.png);}
+.badge_301103_256{width:256px; height:256px; background-image:url(../../images/badge/256/301103.png);}
+.badge_301104_256{width:256px; height:256px; background-image:url(../../images/badge/256/301104.png);}
+.badge_301105_256{width:256px; height:256px; background-image:url(../../images/badge/256/301105.png);}
+.badge_301106_256{width:256px; height:256px; background-image:url(../../images/badge/256/301106.png);}
+.badge_301201_256{width:256px; height:256px; background-image:url(../../images/badge/256/301201.png);}
+.badge_301202_256{width:256px; height:256px; background-image:url(../../images/badge/256/301202.png);}
+.badge_301203_256{width:256px; height:256px; background-image:url(../../images/badge/256/301203.png);}
+.badge_301301_256{width:256px; height:256px; background-image:url(../../images/badge/256/301301.png);}
+.badge_301302_256{width:256px; height:256px; background-image:url(../../images/badge/256/301302.png);}
+.badge_301303_256{width:256px; height:256px; background-image:url(../../images/badge/256/301303.png);}
+.badge_301401_256{width:256px; height:256px; background-image:url(../../images/badge/256/301401.png);}
+.badge_301402_256{width:256px; height:256px; background-image:url(../../images/badge/256/301402.png);}
+.badge_301403_256{width:256px; height:256px; background-image:url(../../images/badge/256/301403.png);}
+.badge_301501_256{width:256px; height:256px; background-image:url(../../images/badge/256/301501.png);}
+.badge_301502_256{width:256px; height:256px; background-image:url(../../images/badge/256/301502.png);}
+.badge_301503_256{width:256px; height:256px; background-image:url(../../images/badge/256/301503.png);}
+.badge_301601_256{width:256px; height:256px; background-image:url(../../images/badge/256/301601.png);}
+.badge_301602_256{width:256px; height:256px; background-image:url(../../images/badge/256/301602.png);}
+.badge_301603_256{width:256px; height:256px; background-image:url(../../images/badge/256/301603.png);}
+.badge_301701_256{width:256px; height:256px; background-image:url(../../images/badge/256/301701.png);}
+.badge_301702_256{width:256px; height:256px; background-image:url(../../images/badge/256/301702.png);}
+.badge_301703_256{width:256px; height:256px; background-image:url(../../images/badge/256/301703.png);}
+.badge_302001_256{width:256px; height:256px; background-image:url(../../images/badge/256/302001.png);}
+.badge_302002_256{width:256px; height:256px; background-image:url(../../images/badge/256/302002.png);}
+.badge_302003_256{width:256px; height:256px; background-image:url(../../images/badge/256/302003.png);}
+.badge_302004_256{width:256px; height:256px; background-image:url(../../images/badge/256/302004.png);}
+
+
+.badge_300101_56{width:56px; height:56px; background-image:url(../../images/badge/56/300101.png);}
+.badge_300102_56{width:56px; height:56px; background-image:url(../../images/badge/56/300102.png);}
+.badge_300103_56{width:56px; height:56px; background-image:url(../../images/badge/56/300103.png);}
+.badge_300104_56{width:56px; height:56px; background-image:url(../../images/badge/56/300104.png);}
+.badge_300105_56{width:56px; height:56px; background-image:url(../../images/badge/56/300105.png);}
+.badge_300106_56{width:56px; height:56px; background-image:url(../../images/badge/56/300106.png);}
+.badge_300107_56{width:56px; height:56px; background-image:url(../../images/badge/56/300107.png);}
+.badge_300108_56{width:56px; height:56px; background-image:url(../../images/badge/56/300108.png);}
+.badge_300109_56{width:56px; height:56px; background-image:url(../../images/badge/56/300109.png);}
+.badge_300201_56{width:56px; height:56px; background-image:url(../../images/badge/56/300201.png);}
+.badge_300202_56{width:56px; height:56px; background-image:url(../../images/badge/56/300202.png);}
+.badge_300203_56{width:56px; height:56px; background-image:url(../../images/badge/56/300203.png);}
+.badge_300204_56{width:56px; height:56px; background-image:url(../../images/badge/56/300204.png);}
+.badge_300205_56{width:56px; height:56px; background-image:url(../../images/badge/56/300205.png);}
+.badge_300206_56{width:56px; height:56px; background-image:url(../../images/badge/56/300206.png);}
+.badge_300301_56{width:56px; height:56px; background-image:url(../../images/badge/56/300301.png);}
+.badge_300302_56{width:56px; height:56px; background-image:url(../../images/badge/56/300302.png);}
+.badge_300303_56{width:56px; height:56px; background-image:url(../../images/badge/56/300303.png);}
+.badge_300304_56{width:56px; height:56px; background-image:url(../../images/badge/56/300304.png);}
+.badge_300305_56{width:56px; height:56px; background-image:url(../../images/badge/56/300305.png);}
+.badge_300306_56{width:56px; height:56px; background-image:url(../../images/badge/56/300306.png);}
+.badge_300401_56{width:56px; height:56px; background-image:url(../../images/badge/56/300401.png);}
+.badge_300402_56{width:56px; height:56px; background-image:url(../../images/badge/56/300402.png);}
+.badge_300403_56{width:56px; height:56px; background-image:url(../../images/badge/56/300403.png);}
+.badge_300404_56{width:56px; height:56px; background-image:url(../../images/badge/56/300404.png);}
+.badge_300405_56{width:56px; height:56px; background-image:url(../../images/badge/56/300405.png);}
+.badge_300406_56{width:56px; height:56px; background-image:url(../../images/badge/56/300406.png);}
+.badge_300501_56{width:56px; height:56px; background-image:url(../../images/badge/56/300501.png);}
+.badge_300502_56{width:56px; height:56px; background-image:url(../../images/badge/56/300502.png);}
+.badge_300503_56{width:56px; height:56px; background-image:url(../../images/badge/56/300503.png);}
+.badge_300504_56{width:56px; height:56px; background-image:url(../../images/badge/56/300504.png);}
+.badge_300505_56{width:56px; height:56px; background-image:url(../../images/badge/56/300505.png);}
+.badge_300506_56{width:56px; height:56px; background-image:url(../../images/badge/56/300506.png);}
+.badge_300601_56{width:56px; height:56px; background-image:url(../../images/badge/56/300601.png);}
+.badge_300602_56{width:56px; height:56px; background-image:url(../../images/badge/56/300602.png);}
+.badge_300603_56{width:56px; height:56px; background-image:url(../../images/badge/56/300603.png);}
+.badge_300604_56{width:56px; height:56px; background-image:url(../../images/badge/56/300604.png);}
+.badge_300605_56{width:56px; height:56px; background-image:url(../../images/badge/56/300605.png);}
+.badge_300606_56{width:56px; height:56px; background-image:url(../../images/badge/56/300606.png);}
+.badge_300701_56{width:56px; height:56px; background-image:url(../../images/badge/56/300701.png);}
+.badge_300702_56{width:56px; height:56px; background-image:url(../../images/badge/56/300702.png);}
+.badge_300703_56{width:56px; height:56px; background-image:url(../../images/badge/56/300703.png);}
+.badge_300704_56{width:56px; height:56px; background-image:url(../../images/badge/56/300704.png);}
+.badge_300705_56{width:56px; height:56px; background-image:url(../../images/badge/56/300705.png);}
+.badge_300706_56{width:56px; height:56px; background-image:url(../../images/badge/56/300706.png);}
+.badge_301001_56{width:56px; height:56px; background-image:url(../../images/badge/56/301001.png);}
+.badge_301002_56{width:56px; height:56px; background-image:url(../../images/badge/56/301002.png);}
+.badge_301003_56{width:56px; height:56px; background-image:url(../../images/badge/56/301003.png);}
+.badge_301004_56{width:56px; height:56px; background-image:url(../../images/badge/56/301004.png);}
+.badge_301005_56{width:56px; height:56px; background-image:url(../../images/badge/56/301005.png);}
+.badge_301006_56{width:56px; height:56px; background-image:url(../../images/badge/56/301006.png);}
+.badge_301007_56{width:56px; height:56px; background-image:url(../../images/badge/56/301007.png);}
+.badge_301008_56{width:56px; height:56px; background-image:url(../../images/badge/56/301008.png);}
+.badge_301101_56{width:56px; height:56px; background-image:url(../../images/badge/56/301101.png);}
+.badge_301102_56{width:56px; height:56px; background-image:url(../../images/badge/56/301102.png);}
+.badge_301103_56{width:56px; height:56px; background-image:url(../../images/badge/56/301103.png);}
+.badge_301104_56{width:56px; height:56px; background-image:url(../../images/badge/56/301104.png);}
+.badge_301105_56{width:56px; height:56px; background-image:url(../../images/badge/56/301105.png);}
+.badge_301106_56{width:56px; height:56px; background-image:url(../../images/badge/56/301106.png);}
+.badge_301201_56{width:56px; height:56px; background-image:url(../../images/badge/56/301201.png);}
+.badge_301202_56{width:56px; height:56px; background-image:url(../../images/badge/56/301202.png);}
+.badge_301203_56{width:56px; height:56px; background-image:url(../../images/badge/56/301203.png);}
+.badge_301301_56{width:56px; height:56px; background-image:url(../../images/badge/56/301301.png);}
+.badge_301302_56{width:56px; height:56px; background-image:url(../../images/badge/56/301302.png);}
+.badge_301303_56{width:56px; height:56px; background-image:url(../../images/badge/56/301303.png);}
+.badge_301401_56{width:56px; height:56px; background-image:url(../../images/badge/56/301401.png);}
+.badge_301402_56{width:56px; height:56px; background-image:url(../../images/badge/56/301402.png);}
+.badge_301403_56{width:56px; height:56px; background-image:url(../../images/badge/56/301403.png);}
+.badge_301501_56{width:56px; height:56px; background-image:url(../../images/badge/56/301501.png);}
+.badge_301502_56{width:56px; height:56px; background-image:url(../../images/badge/56/301502.png);}
+.badge_301503_56{width:56px; height:56px; background-image:url(../../images/badge/56/301503.png);}
+.badge_301601_56{width:56px; height:56px; background-image:url(../../images/badge/56/301601.png);}
+.badge_301602_56{width:56px; height:56px; background-image:url(../../images/badge/56/301602.png);}
+.badge_301603_56{width:56px; height:56px; background-image:url(../../images/badge/56/301603.png);}
+.badge_301701_56{width:56px; height:56px; background-image:url(../../images/badge/56/301701.png);}
+.badge_301702_56{width:56px; height:56px; background-image:url(../../images/badge/56/301702.png);}
+.badge_301703_56{width:56px; height:56px; background-image:url(../../images/badge/56/301703.png);}
+.badge_302001_56{width:56px; height:56px; background-image:url(../../images/badge/56/302001.png);}
+.badge_302002_56{width:56px; height:56px; background-image:url(../../images/badge/56/302002.png);}
+.badge_302003_56{width:56px; height:56px; background-image:url(../../images/badge/56/302003.png);}
+.badge_302004_56{width:56px; height:56px; background-image:url(../../images/badge/56/302004.png);}
+
+
+
+.badge_300101_40{width:40px; height:40px; background-image:url(../../images/badge/40/300101.png);}
+.badge_300102_40{width:40px; height:40px; background-image:url(../../images/badge/40/300102.png);}
+.badge_300103_40{width:40px; height:40px; background-image:url(../../images/badge/40/300103.png);}
+.badge_300104_40{width:40px; height:40px; background-image:url(../../images/badge/40/300104.png);}
+.badge_300105_40{width:40px; height:40px; background-image:url(../../images/badge/40/300105.png);}
+.badge_300106_40{width:40px; height:40px; background-image:url(../../images/badge/40/300106.png);}
+.badge_300107_40{width:40px; height:40px; background-image:url(../../images/badge/40/300107.png);}
+.badge_300108_40{width:40px; height:40px; background-image:url(../../images/badge/40/300108.png);}
+.badge_300109_40{width:40px; height:40px; background-image:url(../../images/badge/40/300109.png);}
+.badge_300201_40{width:40px; height:40px; background-image:url(../../images/badge/40/300201.png);}
+.badge_300202_40{width:40px; height:40px; background-image:url(../../images/badge/40/300202.png);}
+.badge_300203_40{width:40px; height:40px; background-image:url(../../images/badge/40/300203.png);}
+.badge_300204_40{width:40px; height:40px; background-image:url(../../images/badge/40/300204.png);}
+.badge_300205_40{width:40px; height:40px; background-image:url(../../images/badge/40/300205.png);}
+.badge_300206_40{width:40px; height:40px; background-image:url(../../images/badge/40/300206.png);}
+.badge_300301_40{width:40px; height:40px; background-image:url(../../images/badge/40/300301.png);}
+.badge_300302_40{width:40px; height:40px; background-image:url(../../images/badge/40/300302.png);}
+.badge_300303_40{width:40px; height:40px; background-image:url(../../images/badge/40/300303.png);}
+.badge_300304_40{width:40px; height:40px; background-image:url(../../images/badge/40/300304.png);}
+.badge_300305_40{width:40px; height:40px; background-image:url(../../images/badge/40/300305.png);}
+.badge_300306_40{width:40px; height:40px; background-image:url(../../images/badge/40/300306.png);}
+.badge_300401_40{width:40px; height:40px; background-image:url(../../images/badge/40/300401.png);}
+.badge_300402_40{width:40px; height:40px; background-image:url(../../images/badge/40/300402.png);}
+.badge_300403_40{width:40px; height:40px; background-image:url(../../images/badge/40/300403.png);}
+.badge_300404_40{width:40px; height:40px; background-image:url(../../images/badge/40/300404.png);}
+.badge_300405_40{width:40px; height:40px; background-image:url(../../images/badge/40/300405.png);}
+.badge_300406_40{width:40px; height:40px; background-image:url(../../images/badge/40/300406.png);}
+.badge_300501_40{width:40px; height:40px; background-image:url(../../images/badge/40/300501.png);}
+.badge_300502_40{width:40px; height:40px; background-image:url(../../images/badge/40/300502.png);}
+.badge_300503_40{width:40px; height:40px; background-image:url(../../images/badge/40/300503.png);}
+.badge_300504_40{width:40px; height:40px; background-image:url(../../images/badge/40/300504.png);}
+.badge_300505_40{width:40px; height:40px; background-image:url(../../images/badge/40/300505.png);}
+.badge_300506_40{width:40px; height:40px; background-image:url(../../images/badge/40/300506.png);}
+.badge_300601_40{width:40px; height:40px; background-image:url(../../images/badge/40/300601.png);}
+.badge_300602_40{width:40px; height:40px; background-image:url(../../images/badge/40/300602.png);}
+.badge_300603_40{width:40px; height:40px; background-image:url(../../images/badge/40/300603.png);}
+.badge_300604_40{width:40px; height:40px; background-image:url(../../images/badge/40/300604.png);}
+.badge_300605_40{width:40px; height:40px; background-image:url(../../images/badge/40/300605.png);}
+.badge_300606_40{width:40px; height:40px; background-image:url(../../images/badge/40/300606.png);}
+.badge_300701_40{width:40px; height:40px; background-image:url(../../images/badge/40/300701.png);}
+.badge_300702_40{width:40px; height:40px; background-image:url(../../images/badge/40/300702.png);}
+.badge_300703_40{width:40px; height:40px; background-image:url(../../images/badge/40/300703.png);}
+.badge_300704_40{width:40px; height:40px; background-image:url(../../images/badge/40/300704.png);}
+.badge_300705_40{width:40px; height:40px; background-image:url(../../images/badge/40/300705.png);}
+.badge_300706_40{width:40px; height:40px; background-image:url(../../images/badge/40/300706.png);}
+.badge_301001_40{width:40px; height:40px; background-image:url(../../images/badge/40/301001.png);}
+.badge_301002_40{width:40px; height:40px; background-image:url(../../images/badge/40/301002.png);}
+.badge_301003_40{width:40px; height:40px; background-image:url(../../images/badge/40/301003.png);}
+.badge_301004_40{width:40px; height:40px; background-image:url(../../images/badge/40/301004.png);}
+.badge_301005_40{width:40px; height:40px; background-image:url(../../images/badge/40/301005.png);}
+.badge_301006_40{width:40px; height:40px; background-image:url(../../images/badge/40/301006.png);}
+.badge_301007_40{width:40px; height:40px; background-image:url(../../images/badge/40/301007.png);}
+.badge_301008_40{width:40px; height:40px; background-image:url(../../images/badge/40/301008.png);}
+.badge_301101_40{width:40px; height:40px; background-image:url(../../images/badge/40/301101.png);}
+.badge_301102_40{width:40px; height:40px; background-image:url(../../images/badge/40/301102.png);}
+.badge_301103_40{width:40px; height:40px; background-image:url(../../images/badge/40/301103.png);}
+.badge_301104_40{width:40px; height:40px; background-image:url(../../images/badge/40/301104.png);}
+.badge_301105_40{width:40px; height:40px; background-image:url(../../images/badge/40/301105.png);}
+.badge_301106_40{width:40px; height:40px; background-image:url(../../images/badge/40/301106.png);}
+.badge_301201_40{width:40px; height:40px; background-image:url(../../images/badge/40/301201.png);}
+.badge_301202_40{width:40px; height:40px; background-image:url(../../images/badge/40/301202.png);}
+.badge_301203_40{width:40px; height:40px; background-image:url(../../images/badge/40/301203.png);}
+.badge_301301_40{width:40px; height:40px; background-image:url(../../images/badge/40/301301.png);}
+.badge_301302_40{width:40px; height:40px; background-image:url(../../images/badge/40/301302.png);}
+.badge_301303_40{width:40px; height:40px; background-image:url(../../images/badge/40/301303.png);}
+.badge_301401_40{width:40px; height:40px; background-image:url(../../images/badge/40/301401.png);}
+.badge_301402_40{width:40px; height:40px; background-image:url(../../images/badge/40/301402.png);}
+.badge_301403_40{width:40px; height:40px; background-image:url(../../images/badge/40/301403.png);}
+.badge_301501_40{width:40px; height:40px; background-image:url(../../images/badge/40/301501.png);}
+.badge_301502_40{width:40px; height:40px; background-image:url(../../images/badge/40/301502.png);}
+.badge_301503_40{width:40px; height:40px; background-image:url(../../images/badge/40/301503.png);}
+.badge_301601_40{width:40px; height:40px; background-image:url(../../images/badge/40/301601.png);}
+.badge_301602_40{width:40px; height:40px; background-image:url(../../images/badge/40/301602.png);}
+.badge_301603_40{width:40px; height:40px; background-image:url(../../images/badge/40/301603.png);}
+.badge_301701_40{width:40px; height:40px; background-image:url(../../images/badge/40/301701.png);}
+.badge_301702_40{width:40px; height:40px; background-image:url(../../images/badge/40/301702.png);}
+.badge_301703_40{width:40px; height:40px; background-image:url(../../images/badge/40/301703.png);}
+.badge_302001_40{width:40px; height:40px; background-image:url(../../images/badge/40/302001.png);}
+.badge_302002_40{width:40px; height:40px; background-image:url(../../images/badge/40/302002.png);}
+.badge_302003_40{width:40px; height:40px; background-image:url(../../images/badge/40/302003.png);}
+.badge_302004_40{width:40px; height:40px; background-image:url(../../images/badge/40/302004.png);}*/

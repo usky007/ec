@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/**
+ * @author				mitchell
+ * @description		定义投票组件的样式
+ * @lastmodified		$2010-06-22$
+ */
+
+
+.votes {
+	
+}
+.votes .tag {
+	float:left;
+	width:100%;
+	overflow:hidden;
+	padding-bottom:20px;
+	height:144px;
+}
+.votes .tag a {
+	float:left;
+	color:#FFF;
+	font-weight:bold;
+	display:block;
+	width:auto;
+	padding:5px 10px;
+	height:20px;
+	line-height:20px;
+	line-height:22px\0;
+	_line-height:20px;
+	white-space:nowrap;
+	border:1px solid;
+	text-decoration:none;
+	margin:0px 1px 1px 0px;
+	background-color:#c8c8c8;
+	border-color:#c8c8c8
+}
+.votes .tag a.c1 {
+	background-color:#e75555;
+	border-color:#e75555
+}
+.votes .tag a.c2 {
+	background-color:#d55151;
+	border-color:#d55151
+}
+.votes .tag a.c3 {
+	background-color:#c34e4e;
+	border-color:#c34e4e
+}
+.votes .tag a.c4 {
+	background-color:#b14a4a;
+	border-color:#b14a4a
+}
+.votes .tag a.c5 {
+	background-color:#9f4747;
+	border-color:#9f4747
+}
+.votes .tag a.c6 {
+	background-color:#8d4444;
+	border-color:#8d4444
+}
+.votes .tag a.c7 {
+	background-color:#7b4141;
+	border-color:#7b4141
+}
+.votes .tag a.c8 {
+	background-color:#767676;
+	border-color:#767676
+}
+.votes .tag a.c9 {
+	background-color:#848484;
+	border-color:#848484
+}
+.votes .tag a.c10 {
+	background-color:#919191;
+	border-color:#919191
+}
+.votes .tag a.c11 {
+	background-color:#9f9f9f;
+	border-color:#9f9f9f
+}
+.votes .tag a.c12 {
+	background-color:#acacac;
+	border-color:#acacac
+}
+.votes .tag a.c13 {
+	background-color:#bbbbbb;
+	border-color:#bbbbbb
+}
+.votes .tag a.c14 {
+	background-color:#c8c8c8;
+	border-color:#c8c8c8
+}
+.votes .tag a:hover {
+	background-color:#FFF;
+	border:1px solid #C30;
+	color:#d55151;
+}
+.votes .more {
+	clear:both;
+	text-align:right;
+	height:25px;
+	line-height:25px;
+}
+.votes .other {
+	clear:both;
+	text-align:right;
+	padding-top:5px;
+}

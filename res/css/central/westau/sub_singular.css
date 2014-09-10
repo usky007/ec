@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "layout.css";
+body {
+	background:url(../images/pattern_index.jpg) repeat;
+}
+#content {
+	width:980px;
+	margin:0 auto;
+	padding:0;
+}
+.main_box {
+	border-left:1px solid #ededed;
+	border-right:1px solid #ededed;
+	border-bottom:1px solid #ededed;
+	background:#ffffff;
+	margin-bottom:50px;
+	padding:22px;
+}
+.top_title {
+	height:80px;
+	float:left;
+}
+.top_more {
+	height:21px;
+	float:right;
+	padding-top:50px;
+}
+.top_box {
+	margin:5px 0;
+}
+h2 {
+	margin:0px;
+	font-size:28px;
+	font-weight:lighter;
+	color:#616161;
+	font-family:"微软雅黑";
+}
+h3 {
+	color:#616161;
+	font-family:tahoma;
+	font-size:14px;
+	text-align:left;
+	line-height:30px;
+	margin:0;
+	padding:0;
+}
+.boxgrid {
+	width: 314px;
+	height: 421px;
+	margin-right:5px;
+	float:left;
+	background:#fff;
+	overflow: hidden;
+	position: relative;
+}
+.boxgrid img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 0;
+}
+.boxgrid p {
+	padding: 0 10px;
+	color:#afafaf;
+	font-size:12px;
+}
+.boxcaption {
+	float: left;
+	position: absolute;
+	background: #000;
+	height: 100px;
+	width: 314px;
+	opacity: .7;
+	top:389px;
+				/* For IE 5-7 */
+				filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+	/* For IE 8 */
+				-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+.captionfull .boxcaption {
+	top: 320;
+	left: 0;
+}
+.caption .boxcaption {
+	top: 389;
+	left: 0;
+}
+
+
+.boxgrid_low {
+	width: 302px;
+	height: 208px;
+	margin-right:5px;
+	float:left;
+	background:#fff;
+	overflow: hidden;
+	position: relative;
+	margin-bottom:5px;
+}
+.boxgrid_low img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 0;
+}
+.boxgrid_low p {
+	padding: 0 10px;
+	color:#afafaf;
+	font-weight:bold;
+	font:10pt "Lucida Grande", Arial, sans-serif;
+}
+.boxcaption_low {
+	float: left;
+	position: absolute;
+	background: #000;
+	height: 100px;
+	width: 302px;
+	opacity: .7;
+	top:175px;
+				/* For IE 5-7 */
+				filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+	/* For IE 8 */
+				-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+.captionfull_low .boxcaption_low {
+	top: 115;
+	left: 0;
+}
+.caption_low .boxcaption_low {
+	top: 175;
+	left: 0;
+}
+
+
+.calendar { width:600px; float:left;}
+.calendar_tit { width:596px; height:45px; background:#4f722e; text-align:center; padding-top:20px; margin-bottom:15px;} 
+.video { width:300px; float:right; height:220px; background:#17535e; text-align:center; padding-top:20px; margin-bottom:15px;}
+.job { width:300px; float:right; height:405px; background:#40c2f3; text-align:center; padding-top:20px; margin-bottom:20px; color:#fff; font-family:"微软雅黑"; font-size:14px; line-height:18px;}
+
+h4 {
+	color:#FFF;
+	font-family:"微软雅黑";
+	font-size:15px;
+	text-align:left;
+	line-height:33px;
+	margin:0;
+	padding:0;
+	margin-left:10px;
+	margin-top:10px;
+}
+.month {
+	width: 195px;
+	height: 146px;
+	margin-right:5px;
+	margin-bottom:5px;
+	float:left;
+	background:#a7be38;
+	overflow: hidden;
+	position: relative;
+}
+.month img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 0;
+}
+.month p {
+	padding: 0 10px;
+	color:#4f722e;
+	font-size:12px;
+	text-indent:0;
+	font-family:"微软雅黑";
+	line-height:18px;
+}
+
+
+
+.box_pic {
+	position:relative;
+	z-index:1;
+}
+.box_pic:hover .box_zoom {
+	display:block;
+}
+.box_zoom {
+	position:absolute;
+	left:158px;
+	display:none;
+	z-index:100;
+}

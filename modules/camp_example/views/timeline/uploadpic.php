@@ -1,0 +1,2 @@
+<form name="uploadForm" id="upform" op="post" method="POST" action="<?php echo url::site('uploadpic')?>" enctype="multipart/form-data">
+	<div ><input type="file" id="uppic" name="uploadfile"  accept="image/*"/></div></form>
